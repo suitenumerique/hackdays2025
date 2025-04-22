@@ -1,4 +1,10 @@
-## 🧠 HackDays 2025 – AI & Digital Workspace Hackathon
+![Hack Days Banner](https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:k2arf4k6glr2mshjghvrb5uj/bafkreibigwwtkp6ivlia2fhzwxszwnatxxrcdazysoiqgpu63nuyvnp2zu@jpeg)
+
+<p align="center">
+  <a href="https://hackdays.numerique.gouv.fr/"><b>🌐 Hack Days Official Website</b></a>
+</p>
+
+## 🧠 [HackDays 2025 – AI & Digital Workspace Hackathon](](https://hackdays.numerique.gouv.fr/))
 
 Ready to build the future of the digital workspace?
 
