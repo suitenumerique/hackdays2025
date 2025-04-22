@@ -8,10 +8,7 @@ From **June 2–4, 2025**, join us at **Campus Jourdan (Paris)** for a three-day
 
 It’s your turn — time to build your team, explore challenges, show your skills and shine.
 
-
-## 📅 Event Timeline
-
-### ⏳ Before HackDays: Connect, Create, Collaborate!
+## ⏳ Before HackDays: Connect, Create, Collaborate!
 
 - [Explore existing ideas](../../issues) or [propose your own](../../issues/new) — every idea is welcome, big or small!
 - Find teammates, discuss projects, and brainstorm together in [discussions](../../discussions).
