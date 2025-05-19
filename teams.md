@@ -8,3 +8,7 @@ Propose your team here or join an existing team below!
 - **Members**: @janedoe, @johnsmith  
 - **Idea**: Open data platform for public policy transparency.
 
+- **Team Lead**: @mouxprime
+- **Members**: @mouxprime @mdembele, @g-garibotti  
+- **Idea**: Don't know yet.
+
