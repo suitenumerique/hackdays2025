@@ -2,9 +2,9 @@
 
 Propose your team here or join an existing team below!
 
-## Team name
+## Team IronCalc
 
-- **Team Lead**: @janedoe
-- **Members**: @janedoe, @johnsmith  
-- **Idea**: Open data platform for public policy transparency.
-
+- **Team Lead**: @nhatcher
+- **Members**: @nhatcher, @sylvinus - We're looking for more hackers!
+- **Idea**: Alpha version of a Spreadsheets app for La Suite, based on [IronCalc](https://www.ironcalc.com/)
+ 
