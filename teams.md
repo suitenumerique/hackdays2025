@@ -11,5 +11,5 @@ Propose your team here or join an existing team below!
 ## Team Mosa.Cloud
 - **Team Lead**: @NielsCodes
 - **Members**: @NielsCodes, @rielzzapps, @Alevale, @CasperHollemans
-- **Idea**: TBD
+- **Idea**: Central dashboard, combining information from multiple apps as a springboard for users' work
 
