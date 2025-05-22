@@ -2,7 +2,7 @@
 
 Propose your team here or join an existing team below!
 
-## Team name
+## DBT
 
 - **Team Lead**: @nboyse
 - **Members**: @nboyse, @TomMacca, @richiebird, @a-i-flo, @lluli
