@@ -2,9 +2,9 @@
 
 Propose your team here or join an existing team below!
 
-## Team name
+## DBT
 
-- **Team Lead**: @janedoe
-- **Members**: @janedoe, @johnsmith  
-- **Idea**: Open data platform for public policy transparency.
+- **Team Lead**: @nboyse
+- **Members**: @nboyse, @TomMacca, @richiebird, @a-i-flo, @lluli
+- **Idea**: Fact checking functionality for documents.
 
