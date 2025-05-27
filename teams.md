@@ -1,10 +1,8 @@
 # 🛠 Teams
 
-Propose your team here or join an existing team below!
+## Vopenia
 
-## Team name
-
-- **Team Lead**: @janedoe
-- **Members**: @janedoe, @johnsmith  
-- **Idea**: Open data platform for public policy transparency.
+- **Team Lead**: @bsenard
+- **Members**: @bsenard, @RaphReynaud, @4thlabs  , @codlab
+- **Idea**: Meet : Real-Time Captioning and Translation 
 
