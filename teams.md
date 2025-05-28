@@ -1,10 +1,8 @@
 # 🛠 Teams
 
-Propose your team here or join an existing team below!
+## XiVO SIP legacy dring dring tut tut telephony experts
 
-## Team name
-
-- **Team Lead**: @janedoe
-- **Members**: @janedoe, @johnsmith  
-- **Idea**: Open data platform for public policy transparency.
+- **Team Lead**: Laurent Meiller @ajantiss
+- **Members**: Etienne Allovon, Erwan Sevellec, Tony Mourier
+- **Idea**: SIP telephony bridge element compatible
 
