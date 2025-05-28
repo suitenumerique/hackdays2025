@@ -10,5 +10,5 @@ Propose your team here or join an existing team below!
 
 
 - **Team Lead**: @matts2cant
-- **Members**: @Marine, @Clemsazert, @Anais, @ThomasMetzger
+- **Members**: @Marine, @Clemsazert, @anaisberg, @ThomasMetzger
 - **Idea**: Integrate Grist into Docs by allowing user to create graph linked to Grist data.
