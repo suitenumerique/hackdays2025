@@ -8,3 +8,7 @@ Propose your team here or join an existing team below!
 - **Members**: @janedoe, @johnsmith  
 - **Idea**: Open data platform for public policy transparency.
 
+
+- **Team Lead**: @matts2cant
+- **Members**: @Marine, @Clemsazert, @Anais, @ThomasMetzger
+- **Idea**: Integrate Grist into Docs by allowing user to create graph linked to Grist data.
