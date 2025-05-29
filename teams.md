@@ -2,9 +2,9 @@
 
 Propose your team here or join an existing team below!
 
-## Team name
+## Sovereign42
 
-- **Team Lead**: @janedoe
-- **Members**: @janedoe, @johnsmith  
-- **Idea**: Open data platform for public policy transparency.
+- **Team Lead**: @frenzlad
+- **Members**: @frenzla, @extrymes, @Helios5D, @JeanBRen, @msima0
+- **Idea**: We're still thinking about it
 
