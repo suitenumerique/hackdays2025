@@ -19,11 +19,14 @@ It’s your turn — time to build your team, explore challenges, show your skil
 - [Explore existing ideas](../../issues) or [propose your own](../../issues/new) — every idea is welcome, big or small!
 - Find teammates, discuss projects, and brainstorm together in [discussions](../../discussions).
 - When you're ready, join a team or create a new one by making a [pull request to teams.md](teams.md) make to follow the example provide
-```
-## Team name
+    ```
+    ## Team name
 
-- **Team Lead**: (@GitHubHandle + name)
-- **Members**: (@GitHubHandle + name), (@GitHubHandle or name), (@GitHubHandle or name)  
-- **Idea**: (Describe your idea in a few words).
+    - **Team Lead**: Name ([@GitHub_Handle](https://github.com/github_handle)) 
+    - **Members**: 
+        - Name ([@GitHub_Handle](https://github.com/github_handle))
+        - Name ([@GitHub_Handle](https://github.com/github_handle)) 
+    - **Idea**: (Describe your idea in a few words).
+    ```
 
 ### Happy hacking! 🚀

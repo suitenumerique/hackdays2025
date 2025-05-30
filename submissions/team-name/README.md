@@ -1,4 +1,4 @@
-# 🏆 Final Submission for {{name}}
+# 🏆 Final Submission for Team name
 
 ## Final Project Description
 (Summarize your project as it stands at the end)
