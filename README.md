@@ -18,7 +18,7 @@ It’s your turn — time to build your team, explore challenges, show your skil
 
 - [Explore existing ideas](../../issues) or [propose your own](../../issues/new) — every idea is welcome, big or small!
 - Find teammates, discuss projects, and brainstorm together in [discussions](../../discussions).
-- When you're ready, join a team or create a new one by making a [pull request to teams.md](teams.md) make to follow the example provide
+- When you're ready, join a team or create a new one by making a [pull request to teams.md](teams.md) make sure to follow the example provide. 
     ```
     ## Team name
 
@@ -28,5 +28,5 @@ It’s your turn — time to build your team, explore challenges, show your skil
         - Name ([@GitHub_Handle](https://github.com/github_handle)) 
     - **Idea**: (Describe your idea in a few words).
     ```
-
+  🫶 Don't worry if you didn't create your pull request to add your team before the hackathon. We know a lot of teams will be formed in the morning on day 1. We'll make sure to get your team's info and edit teams.md when everyone went through the checkpoint.
 ### Happy hacking! 🚀
