@@ -4,10 +4,11 @@
 (Summarize your project as it stands at the end)
 
 ## Code base
-(Provide link to your Git repository)
+(Provide a link to your Git repository)
 
-## Demo Link
-(Link to a live demo, a video or screenshots, and attach your pitch deck)
+## Deliverables 
+(Prove a link to a live demo, if you have one) 
+(Add screenshots (image, gif or video) and presentation deck to `/assets`)
 
 ## Key Achievements
 (Highlight the main features or breakthroughs)
