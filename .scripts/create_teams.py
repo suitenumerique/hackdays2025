@@ -45,7 +45,7 @@ def parse_teams():
             # Start a new team
             current_team = {
                 "name": element.get_text().strip(),
-                "contributors": [],
+                "contributors": None,
                 "project": None,
                 "description": None
             }
@@ -57,6 +57,14 @@ def parse_teams():
                     key = key.strip().lower()
                     value = value.strip()
                     if key in {"contributors", "project", "description"}:
+                        # For contributors, preserve markdown formatting
+                        if key == "contributors":
+                            value = li.decode_contents().strip()
+                            # Strip out the <p><strong>Contributors</strong>: part
+                            value = re.sub(r'<p><strong>Contributors</strong>:\s*', '', value)
+                            value = re.sub(r'</p>$', '', value)
+                            # Add a space after each comma
+                            value = re.sub(r',', ', ', value)
                         current_team[key] = value
 
     # Add the last team if one exists
@@ -108,10 +116,9 @@ def replace_placeholders(file_path, team):
         content = f.read()
 
     for key, value in team.items():
-        placeholder = f'{{{{{key}}}}}'  # builds {{name}}, {{idea}}, etc.
-        if isinstance(value, list):
-            value = ', '.join(value)  # join lists like members into a string
-        content = content.replace(placeholder, str(value))
+        placeholder = f'{{{{{key}}}}}'  # builds {{name}}, {{project}}, etc.
+        # Contributors is always a string, so just use as-is
+        content = content.replace(placeholder, str(value) if value is not None else "")
 
     with open(file_path, 'w', encoding='utf-8') as f:
         f.write(content)

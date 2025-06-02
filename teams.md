@@ -24,7 +24,7 @@
 
 - **Description**: Parula is a desktop application available for Windows, MacOs and Linux that integrates with the Online LaSuite services. We are also working on a second product: a online dashboard application that integrates all la suite services into a integrated environment
 
-- **Contributors**: [@cocopops](https://github.com/cocopops)-fr,[@Corentin](https://github.com/Corentin)-BTS,[@benbuckscg](https://github.com/benbuckscg),[@berrydenHARYUS](https://github.com/berrydenHARYUS)
+- **Contributors**: [@cocopops-fr](https://github.com/cocopops-fr),[@Corentin-BTS](https://github.com/Corentin-BTS),[@benbuckscg](https://github.com/benbuckscg),[@berrydenHARYUS](https://github.com/berrydenHARYUS)
 
 
 ## Yunohosters
@@ -33,7 +33,7 @@
 
 - **Description**: Package Docs on YunoHost
 
-- **Contributors**: [@Maeva](https://github.com/Maeva)-Calmettes,[@DDATAA](https://github.com/DDATAA),[@fflorent](https://github.com/fflorent),[@Flightan](https://github.com/Flightan),[@mjeammet](https://github.com/mjeammet),[@rouja](https://github.com/rouja)
+- **Contributors**: [@Maeva](https://github.com/Maeva-Calmettes),[@DDATAA](https://github.com/DDATAA),[@fflorent](https://github.com/fflorent),[@Flightan](https://github.com/Flightan),[@mjeammet](https://github.com/mjeammet),[@rouja](https://github.com/rouja)
 
 
 ## Decision makers
@@ -51,7 +51,7 @@
 
 - **Description**: Add bibliogaphy to Docs using a custom block and custom inline content
 
-- **Contributors**: [@jmaupetit](https://github.com/jmaupetit),[@wilbrdt](https://github.com/wilbrdt),[@mathilde](https://github.com/mathilde)-lannes,[@flipuh](https://github.com/flipuh),[@matthewlipski](https://github.com/matthewlipski)
+- **Contributors**: [@jmaupetit](https://github.com/jmaupetit),[@wilbrdt](https://github.com/wilbrdt),[@mathilde-lannes](https://github.com/mathilde-lannes),[@flipuh](https://github.com/flipuh),[@matthewlipski](https://github.com/matthewlipski)
 
 
 ## PYCRDT
@@ -78,7 +78,7 @@
 
 - **Description**: Allow Drive users to create slides using Polotno and use AI for text to slides
 
-- **Contributors**: [@agellot](https://github.com/agellot),[@francisngn](https://github.com/francisngn),[@ClemTeu](https://github.com/ClemTeu),[@MrMghoul](https://github.com/MrMghoul),[@charlie](https://github.com/charlie)-prog
+- **Contributors**: [@agellot](https://github.com/agellot),[@francisngn](https://github.com/francisngn),[@ClemTeu](https://github.com/ClemTeu),[@MrMghoul](https://github.com/MrMghoul),[@charlie-prog](https://github.com/charlie-prog)
 
 
 ## La Suite Territoriale
@@ -87,7 +87,7 @@
 
 - **Description**: Add attachments in Messages from Drive. Save attachments from Messages into Drive 
 
-- **Contributors**: [@jbpenrath](https://github.com/jbpenrath),[@panchoutnathan](https://github.com/panchoutnathan),[@rl](https://github.com/rl)-83,[@nathanvss](https://github.com/nathanvss)
+- **Contributors**: [@jbpenrath](https://github.com/jbpenrath),[@panchoutnathan](https://github.com/panchoutnathan),[@rl-83](https://github.com/rl-83),[@nathanvss](https://github.com/nathanvss)
 
 
 ## Incubateur Educnat
@@ -150,7 +150,7 @@
 
 - **Description**: A project plan to port MSL encryption protocol on La Suite apps.
 
-- **Contributors**: [@lisafmt](https://github.com/lisafmt),@ vicnetto,[@jpeisenbarth](https://github.com/jpeisenbarth),[@qachr](https://github.com/qachr),[@ludop67](https://github.com/ludop67),
+- **Contributors**: [@lisafmt](https://github.com/lisafmt),[@vicnetto](https://github.com/vicnetto),[@jpeisenbarth](https://github.com/jpeisenbarth),[@qachr](https://github.com/qachr),[@ludop67](https://github.com/ludop67),
 
 
 ## OneT
@@ -285,7 +285,7 @@
 
 - **Description**: Write and display LaTeX in Docs
 
-- **Contributors**: [@tidann](https://github.com/tidann),[@arkey](https://github.com/arkey)-dev,[@plouil](https://github.com/plouil),[@Math](https://github.com/Math)-s314,[@SamuelPerezDuarte](https://github.com/SamuelPerezDuarte),[@Withers001](https://github.com/Withers001)
+- **Contributors**: [@tidann](https://github.com/tidann),[@arkey-dev](https://github.com/arkey-dev),[@plouil](https://github.com/plouil),[@Math-s314](https://github.com/Math-s314),[@SamuelPerezDuarte](https://github.com/SamuelPerezDuarte),[@Withers001](https://github.com/Withers001)
 
 ## DBT
 
@@ -327,7 +327,7 @@
 
 - **Description**: Provide a generic and easy way for people to migrate their files to Docs
 
-- **Contributors**: [@ericwout](https://github.com/ericwout)-overheid,[@hhappel](https://github.com/hhappel),[@mountainborn](https://github.com/mountainborn),[@StephanMeijer](https://github.com/StephanMeijer)
+- **Contributors**: [@ericwout-overheid](https://github.com/ericwout-overheid),[@hhappel](https://github.com/hhappel),[@mountainborn](https://github.com/mountainborn),[@StephanMeijer](https://github.com/StephanMeijer)
 
 
 ## Sovereign42
@@ -345,7 +345,7 @@
 
 - **Description**: Chat with your data thanks to Albert API
 
-- **Contributors**:  [@nic01asfr](https://github.com/nic01asfr),[@Taha](https://github.com/Taha)-130,[@nicolassaint](https://github.com/nicolassaint),[@SamuelRiversMoore](https://github.com/SamuelRiversMoore),[@tazsinttttttt](https://github.com/tazsinttttttt)
+- **Contributors**:  [@nic01asfr](https://github.com/nic01asfr),[@Taha-130](https://github.com/Taha-130),[@nicolassaint](https://github.com/nicolassaint),[@SamuelRiversMoore](https://github.com/SamuelRiversMoore),[@tazsinttttttt](https://github.com/tazsinttttttt)
 
 
 ## The GR
@@ -362,7 +362,7 @@
 
 - **Description**: Theme generator UI that create custom accessible color palettes in a few clicks 
 
-- **Contributors**: [@rl](https://github.com/rl)-83,[@NathanVss](https://github.com/NathanVss),[@PanchoutNathan](https://github.com/PanchoutNathan)
+- **Contributors**: [@rl-83](https://github.com/rl-83),[@NathanVss](https://github.com/NathanVss),[@PanchoutNathan](https://github.com/PanchoutNathan)
 
 
 ## DGNUM x Nix Community
@@ -381,7 +381,7 @@
 
 - **Description**: A personal AI leveraging all your workplace contents, thanks to a common data platform
 
-- **Contributors**: [@benibur](https://github.com/benibur),[@zatteo](https://github.com/zatteo),[@paultranvan](https://github.com/paultranvan),[@benjaminbellamy](https://github.com/benjaminbellamy),[@dodekapode](https://github.com/dodekapode),[@Ahmath](https://github.com/Ahmath)-Gadji
+- **Contributors**: [@benibur](https://github.com/benibur),[@zatteo](https://github.com/zatteo),[@paultranvan](https://github.com/paultranvan),[@benjaminbellamy](https://github.com/benjaminbellamy),[@dodekapode](https://github.com/dodekapode),[@Ahmath-Gadji](https://github.com/Ahmath-Gadji)
 
 
 ## Baller
@@ -417,7 +417,7 @@
 
 - **Description**: Linux for the desktop in the public sector
 
-- **Contributors**: [@neuhaus](https://github.com/neuhaus),[@camilem](https://github.com/camilem),[@antheas](https://github.com/antheas),[@jdum](https://github.com/jdum),[@rriemann](https://github.com/rriemann),[@gallb1](https://github.com/gallb1)-system,[@CsekeSec](https://github.com/CsekeSec)
+- **Contributors**: [@neuhaus](https://github.com/neuhaus),[@camilem](https://github.com/camilem),[@antheas](https://github.com/antheas),[@jdum](https://github.com/jdum),[@rriemann](https://github.com/rriemann),[@gallb1-system](https://github.com/gallb1-system),[@CsekeSec](https://github.com/CsekeSec)
 
 
 ## OpenProject: Hacking Borders
