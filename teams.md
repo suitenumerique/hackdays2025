@@ -127,3 +127,9 @@ Propose your team here or join an existing team below!
 - **Members**: [@mouxprime](https://github.com/mouxprime), [@mdembele](https://github.com/mdembele), [@g-garibotti](https://github.com/g-garibotti), [@Wdaoudi](https://github.com/Wdaoudi)
 - **Idea**: Don't know yet.
 
+## haXathon
+
+- **Lead**: [@tidann](https://github.com/tidann)
+- **Members**: [@Withers001-1](https://github.com/Withers001-1), [@SamuelPerezDuarte](https://github.com/SamuelPerezDuarte), [@Arky-dev](https://github.com/Arky-dev), [@Plouil](https://github.com/Plouil), [@Math-s314](https://github.com/Math-s314), [@tidann](https://github.com/tidann)
+- **Idea**: Integrate math tools to Docs
+
