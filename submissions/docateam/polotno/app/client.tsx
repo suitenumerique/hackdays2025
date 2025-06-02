@@ -9,7 +9,7 @@ import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { SidePanel } from 'polotno/side-panel';
 import { Workspace } from 'polotno/canvas/workspace';
 
-import { createStore } from 'polotno/model/store';
+import { createStore, type StoreType } from 'polotno/model/store';
 
 // import css styles from blueprint framework (used by polotno)
 // if you bundler doesn't support such import you can use css from CDN (see bellow)
@@ -18,11 +18,12 @@ import React from 'react';
 
 const store = createStore({
   key: 'your-key',
+  showCredit: false
 });
 
 const page = store.addPage();
 
-export const App = ({ store }) => {
+export const App = ({ store }: { store: StoreType }) => {
   const ignorePathRef = React.useRef(false);
 
   const socket = usePartySocket({

@@ -15,7 +15,7 @@
   "devDependencies": {
     "@types/react": "^18.2.60",
     "@types/react-dom": "^18.2.19",
-    "partykit": "^0.0.96",
+    "partykit": "^0.0.115",
     "typescript": "^5.3.3"
   }
 }
