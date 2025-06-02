@@ -1,11 +1,14 @@
 # 🏆 Final Submission for {{name}}
 
-## Final Project Description
-(Summarize your project as it stands at the end)
+## Project
+{{project}}
 
-## Team
-- **Lead**: {{lead}}
-- **Members**: {{members}}
+## Final Project Description
+{{description}}
+
+
+## Contributors
+{{contributors}}
 
 ## Code base
 (Provide a link to your Git repository)
