@@ -1,4 +1,5 @@
 # Complete your Final submission:
+
 - [x] Clone the repo
 - [ ] Create a branch with your team name
 - [ ] Find your team's folder in [/submissions]
@@ -7,5 +8,3 @@
 - [ ] Submit a pull request to make your submission
 
 ⚠️ Your submission is due by 4pm on the 3rd of June 2025. Teams that do not submit a complete pull request will not be able to pitch their project to the pre-selection committee.
-
-
