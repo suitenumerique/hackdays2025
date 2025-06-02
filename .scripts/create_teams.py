@@ -49,20 +49,15 @@ def parse_teams():
                 "members": [],
                 "idea": None
             }
-        elif element.name == 'ul' and current_team:  # List for Team Lead, Members, and Idea
+        elif element.name == 'ul' and current_team:
             for li in element.find_all('li'):
                 text = li.get_text().strip()
-                if text.startswith("Team Lead"):
-                    match = re.search(r"@(\w+)", text)
-                    if match:
-                        current_team["lead"] = match.group(1)
-                elif text.startswith("Members"):
-                    matches = re.findall(r"@(\w+)", text)
-                    current_team["members"] = ", ".join(matches)
-                elif text.startswith("Idea"):
-                    idea_match = re.search(r"^Idea:\s*(.*)", text)
-                    if idea_match:
-                        current_team["idea"] = idea_match.group(1).strip()
+                if ":" in text:
+                    key, value = text.split(":", 1)
+                    key = key.strip().lower()
+                    value = value.strip()
+                    if key in {"lead", "members", "idea"}:
+                        current_team[key] = value
 
     # Add the last team if one exists
     if current_team:

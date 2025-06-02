@@ -48,33 +48,27 @@ def check_headings():
             errors.append(f"Unexpected file in submissions directory: {team_slug}")
             continue
 
-        for day_folder in os.listdir(team_path):
-            day_path = os.path.join(team_path, day_folder)
-            if not os.path.isdir(day_path):
-                errors.append(f"Unexpected file in team folder {team_slug}: {day_folder}")
-                continue
+        submission_path = os.path.join(team_path, "submission_instructions.md")
+        template_path = os.path.join(TEMPLATE_DIR, "submission_instructions.md")
 
-            submission_path = os.path.join(day_path, "submission.md")
-            template_path = os.path.join(TEMPLATE_DIR, day_folder, "submission.md")
+        if not os.path.exists(submission_path):
+            errors.append(f"Missing submission.md for {team_slug}")
+            continue
 
-            if not os.path.exists(submission_path):
-                errors.append(f"Missing submission.md for {team_slug}/{day_folder}")
-                continue
+        try:
+            # Pass the whole team data to the extract_heading_structure function
+            template_headings = extract_heading_structure(template_path, team_data=team)
+            submission_headings = extract_heading_structure(submission_path)
+        except FileNotFoundError as e:
+            errors.append(str(e))
+            continue
 
-            try:
-                # Pass the whole team data to the extract_heading_structure function
-                template_headings = extract_heading_structure(template_path, team_data=team)
-                submission_headings = extract_heading_structure(submission_path)
-            except FileNotFoundError as e:
-                errors.append(str(e))
-                continue
-
-            if template_headings != submission_headings:
-                errors.append(
-                    f"Heading structure mismatch in {submission_path}:\n"
-                    f" - Expected: {template_headings}\n"
-                    f" - Found:    {submission_headings}"
-                )
+        if template_headings != submission_headings:
+            errors.append(
+                f"Heading structure mismatch in {submission_path}:\n"
+                f" - Expected: {template_headings}\n"
+                f" - Found:    {submission_headings}"
+            )
 
     if errors:
         print("\nFound issues:")
