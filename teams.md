@@ -127,3 +127,8 @@ Propose your team here or join an existing team below!
 - **Members**: [@mouxprime](https://github.com/mouxprime), [@mdembele](https://github.com/mdembele), [@g-garibotti](https://github.com/g-garibotti), [@Wdaoudi](https://github.com/Wdaoudi)
 - **Idea**: Don't know yet.
 
+## XWiki/Cristal
+
+- **Lead**: [@ldubost](https://github.com/ldubost)
+- **Members**: [@manuelleduc](https://github.com/manuelleduc), [@ClementEXWiki](https://github.com/ClementEXWiki)
+- **Idea**: Integrate Cristal with Docs.
