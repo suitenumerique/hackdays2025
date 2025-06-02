@@ -20,9 +20,9 @@
 
 ## Parula
 
-- **Project**: Parula
+- **Project**: Desktop app for lasuite
 
-- **Description**: 
+- **Description**: Parula is a desktop application available for Windows, MacOs and Linux that integrates with the Online LaSuite services. We are also working on a second product: a online dashboard application that integrates all la suite services into a integrated environment
 
 - **Contributors**: [@cocopops](https://github.com/cocopops)-fr,[@Corentin](https://github.com/Corentin)-BTS,[@benbuckscg](https://github.com/benbuckscg),[@berrydenHARYUS](https://github.com/berrydenHARYUS)
 
@@ -40,16 +40,16 @@
 
 - **Project**: Timeboxed decision making plugin for Meet
 
-- **Description**:  a tool designed to enhance meeting efficiency by integrating structured, time-limited decision-making processes directly into meeting platforms.
+- **Description**:  A tool designed to enhance meeting efficiency by integrating structured, time-limited decision-making processes directly into meeting platforms.
 
-- **Contributors**: [@RichaoAlexandre](https://github.com/RichaoAlexandre),[@olah0la](https://github.com/olah0la),[@antoinehashbang](https://github.com/antoinehashbang),[@teonateodorescu](https://github.com/teonateodorescu),[@C](https://github.com/C)-BdB,
+- **Contributors**: [@RichaoAlexandre](https://github.com/RichaoAlexandre),[@olah0la](https://github.com/olah0la),[@antoinehashbang](https://github.com/antoinehashbang),[@teonateodorescu](https://github.com/teonateodorescu),[@C-BdB](https://github.com/C-BdB)
 
 
 ## Bib4win
 
 - **Project**: Docs Bibliography
 
-- **Description**: Add bibliogaphy to Docs using custom blocks and custom inline content
+- **Description**: Add bibliogaphy to Docs using a custom block and custom inline content
 
 - **Contributors**: [@jmaupetit](https://github.com/jmaupetit),[@wilbrdt](https://github.com/wilbrdt),[@mathilde](https://github.com/mathilde)-lannes,[@flipuh](https://github.com/flipuh),[@matthewlipski](https://github.com/matthewlipski)
 
@@ -58,7 +58,7 @@
 
 - **Project**: PYCRDT & Jupyter
 
-- **Description**: 
+- **Description**: Handle CRDTs in Docs using Python instead of Javascript
 
 - **Contributors**: [@davidbrochart](https://github.com/davidbrochart),[@JudgeGregg](https://github.com/JudgeGregg)
 
@@ -76,24 +76,23 @@
 
 - **Project**: Slides in Drive
 
-- **Description**: Allow Drive users to create slides using Polotno and use AI for text to slide
+- **Description**: Allow Drive users to create slides using Polotno and use AI for text to slides
 
 - **Contributors**: [@agellot](https://github.com/agellot),[@francisngn](https://github.com/francisngn),[@ClemTeu](https://github.com/ClemTeu),[@MrMghoul](https://github.com/MrMghoul),[@charlie](https://github.com/charlie)-prog
 
 
-## LST
+## La Suite Territoriale
 
-- **Project**: Interop Messages with Drive
+- **Project**: Make Messages interoperable with Drive
 
-- **Description**: Add attachments in Messages from Drive.
-Save attachment into Drive 
+- **Description**: Add attachments in Messages from Drive. Save attachments from Messages into Drive 
 
 - **Contributors**: [@jbpenrath](https://github.com/jbpenrath),[@panchoutnathan](https://github.com/panchoutnathan),[@rl](https://github.com/rl)-83,[@nathanvss](https://github.com/nathanvss)
 
 
 ## Incubateur Educnat
 
-- **Project**: CEE - Fichiers To Docs with AI
+- **Project**: Drive to Docs with AI
 
 - **Description**: Sum up a collection of files in Drive with AlbertAPI and push it to Docs
 
@@ -106,19 +105,19 @@ Save attachment into Drive
 
 - **Description**: Albert API implementation in Resana, search document, sum up dialogues and more
 
-- **Contributors**: [@romaindebrito](https://github.com/romaindebrito),[@Anthony](https://github.com/Anthony)-Dmn
+- **Contributors**: [@romaindebrito](https://github.com/romaindebrito),[@Anthony-Dmn](https://github.com/@Anthony-Dmn)
 
 
 ## Albert AI
 
 - **Project**: Assistant AI x La Suite
 
-- **Description**: Implement Docs as a Canvas in Albert Conversation. So that user can interact with their Doc in AlbertConversation. 
+- **Description**: Implement Docs as a Canvas in Albert Conversation. So that user can interact with their Doc in Chat like interface powered by AI. 
 
 - **Contributors**: [@eliott07](https://github.com/eliott07),[@anthonyjacquelim](https://github.com/anthonyjacquelim),[@naxxos](https://github.com/naxxos)
 
 
-## Big blue button
+## Big Blue Button
 
 - **Project**: bbb+docs=ftw
 
@@ -138,11 +137,11 @@ Save attachment into Drive
 
 ## AirGrist
 
-- **Project**: Migrate form Airtable to Grist
+- **Project**: Migrate from Airtable to Grist
 
 - **Description**: User facing migration UI that allows users to migrate from Airtable to Grist
 
-- **Contributors**: [@gillesbl](https://github.com/gillesbl),[@reedery](https://github.com/reedery),[@nabla](https://github.com/nabla)-c0d3,[@mrrossiom](https://github.com/mrrossiom),[@revolunet](https://github.com/revolunet),[@dxb](https://github.com/dxb)
+- **Contributors**: [@gillesbl](https://github.com/gillesbl),[@reedery](https://github.com/reedery),[@nabla-c0d3](https://github.com/nabla-c0d3),[@mrrossiom](https://github.com/mrrossiom),[@revolunet](https://github.com/revolunet),[@dxb](https://github.com/dxb)
 
 
 ## Caçaï
@@ -156,7 +155,7 @@ Save attachment into Drive
 
 ## OneT
 
-- **Project**: SovereignCloudSuit
+- **Project**: SovereignCloudSuite
 
 - **Description**: Deploy La Suite on SecNumCloud infrastructure with Kubernetes
 
@@ -178,7 +177,7 @@ Save attachment into Drive
 
 - **Description**: NixOS packaging of La Suite apps (Drive, Meet, Docs) 
 
-- **Contributors**: [@yu](https://github.com/yu)-re-ka,[@copeugne](https://github.com/copeugne),[@laurentS](https://github.com/laurentS)
+- **Contributors**: [@yu-re-ka](https://github.com/yu-re-ka),[@copeugne](https://github.com/copeugne),[@laurentS](https://github.com/laurentS)
 
 
 ## VOPENIA
@@ -187,25 +186,25 @@ Save attachment into Drive
 
 - **Description**: Provide accurate and real-time transcripts for accessibility, better collaboration and record-keeping
 
-- **Contributors**: [@bsenard](https://github.com/bsenard),RaphReynaud,4thlabs,codlab
+- **Contributors**: [@bsenard](https://github.com/bsenard),[@RaphReynaud](https://github.com/RaphReynaud),[@4thlabs](https://github.com/@4thlabs),[@codlab](https://github.com/@codlab)
 
 
 ## Vort'x
 
 - **Project**: Moodle Docs
 
-- **Description**: Education assistant that stores moodle contents into a vector data base that's available via chat in Docs.
+- **Description**: Education AI assistant that stores moodle contents into a vector data base that's available via chat in Docs.
 
 - **Contributors**: [@vianneyGG](https://github.com/vianneyGG),[@Elyndrium](https://github.com/Elyndrium),[@rompoggi](https://github.com/rompoggi),[@Blackbull11](https://github.com/Blackbull11),[@thomas_Turkieh](https://github.com/thomas_Turkieh)
 
 
 ## Handi Access
 
-- **Project**: Improve access for Docs
+- **Project**: Improve accessibility for Docs
 
-- **Description**: 
+- **Description**: Docs needs to be accessible to all. Let's fix the issues taggued with the tag `accessibilty` 
 
-- **Contributors**: 
+- **Contributors**: [@Appryll](https://github.com/Appryll/)
 
 
 ## One Point
@@ -221,9 +220,9 @@ Save attachment into Drive
 
 - **Project**: Template market place for Docs
 
-- **Description**: A template library that Docs' user can duplicate
+- **Description**: A template library that Docs' users can duplicate
 
-- **Contributors**: [@Luka](https://github.com/Luka)-Kupatadze,[@Comete99](https://github.com/Comete99),[@jesptri](https://github.com/jesptri),[@jlemercier](https://github.com/jlemercier),[@fabricekossi](https://github.com/fabricekossi),[@rokssg](https://github.com/rokssg),[@Luc](https://github.com/Luc)
+- **Contributors**: [@Luka-Kupatadze](https://github.com/Luka-Kupatadze),[@Comete99](https://github.com/Comete99),[@jesptri](https://github.com/jesptri),[@jlemercier](https://github.com/jlemercier),[@fabricekossi](https://github.com/fabricekossi),[@rokssg](https://github.com/rokssg),[@Luc](https://github.com/Luc)
 
 
 ## dringdringtuttut
@@ -239,7 +238,7 @@ Save attachment into Drive
 
 - **Project**: RAG on Drive
 
-- **Description**: Store shared files as vector so they can query an LLM pipeline 
+- **Description**: Store shared files as vector database so they can query an LLM pipeline 
 
 - **Contributors**: [@AlexandreAmate](https://github.com/AlexandreAmate),[@Roswell1208](https://github.com/Roswell1208),[@tgreil](https://github.com/tgreil)
 
@@ -250,8 +249,6 @@ Save attachment into Drive
 
 - **Description**: Allow using docs and spreadsheets right in your 2D virtual office.
 
-
-
 - **Contributors**: [@ydiarra](https://github.com/ydiarra),[@moufmouf](https://github.com/moufmouf),[@MaisonHub](https://github.com/MaisonHub)
 
 
@@ -259,7 +256,7 @@ Save attachment into Drive
 
 - **Project**: Improve the UX of Grist features
 
-- **Description**: Documentation for custom waffle for Grist  / Enable Attachment for public form / Enable markdown for doc tour.
+- **Description**: Documentation of the waffle for Grist  / Enable Attachment for public forms / Enable markdown for doc tour.
 
 - **Contributors**: [@tayflo](https://github.com/tayflo),[@mrdev023](https://github.com/mrdev023),[@ogui11aume](https://github.com/ogui11aume),[@mclegrand](https://github.com/mclegrand)
 
@@ -286,19 +283,9 @@ Save attachment into Drive
 
 - **Project**: Math integration into Docs
 
-- **Description**: Write and display LaTeX and Mermaid.js in Docs
+- **Description**: Write and display LaTeX in Docs
 
-- **Contributors**: [@tidann](https://github.com/tidann),[@arkey](https://github.com/arkey)-dev,[@plouil](https://github.com/plouil),[@Math](https://github.com/Math)-s314,[@SamuelPerezDuarte](https://github.com/SamuelPerezDuarte),[@Withers001](https://github.com/Withers001)-1
-
-
-## TBD
-
-- **Project**: TBD 
-
-- **Description**: 
-
-- **Contributors**: [@naofel1](https://github.com/naofel1),[@mbehrami](https://github.com/mbehrami)
-
+- **Contributors**: [@tidann](https://github.com/tidann),[@arkey](https://github.com/arkey)-dev,[@plouil](https://github.com/plouil),[@Math](https://github.com/Math)-s314,[@SamuelPerezDuarte](https://github.com/SamuelPerezDuarte),[@Withers001](https://github.com/Withers001)
 
 ## DBT
 
@@ -306,14 +293,21 @@ Save attachment into Drive
 
 - **Description**: Add fact checking to Docs with AI.
 
-- **Contributors**: [@a](https://github.com/a)-i-slo,[@lluli](https://github.com/lluli),[@nboyse](https://github.com/nboyse),[@dalebird](https://github.com/dalebird),[@developwithtom](https://github.com/developwithtom)
+- **Contributors**: [@a-i-slo](https://github.com/a-i-slo),[@lluli](https://github.com/lluli),[@nboyse](https://github.com/nboyse),[@dalebird](https://github.com/dalebird),[@developwithtom](https://github.com/developwithtom)
 
+## Lin phone
+
+- **Project**: Tchap Phone Call
+
+- **Description**: Provide Tchap users with the possibility to call real phone numbers over the internet
+
+- **Contributors**: [@jehandelalune](https://github.com/jehandelalune),[@a-jogy](https://github.com/a-jogy)
 
 ## Panographix
 
 - **Project**: Tables and  graphs in Docs
 
-- **Description**: Integrate Grist into Docs through a nice embedding and custom block.
+- **Description**: Integrate Grist into Docs through a nice embedded view and a custom block.
 
 - **Contributors**: [@matts2cant](https://github.com/matts2cant),[@anaisberg](https://github.com/anaisberg),[@Clemsazert](https://github.com/Clemsazert),[@ThomasMetzger](https://github.com/ThomasMetzger),
 
@@ -329,9 +323,9 @@ Save attachment into Drive
 
 ## Doc Spec
 
-- **Project**: Import to Docs
+- **Project**: Import text files to to Docs
 
-- **Description**: Provide a generic and easy way for people to migrate to Docs
+- **Description**: Provide a generic and easy way for people to migrate their files to Docs
 
 - **Contributors**: [@ericwout](https://github.com/ericwout)-overheid,[@hhappel](https://github.com/hhappel),[@mountainborn](https://github.com/mountainborn),[@StephanMeijer](https://github.com/StephanMeijer)
 
@@ -340,27 +334,18 @@ Save attachment into Drive
 
 - **Project**: Email Security Audit
 
-- **Description**: Plugin for OpenXchange email client that evaluates the risk of received email
+- **Description**: Plugin for OpenXchange email client that evaluates the risk of received emails
 
 - **Contributors**: [@Frenzla](https://github.com/Frenzla),[@JeanBRen](https://github.com/JeanBRen),[@Heliossd](https://github.com/Heliossd),[@msima0](https://github.com/msima0),[@extrymes](https://github.com/extrymes)
 
 
 ## Grist <3 IA
 
-- **Project**: Chatbot Grist
+- **Project**: AI Chatbot in Grist
 
 - **Description**: Chat with your data thanks to Albert API
 
 - **Contributors**:  [@nic01asfr](https://github.com/nic01asfr),[@Taha](https://github.com/Taha)-130,[@nicolassaint](https://github.com/nicolassaint),[@SamuelRiversMoore](https://github.com/SamuelRiversMoore),[@tazsinttttttt](https://github.com/tazsinttttttt)
-
-
-## Lin phone
-
-- **Project**: Tchap Phone Call
-
-- **Description**: Provide Tchap user with the possibility to call real phone numbers over the internet
-
-- **Contributors**: [@jehandelalune](https://github.com/jehandelalune),[@a](https://github.com/a)-jogy
 
 
 ## The GR
@@ -369,23 +354,13 @@ Save attachment into Drive
 
 - **Description**: AI assistant that queries your Docs activity
 
-- **Contributors**: [@gaspardvilla](https://github.com/gaspardvilla),[@julienperia](https://github.com/julienperia),[@isaac](https://github.com/isaac)-gros,[@zouicheomar](https://github.com/zouicheomar)
+- **Contributors**: [@gaspardvilla](https://github.com/gaspardvilla),[@julienperia](https://github.com/julienperia),[@isaac-gros](https://github.com/isaac),[@zouicheomar](https://github.com/zouicheomar)
 
-
-## 
-
-- **Project**: HANDI ACCESS
-
-- **Description**: 
-
-- **Contributors**: 
-
-
-## LST
+## La Suite UI 
 
 - **Project**: Co1ors
 
-- **Description**: Accesible theme generator
+- **Description**: Theme generator UI that create custom accessible color palettes in a few clicks 
 
 - **Contributors**: [@rl](https://github.com/rl)-83,[@NathanVss](https://github.com/NathanVss),[@PanchoutNathan](https://github.com/PanchoutNathan)
 
@@ -404,18 +379,18 @@ Save attachment into Drive
 
 - **Project**: From RAG to RAW (Retrieval Augmented Workplace)
 
-- **Description**: A personal AI leveraging all your workplace contents, thanks to common data platform
+- **Description**: A personal AI leveraging all your workplace contents, thanks to a common data platform
 
 - **Contributors**: [@benibur](https://github.com/benibur),[@zatteo](https://github.com/zatteo),[@paultranvan](https://github.com/paultranvan),[@benjaminbellamy](https://github.com/benjaminbellamy),[@dodekapode](https://github.com/dodekapode),[@Ahmath](https://github.com/Ahmath)-Gadji
 
 
 ## Baller
 
-- **Project**: Mailing-list (Google Group alternative)
+- **Project**: Mailing-list a Google Groups alternative
 
 - **Description**: A mailing-list manager with a Grist backend 
 
-- **Contributors**: [@OllieJC](https://github.com/OllieJC),[@smford](https://github.com/smford),[@adamrobertson](https://github.com/adamrobertson)-gds,[@saralk](https://github.com/saralk)
+- **Contributors**: [@OllieJC](https://github.com/OllieJC),[@smford](https://github.com/smford),[@adamrobertson-gds](https://github.com/adamrobertson-gds),[@saralk](https://github.com/saralk)
 
 
 ## IronCalc
@@ -431,7 +406,7 @@ Save attachment into Drive
 
 - **Project**: Epicentre
 
-- **Description**: A personal dashboard that centralise activity across La Suite apps 
+- **Description**: A personal dashboard that centralises activity across La Suite apps 
 
 - **Contributors**: [@nielscodes](https://github.com/nielscodes),[@CasperHollemans](https://github.com/CasperHollemans),[@rielzzapps](https://github.com/rielzzapps),[@AleVale](https://github.com/AleVale)
 
@@ -449,9 +424,9 @@ Save attachment into Drive
 
 - **Project**: Docs x OpenProject Integration
 
-- **Description**: Deep integration between Docs and OpenProject thanks to a shared use of BlockNote solved in a generic way that is scalable to others applications for further integration. The benefit for user is going from a collaborative text draft to a concrete project plan.
+- **Description**: Deep integration between Docs and OpenProject thanks to a shared use of BlockNotejs. Solved in a generic way that is scalable to others applications for further integration. The benefit for the user is going from a collaborative text draft to a concrete project plan.
 
-- **Contributors**: [@wielinde](https://github.com/wielinde),[@kharonus](https://github.com/kharonus),[@brunopagno](https://github.com/brunopagno),[@dominic](https://github.com/dominic)-braeunlein,[@psatyal](https://github.com/psatyal)
+- **Contributors**: [@wielinde](https://github.com/wielinde),[@kharonus](https://github.com/kharonus),[@brunopagno](https://github.com/brunopagno),[@dominic-braeunlein](https://github.com/dominic-braeunlein),[@psatyal](https://github.com/psatyal)
 
 
 ## Matrix Preview
