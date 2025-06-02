@@ -44,11 +44,6 @@ Propose your team here or join an existing team below!
 - **Members**: [@Marine](https://github.com/Marine), [@Clemsazert](https://github.com/Clemsazert), [@anaisberg](https://github.com/anaisberg), [@ThomasMetzger](https://github.com/ThomasMetzger)
 - **Idea**: Integrate Grist into Docs by allowing user to create graph linked to Grist data.
 
-## OSRD
-
-- **Lead**: [@clarani](https://github.com/clarani)
-- **Members**: [@clarani](https://github.com/clarani), [@Tguisnet](https://github.com/Tguisnet), [@emersion](https://github.com/emersion), [@Castavo](https://github.com/Castavo) 
-- **Idea**: None yet but we're working on it
 
 ## Vopenia
 
@@ -127,3 +122,9 @@ Propose your team here or join an existing team below!
 - **Members**: [@mouxprime](https://github.com/mouxprime), [@mdembele](https://github.com/mdembele), [@g-garibotti](https://github.com/g-garibotti), [@Wdaoudi](https://github.com/Wdaoudi)
 - **Idea**: Don't know yet.
 
+
+## The Importers 🎸
+
+- **Lead**: [@nicolasritouet](https://github.com/nicolasritouet)
+- **Members**: [@clarani](https://github.com/clarani), [@Tguisnet](https://github.com/Tguisnet), [@emersion](https://github.com/emersion), [@Castavo](https://github.com/Castavo) [@nicolasritouet](https://github.com/nicolasritouet) 
+- **Idea**: Import content from Notion, outline and DocSpec into Docs
