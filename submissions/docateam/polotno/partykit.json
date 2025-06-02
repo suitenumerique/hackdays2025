@@ -1,0 +1,10 @@
+{
+  "$schema": "https://www.partykit.io/schema.json",
+  "name": "polotno-partykit",
+  "main": "party/server.ts",
+  "compatibilityDate": "2024-03-05",
+  "serve": {
+    "path": "public",
+    "build": "app/client.tsx"
+  }
+}

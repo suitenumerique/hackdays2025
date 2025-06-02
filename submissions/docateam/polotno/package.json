@@ -1,41 +1,21 @@
 {
-  "name": "polotno-studio",
-  "version": "0.1.1",
-  "author": "Anton Lavrenov",
-  "description": "Free design editor",
+  "name": "polotno-partykit",
+  "version": "0.0.0",
   "private": true,
-  "dependencies": {
-    "@meronex/icons": "^4.0.0",
-    "@sentry/browser": "^8.31.0",
-    "@sentry/tracing": "^7.114.0",
-    "jszip": "^3.10.1",
-    "localforage": "^1.10.0",
-    "polotno": "^2.14.4",
-    "qrcode": "^1.5.4",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-error-boundary": "^4.0.13",
-    "react-scripts": "5.0.1"
-  },
-  "homepage": ".",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test"
+    "dev": "partykit dev --live",
+    "deploy": "partykit deploy"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "partysocket": "^1.0.0",
+    "polotno": "^2.4.19",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@types/react": "^18.2.60",
+    "@types/react-dom": "^18.2.19",
+    "partykit": "^0.0.96",
+    "typescript": "^5.3.3"
   }
 }
