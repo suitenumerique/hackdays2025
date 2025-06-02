@@ -9,7 +9,24 @@ export const CloudWarning = observer(() => {
     return null;
   }
   return (
-    <div>
-    </div>
+      <div>
+        <p style={{ color: '#fbb360' }}>
+          Warning! Your data is saved locally only.
+        </p>
+        {/* <p>
+        If you want to have bigger storage and enable cloud saving please sign
+        in with puter.com.
+      </p> */}
+        <Button
+            fill
+            intent="success"
+            onClick={() => {
+              project.signIn();
+            }}
+            icon={<Cloud />}
+        >
+          Enable cloud storage
+        </Button>
+      </div>
   );
 });
