@@ -1,0 +1,91 @@
+{
+    "width": 940,
+    "height": 788,
+    "fonts": [
+        {
+            "family": "Open Sans",
+            "style": "Regular",
+            "size": 24
+        },
+        {
+            "family": "Open Sans",
+            "style": "Bold",
+            "size": 36
+        }
+    ],
+    "pages": [
+        {
+            "id": "page-1",
+            "children": [
+                {
+                    "type": "text",
+                    "text": "Présentation de l'équipe",
+                    "x": 100,
+                    "y": 100,
+                    "font": "Open Sans",
+                    "size": 24,
+                    "color": "#333333"
+                },
+                {
+                    "type": "image",
+                    "src": "oussime.png",
+                    "x": 200,
+                    "y": 150,
+                    "width": 100,
+                    "height": 100
+                },
+                {
+                    "type": "text",
+                    "text": "Oussime",
+                    "x": 320,
+                    "y": 250,
+                    "font": "Open Sans",
+                    "size": 18,
+                    "color": "#666666"
+                },
+                {
+                    "type": "image",
+                    "src": "didier.png",
+                    "x": 200,
+                    "y": 350,
+                    "width": 100,
+                    "height": 100
+                },
+                {
+                    "type": "text",
+                    "text": "Didier",
+                    "x": 320,
+                    "y": 450,
+                    "font": "Open Sans",
+                    "size": 18,
+                    "color": "#666666"
+                },
+                {
+                    "type": "image",
+                    "src": "michel.png",
+                    "x": 200,
+                    "y": 550,
+                    "width": 100,
+                    "height": 100
+                },
+                {
+                    "type": "text",
+                    "text": "Michel",
+                    "x": 320,
+                    "y": 650,
+                    "font": "Open Sans",
+                    "size": 18,
+                    "color": "#666666"
+                }
+            ],
+            "width": "auto",
+            "height": "auto",
+            "background": "white",
+            "bleed": 0,
+            "duration": 5000
+        }
+    ],
+    "audios": [],
+    "unit": "px",
+    "dpi": 72
+}
