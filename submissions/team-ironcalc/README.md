@@ -5,13 +5,18 @@
 
 ## Team
 - **Lead**: @nhatcher
-- **Members**: @nhatcher, @sylvinus - We're looking for more hackers!
+- **Members**: @scandel, @nastaliss, @sylvinus
 
 ## Code base
-(Provide a link to your Git repository)
+
+https://github.com/suitenumerique/calc
 
 ## Deliverables 
-(Provide a link to a live demo, if you have one)
+
+https://calc-demo.osc-fr1.scalingo.io/
+
+(Demo is plugged to ProConnect Identite Sandbox)
+
 (Add screenshots (image, gif or video) and presentation deck to `/assets`)
 
 ## Key Achievements
