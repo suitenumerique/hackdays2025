@@ -1,0 +1,41 @@
+{
+  "name": "polotno-studio",
+  "version": "0.1.1",
+  "author": "Anton Lavrenov",
+  "description": "Free design editor",
+  "private": true,
+  "dependencies": {
+    "@meronex/icons": "^4.0.0",
+    "@sentry/browser": "^8.31.0",
+    "@sentry/tracing": "^7.114.0",
+    "jszip": "^3.10.1",
+    "localforage": "^1.10.0",
+    "polotno": "^2.14.4",
+    "qrcode": "^1.5.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-error-boundary": "^4.0.13",
+    "react-scripts": "5.0.1"
+  },
+  "homepage": ".",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
