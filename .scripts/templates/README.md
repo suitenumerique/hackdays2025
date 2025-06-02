@@ -3,7 +3,7 @@
 ## Project
 {{project}}
 
-## Final Project Description
+## Project Description
 {{description}}
 
 
