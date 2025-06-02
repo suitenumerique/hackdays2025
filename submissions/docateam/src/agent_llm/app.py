@@ -20,26 +20,54 @@ def main():
     prompt_template = PromptTemplate.from_template(prompt_generic)
     final_prompt = prompt_template.format(
         slide_template="""
-                {
-                "width": 940,
-                "height": 788,
-                "fonts": [],
-                "pages": [
-                    {
-                    "id": "page-1",
-                    "children": [],
-                    "width": "auto",
-                    "height": "auto",
-                    "background": "white",
-                    "bleed": 0,
-                    "duration": 5000
-                    }
-                ],
-                "audios": [],
-                "unit": "px",
-                "dpi": 72
-                }""",
-        client_request="Créer une slide de présentation de l'équipe avec Oussime, Didier et Michel",
+                {"width":1280,"height":720,"fonts":[],"pages":[{"id":"kg7dDOz1RO","children":[{"id":"3ztNniKf5_","type":"image","name":"","opacity":1,"visible":true,"selectable":true,"removable":true,"alwaysOnTop":false,"showInExport":true,"x":1003.010864058346,"y":70.10070871780067,"width":204.3002691739837,"height":318.0601124208777,"rotation":0,"animations":[],"blurEnabled":false,"blurRadius":10,"brightnessEnabled":false,"brightness":0,"sepiaEnabled":false,"grayscaleEnabled":false,"shadowEnabled":false,"shadowBlur":5,"shadowOffsetX":0,"shadowOffsetY":0,"shadowColor":"black","shadowOpacity":1,"draggable":true,"resizable":true,"contentEditable":true,"styleEditable":true,"src":"https://images.unsplash.com/photo-1748779650617-1388808658e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTY5OTZ8MHwxfGFsbHw0fHx8fHx8fHwxNzQ4ODU4NDI2fA&ixlib=rb-4.1.0&q=80&w=1080","cropX":0,"cropY":0,"cropWidth":0.8564430064031008,"cropHeight":0.9999999999999996,"cornerRadius":0,"flipX":false,"flipY":false,"clipSrc":"","borderColor":"black","borderSize":0,"keepRatio":false},{"id":"dsJIBXVuvR","type":"text","name":"","opacity":1,"visible":true,"selectable":true,"removable":true,"alwaysOnTop":false,"showInExport":true,"x":53.91231427649251,"y":58.237900370969015,"width":393.7666397360879,"height":74,"rotation":0,"animations":[],"blurEnabled":false,"blurRadius":10,"brightnessEnabled":false,"brightness":0,"sepiaEnabled":false,"grayscaleEnabled":false,"shadowEnabled":false,"shadowBlur":5,"shadowOffsetX":0,"shadowOffsetY":0,"shadowColor":"black","shadowOpacity":1,"draggable":true,"resizable":true,"contentEditable":true,"styleEditable":true,"text":"Adventure","placeholder":"","fontSize":60.42746463773151,"fontFamily":"Rock Salt","fontStyle":"italic","fontWeight":"normal","textDecoration":"","fill":"rgba(0,0,0,1)","align":"center","verticalAlign":"top","strokeWidth":0,"stroke":"black","lineHeight":1.2,"letterSpacing":0,"backgroundEnabled":false,"backgroundColor":"#7ED321","backgroundOpacity":1,"backgroundCornerRadius":0.5,"backgroundPadding":0.5},{"id":"jrVhFDD3S-","type":"text","name":"","opacity":1,"visible":true,"selectable":true,"removable":true,"alwaysOnTop":false,"showInExport":true,"x":108.80781219513085,"y":13.817867097300436,"width":125.47672402542184,"height":38,"rotation":0,"animations":[],"blurEnabled":false,"blurRadius":10,"brightnessEnabled":false,"brightness":0,"sepiaEnabled":false,"grayscaleEnabled":false,"shadowEnabled":false,"shadowBlur":5,"shadowOffsetX":0,"shadowOffsetY":0,"shadowColor":"black","shadowOpacity":1,"draggable":true,"resizable":true,"contentEditable":true,"styleEditable":true,"text":"Life is an ","placeholder":"","fontSize":30.783476085107676,"fontFamily":"Quattrocento","fontStyle":"normal","fontWeight":"bold","textDecoration":"","fill":"rgba(0,0,0,1)","align":"left","verticalAlign":"top","strokeWidth":0,"stroke":"black","lineHeight":1.2,"letterSpacing":0,"backgroundEnabled":false,"backgroundColor":"#7ED321","backgroundOpacity":1,"backgroundCornerRadius":0.5,"backgroundPadding":0.5},{"id":"XKaXeZmKEw","type":"text","name":"","opacity":1,"visible":true,"selectable":true,"removable":true,"alwaysOnTop":false,"showInExport":true,"x":36.521316063450925,"y":196.75766924780493,"width":325.8246320353653,"height":140,"rotation":0,"animations":[],"blurEnabled":false,"blurRadius":10,"brightnessEnabled":false,"brightness":0,"sepiaEnabled":false,"grayscaleEnabled":false,"shadowEnabled":false,"shadowBlur":5,"shadowOffsetX":0,"shadowOffsetY":0,"shadowColor":"black","shadowOpacity":1,"draggable":true,"resizable":true,"contentEditable":true,"styleEditable":true,"text":"MARKETING PROPOSAL","placeholder":"","fontSize":57.66797995453046,"fontFamily":"Alata","fontStyle":"normal","fontWeight":"bold","textDecoration":"","fill":"black","align":"left","verticalAlign":"top","strokeWidth":0,"stroke":"black","lineHeight":1.2,"letterSpacing":0,"backgroundEnabled":false,"backgroundColor":"#7ED321","backgroundOpacity":1,"backgroundCornerRadius":0.5,"backgroundPadding":0.5},{"id":"AWnJX4eHRB","type":"text","name":"","opacity":1,"visible":true,"selectable":true,"removable":true,"alwaysOnTop":false,"showInExport":true,"x":36.52131606345092,"y":169.06392857149973,"width":155.0744848128272,"height":29,"rotation":0,"animations":[],"blurEnabled":false,"blurRadius":10,"brightnessEnabled":false,"brightness":0,"sepiaEnabled":false,"grayscaleEnabled":false,"shadowEnabled":false,"shadowBlur":5,"shadowOffsetX":0,"shadowOffsetY":0,"shadowColor":"black","shadowOpacity":1,"draggable":true,"resizable":true,"contentEditable":true,"styleEditable":true,"text":"M.MK and CO","placeholder":"","fontSize":23.078117230254342,"fontFamily":"Nunito Sans","fontStyle":"normal","fontWeight":"bold","textDecoration":"","fill":"black","align":"left","verticalAlign":"top","strokeWidth":0,"stroke":"black","lineHeight":1.2,"letterSpacing":0,"backgroundEnabled":false,"backgroundColor":"#7ED321","backgroundOpacity":1,"backgroundCornerRadius":0.5,"backgroundPadding":0.5},{"id":"KPeOS3msZ3","type":"text","name":"","opacity":1,"visible":true,"selectable":true,"removable":true,"alwaysOnTop":false,"showInExport":true,"x":36.521316063450925,"y":335.16082113867844,"width":350.6054697210345,"height":53,"rotation":0,"animations":[],"blurEnabled":false,"blurRadius":10,"brightnessEnabled":false,"brightness":0,"sepiaEnabled":false,"grayscaleEnabled":false,"shadowEnabled":false,"shadowBlur":5,"shadowOffsetX":0,"shadowOffsetY":0,"shadowColor":"black","shadowOpacity":1,"draggable":true,"resizable":true,"contentEditable":true,"styleEditable":true,"text":"An operational document that outlines an advertising strategy that an organization will implement to generate leads and reach its target market.","placeholder":"","fontSize":14.366000338880212,"fontFamily":"Roboto","fontStyle":"normal","fontWeight":"normal","textDecoration":"","fill":"black","align":"left","verticalAlign":"top","strokeWidth":0,"stroke":"black","lineHeight":1.2,"letterSpacing":0,"backgroundEnabled":false,"backgroundColor":"#7ED321","backgroundOpacity":1,"backgroundCornerRadius":0.5,"backgroundPadding":0.5},{"id":"z7KD1wdell","type":"svg","name":"","opacity":1,"visible":true,"selectable":true,"removable":true,"alwaysOnTop":false,"showInExport":true,"x":80.45968174605389,"y":418.0391178127062,"width":237.94790069015937,"height":237.94790069015937,"rotation":0,"animations":[],"blurEnabled":false,"blurRadius":10,"brightnessEnabled":false,"brightness":0,"sepiaEnabled":false,"grayscaleEnabled":false,"shadowEnabled":false,"shadowBlur":5,"shadowOffsetX":0,"shadowOffsetY":0,"shadowColor":"black","shadowOpacity":1,"draggable":true,"resizable":true,"contentEditable":true,"styleEditable":true,"src":"data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iMTAwJSIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoyOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjEwMCUiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnIGlkPSJnNTg5MSI+PHBhdGggZD0iTTUxMiw2NGMwLC0zNS4zMjMgLTI4LjY3NywtNjQgLTY0LC02NGwtMzg0LDBjLTM1LjMyMywwIC02NCwyOC42NzcgLTY0LDY0bDAsMzg0YzAsMzUuMzIzIDI4LjY3Nyw2NCA2NCw2NGwzODQsMGMzNS4zMjMsMCA2NCwtMjguNjc3IDY0LC02NGwwLC0zODRaIiBpZD0iYmFja2dyb3VuZCIgc3R5bGU9ImZpbGw6IzI4NjdiMjsiLz48ZyBpZD0ic2hhcGVzIj48cmVjdCBoZWlnaHQ9IjI1Ny45NjIiIGlkPSJyZWN0MTEiIHN0eWxlPSJmaWxsOiNmZmY7IiB3aWR0aD0iODUuNzYiIHg9IjYxLjA1MyIgeT0iMTc4LjY2NyIvPjxwYXRoIGQ9Ik0xMDQuNTEyLDU0LjI4Yy0yOS4zNDEsMCAtNDguNTEyLDE5LjI5IC00OC41MTIsNDQuNTczYzAsMjQuNzUyIDE4LjU4OCw0NC41NzQgNDcuMzc3LDQ0LjU3NGwwLjU1NCwwYzI5LjkwMywwIDQ4LjUxNiwtMTkuODIyIDQ4LjUxNiwtNDQuNTc0Yy0wLjU1NSwtMjUuMjgzIC0xOC42MTEsLTQ0LjU3MyAtNDcuOTM1LC00NC41NzNaIiBpZD0icGF0aDEzLTAiIHN0eWxlPSJmaWxsOiNmZmY7ZmlsbC1ydWxlOm5vbnplcm87Ii8+PHBhdGggZD0iTTM1Ny4yNzgsMTcyLjYwMWMtNDUuNDksMCAtNjUuODY2LDI1LjAxNyAtNzcuMjc2LDQyLjU4OWwwLC0zNi41MjNsLTg1LjczOCwwYzEuMTM3LDI0LjE5NyAwLDI1Ny45NjEgMCwyNTcuOTYxbDg1LjczNywwbDAsLTE0NC4wNjRjMCwtNy43MTEgMC41NTQsLTE1LjQyIDIuODI3LC0yMC45MzFjNi4xODgsLTE1LjQgMjAuMzA1LC0zMS4zNTIgNDMuOTkzLC0zMS4zNTJjMzEuMDEyLDAgNDMuNDM2LDIzLjY2NCA0My40MzYsNTguMzI3bDAsMTM4LjAybDg1Ljc0MSwwbDAsLTE0Ny45M2MwLC03OS4yMzcgLTQyLjMwNSwtMTE2LjA5NyAtOTguNzIsLTExNi4wOTdaIiBpZD0icGF0aDE1IiBzdHlsZT0iZmlsbDojZmZmO2ZpbGwtcnVsZTpub256ZXJvOyIvPjwvZz48L2c+PC9zdmc+","maskSrc":"","cropX":0,"cropY":0,"cropWidth":1,"cropHeight":1,"keepRatio":true,"flipX":false,"flipY":false,"borderColor":"black","borderSize":0,"cornerRadius":0,"colorsReplace":{}},{"id":"ahqxleXRyR","type":"line","name":"","opacity":1,"visible":true,"selectable":true,"removable":true,"alwaysOnTop":false,"showInExport":true,"x":587.8998290024526,"y":90.2379003709689,"width":188.9400090212,"height":10,"rotation":1.7237683065068565e-14,"animations":[],"blurEnabled":false,"blurRadius":10,"brightnessEnabled":false,"brightness":0,"sepiaEnabled":false,"grayscaleEnabled":false,"shadowEnabled":false,"shadowBlur":5,"shadowOffsetX":0,"shadowOffsetY":0,"shadowColor":"black","shadowOpacity":1,"draggable":true,"resizable":true,"contentEditable":true,"styleEditable":true,"color":"black","dash":[],"startHead":"","endHead":"arrow"}],"width":"auto","height":"auto","background":"https://images.unsplash.com/photo-1557683304-673a23048d34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTY5OTZ8MHwxfHNlYXJjaHw5fHxncmFkaWVudHxlbnwwfHx8fDE3NDg3OTMwNTV8MA&ixlib=rb-4.1.0&q=80&w=1080","bleed":0,"duration":5000},{"id":"ODwW9_fb1I","children":[],"width":"auto","height":"auto","background":"white","bleed":0,"duration":5000},{"id":"jfNbRD_WCz","children":[],"width":"auto","height":"auto","background":"white","bleed":0,"duration":5000}],"audios":[],"unit":"px","dpi":72}""",
+        client_request="Modifie moi cette slide en rajoutant un fond noir et une présentation qui parle de chat ",
+        slide_structure = """ {
+  "width": 1280,
+  "height": 720,
+  "fonts": [],
+  "pages": [
+    {
+      "id": "page-1",
+      "width": "auto",
+      "height": "auto",
+      "background": "#FFFFFF",
+      "bleed": 0,
+      "duration": 5000,
+      "children": [
+        {
+          "id": "obj-1",
+          "type": "text",
+          "text": "Titre",
+          "x": 100,
+          "y": 50,
+          "width": 400,
+          "height": 80,
+          "fontSize": 48,
+          "fontFamily": "Arial",
+          "fill": "#000000",
+          "align": "center",
+          "opacity": 1,
+          "visible": true
+        },
+        {
+          "id": "obj-2",
+          "type": "image",
+          "src": "https://example.com/image.jpg",
+          "x": 200,
+          "y": 200,
+          "width": 300,
+          "height": 200,
+          "opacity": 1,
+          "visible": true
+        }
+      ]
+    }
+  ],
+  "audios": [],
+  "unit": "px",
+  "dpi": 72
+} """,
     )
 
     if st.button("Générer la présentation"):
