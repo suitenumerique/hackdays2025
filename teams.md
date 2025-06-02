@@ -127,3 +127,9 @@ Propose your team here or join an existing team below!
 - **Members**: [@mouxprime](https://github.com/mouxprime), [@mdembele](https://github.com/mdembele), [@g-garibotti](https://github.com/g-garibotti), [@Wdaoudi](https://github.com/Wdaoudi)
 - **Idea**: Don't know yet.
 
+## DocaTeam
+
+- **Lead**: [@agellot](https://github.com/agellot)
+- **Members**: [@ClemTeu](https://github.com/ClemTeu), [@FrancisNgn](https://github.com/FrancisNgn), [@MrMghoul](https://github.com/MrMghoul), [@Charl-prog](https://github.com/Charl-prog)
+- **Idea**: Slides
+
