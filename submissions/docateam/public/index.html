@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="/icon@2x.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Free online design editor. Create images for social media, youtube previews, facebook covers"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
+    <!-- SOCIAL DATA -->
+    <meta
+      property="og:title"
+      content="Polotno Studio - Online Free Design Editor"
+    />
+    <meta
+      property="og:description"
+      content="Create graphical designs for social media, youtube previews, facebook covers and more"
+    />
+    <meta
+      property="og:image"
+      content="https://studio.polotno.com/studio-polotno-preview.jpg"
+    />
+    <meta property="og:url" content="https://studio.polotno.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- STYLES -->
+    <link
+      href="https://unpkg.com/@blueprintjs/core@5/lib/css/blueprint.css"
+      rel="stylesheet"
+    />
+    <script src="https://js.puter.com/v2/"></script>
+    <script type="text/javascript">
+      !(function (e, t) {
+        ((e = t.createElement('script')).src =
+          'https://cdn.convertbox.com/convertbox/js/embed.js'),
+          (e.id = 'app-convertbox-script'),
+          (e.async = true),
+          (e.dataset.uuid = 'db9e320b-6d6c-49c4-ba5c-b29e6d5fc91c'),
+          document.getElementsByTagName('head')[0].appendChild(e);
+      })(window, document);
+    </script>
+
+    <style>
+      html {
+        min-height: -webkit-fill-available;
+      }
+
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: #2f343c;
+        padding-bottom: env(safe-area-inset-bottom);
+      }
+
+      .bp5-dark #root {
+        background-color: #2f343c;
+      }
+      #root {
+        width: 100vw;
+        height: 100%;
+      }
+
+      @media (max-width: 500px) {
+        .bp5-dark .bp5-navbar {
+          box-shadow: none;
+        }
+      }
+    </style>
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Polotno Studio - Make graphical designs</title>
+    <!-- <script
+      src="https://browser.sentry-cdn.com/7.33.0/bundle.tracing.replay.min.js"
+      integrity="sha384-r6F+mzvQDMgIeW691qWNnOMWoxI4prCcX+pFIwb6xkPCDFt7F82JhTgU1uvDLdgR"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      Sentry.init({
+        dsn: 'https://e7d484f3277f4792a7c924a7004c20a8@o1067670.ingest.sentry.io/4504571570749440',
+        integrations: [
+          // new Sentry.BrowserTracing(),
+          new Sentry.Integrations.Replay(),
+        ],
+
+        // Set tracesSampleRate to 1.0 to capture 100%
+        // of transactions for performance monitoring.
+        // We recommend adjusting this value in production
+        tracesSampleRate: 1.0,
+      });
+      // You can do the same thing using `addGlobalEventProcessor`
+      Sentry.addGlobalEventProcessor(function (event, hint) {
+        // Add anything to the event here
+        // returning `null` will drop the event
+        console.log(1);
+        event.store = window.store.toJSON();
+        return event;
+      });
+    </script> -->
+  </head>
+  <body class="bp5-dark">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script
+      async
+      defer
+      data-domain="%REACT_APP_PLAUSIBLE_DOMAIN%"
+      src="https://plausible.io/js/script.tagged-events.js"
+    ></script>
+  </body>
+</html>
