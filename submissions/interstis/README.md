@@ -1,149 +1,140 @@
-# 🏆 Final Submission for Interstis
+# 🏆 Final Submission — Interstis Hackdays
 
-## Project
-Resana & Co
+## 🚀 Project: RESANA & Co
 
-## Project Description
-Albert API implementation in Resana, search document, sum up dialogues and more
+**Integration of the Albert API into the RESANA collaborative platform**  
+🧠 Document search, summarization, AI-powered dialogue, and more.
 
+---
 
-## Contributors
-<a href="https://github.com/romaindebrito">@romaindebrito</a>, <a href="https://github.com/@Anthony-Dmn">@Anthony-Dmn</a>
+## 👥 Contributors
+- [@romaindebrito](https://github.com/romaindebrito)
+- [@Anthony-Dmn](https://github.com/Anthony-Dmn)
 
-## Code base
+---
 
-The code base is shared across all RESANA microservices, but it is not currently available in a public repository.
+## 🧱 Code Base Overview
 
-As part of this Proof of Concept (POC), we integrated selected functionalities from the Albert API, primarily through its gateway.
+The code base is shared across all RESANA microservices and is not currently public.
 
-The key technical components involved are:
+This Proof of Concept (POC) integrates features from the **Albert API** through a gateway, leveraging the following technical stack:
 
-Kafka: used for message handling and asynchronous communication between services.
+### 🔧 Technical Components
+- **Kafka** — Message broker for event handling and asynchronous tasks.
+- **PHP (RESANA Core)** — Business logic and integration layer.
+- **N8N** — Worker for automations and API interconnectivity.
+- **Node.js** — Real-time dialogue management with Albert.
 
-PHP (RESANA core): serves as the foundational framework for business services.
+---
 
-N8N: acts as a worker to automate tasks and ensure interoperability between services.
+## 🧠 Stack Technique
 
-Node.js: handles real-time dialogue management.
+### 1️⃣ Albert API Gateway Integration
 
-The project is built on a distributed architecture combining AI capabilities, document processing, and real-time integration within RESANA. Here’s a breakdown of the key technical components:
+- **Prompt fine-tuning**: Adjusted to improve relevance of AI answers.
+- **Connection to RESANA documentation**: Real-time querying of internal data.
+- **Contextual document slicing**: Sends only relevant excerpts to the AI.
 
-🔌 1. Use of Albert API (Gateway)
-Prompt fine-tuning:
-Carefully tailored prompts guide Albert’s behavior and ensure responses are aligned with RESANA-specific use cases.
+### 2️⃣ Integration into RESANA
 
-Querying RESANA's internal documentation:
-Dynamic connection allows Albert to access and leverage internal content repositories in real time based on user queries.
+- **AI chat embedded into dialogues**: Real-time interaction with Albert via Node.js and PHP.
+- **Markdown support**: Enhanced readability of AI responses.
+- **Document indexing pipeline**:
+  - Extracts from PDF, Docx, Excel, TXT.
+  - Built with RESANA GED Core, Kafka, and N8N.
 
-Document snippet segmentation:
-Documents are automatically broken down into contextually relevant excerpts to improve the precision and focus of AI responses.
+---
 
-🧩 2. Integration into RESANA
-Real-time AI chat integration:
-A live chat component was embedded directly into RESANA’s interface, enabling users to consult Albert at any moment.
+## 📦 Deliverables & Demo
 
-Technologies used:
+A working prototype is available on the internal **Interstis testing platform**, with full integration of **Albert API** in real-time.
 
-PHP: integration with the RESANA application core
+### ✅ Key Features:
+- Responds to user queries using the **Albert model**.
+- Analyzes and extracts content from uploaded documents (PDF, Excel, Word, TXT).
+- Queries the document base when needed to enrich AI responses.
 
-Node.js: management of real-time exchanges
+### 📸 Screenshots
 
-Markdown rendering: ensures well-formatted, readable AI responses
+#### 🔹 Sample Dialogues with Albert
+![Dialog Hackdays](./assets/dialog_with_IA.png)
 
-Smart document indexing pipeline:
-An automated workflow processes and indexes content from various file formats (PDF, Docx, Excel, TXT) as they are uploaded to RESANA.
+![Dialog with Train Time](./assets/dialog2_with_IA.png)
 
-Components used:
+#### 🔹 Workflows & Results
+**N8N Workflow pushing data to Albert:**
 
-RESANA Core GED: for document access and metadata extraction
+![N8N Workflow](./assets/push_datas_in_albert.png)
 
-Kafka: message broker to coordinate processing events
+**Document content extraction:**
 
-N8N: workflow automation tool to extract, transform, and send data to the Albert API
+![Extracted Content](./assets/result-extract-content-docs.png)
 
-## Deliverables 
+**Kafka message broker output:**
 
-A live demo is available on an internal testing platform (Interstis), featuring a real-time integration of the Albert API.
-You can view video and screenshot to demo application. In presentation, we can share a live demo in stagging env.
+![Kafka Messaging](./assets/messaging-datas-broker.png)
 
-This test platform provides the following capabilities:
+---
 
-Respond to all user requests using the Albert AI, powered by the Albert model.
+## 🛠️ Key Achievements
 
-Automatically analyze and extract content from uploaded documents in various formats: PDF, Excel, Docx, or TXT.
+- ✅ Integrated **Albert API Gateway** with prompt optimization.
+- ✅ Enabled dynamic access to the RESANA documentation base.
+- ✅ Built a real-time **AI assistant** within user dialogues (PHP + Node.js).
+- ✅ Created an indexing pipeline to **analyze document contents** via:
+  - GED Core
+  - Kafka
+  - N8N
+- ✅ Enhanced user interaction with **Markdown-formatted AI responses**.
 
-Query the document database via Albert for each user request, when relevant, to enhance the response.
+---
 
-Samples dialog with IA
+## ⚙️ Challenges Overcome
 
-[Dialog hackdays content](./assets/dialog_with_IA.png)
+### 🧩 Data Adaptation
+Normalized heterogeneous data sources (documents, forms, events) to make them digestible and usable by Albert AI.
 
-[Dialog with train time](./assets/dialog2_with_IA.png)
+### 💬 Real-time Dialogue Rework
+Redesigned dialogue flow to support **live, dynamic AI responses**, integrated into RESANA’s existing architecture.
 
-[Workflow N8N to push datas in Albert](./assets/push_datas_in_albert.png)
+---
 
-[Extract content document](./assets/result-extract-content-docs.png)
+## 🔍 User Problems Solved
 
-[Result messaging in broker message Kafka](./assets/messaging-datas-broker.png)
+1. **📁 How to easily find a document in RESANA?**  
+   ➤ Contextual AI search allows smart filtering and relevance-based retrieval.
 
-## Key Achievements
+2. **📝 How to summarize a group of documents?**  
+   ➤ AI-powered summarization based on real-time analysis of related documents.
 
-Key Work Completed:
-Use of the Albert API (Gateway)
+3. **🧾 How to generate content from templates?**  
+   ➤ Prompt Albert to create structured drafts using reference materials.
 
-Prompt fine-tuning with the Albert model to better frame and guide the AI’s responses.
+---
 
-Querying the RESANA documentation database: implemented a mechanism for dynamically consulting existing documentation at each user request.
+## 🚀 Next Steps
 
-Smart document snippet segmentation: designed to send only the most relevant content to Albert by contextually breaking down document sections.
+### 🎯 Objectives
 
-Integration into RESANA
+1. **Vector Database Integration**  
+   ➤ Connect Albert directly to embedded vectors in RESANA to minimize data transfers and boost precision.
 
-Embedding AI chat in existing dialogue flows: added a component that allows users to interact with the AI at any time via the Albert API in real time. This was implemented using PHP (RESANA core) and Node.js (for real-time communication). Response rendering also supports Markdown for improved readability.
+2. **Data Isolation by Metadata & Filters**  
+   ➤ Use metadata and structured filters to enforce data scoping and better guide AI behavior.
 
-Document indexing system: automated extraction of content from PDF, Docx, Excel, and TXT files using a pipeline built with the RESANA Core GED, Kafka (as message broker), and N8N (as a worker to push data into the Albert API).
+3. **Advanced Prompt Tuning**  
+   ➤ Enable deeper analysis and extend use cases (e.g., decision support, reporting).
 
-## Challenges Overcome
+4. **Asynchronous Automations**  
+   - 🔄 Automatic activity summaries (weekly/monthly).
+   - 📬 Digest of user notifications based on priority and topics.
+   - 📚 Preloading Albert with existing RESANA data for instant knowledge.
 
-Adapting data to enable information transmission to Albert
-It was necessary to normalize and restructure data from various sources (documents, forms, events) so that it could be understood and processed by the Albert AI. This data transformation was essential to ensure the relevance and accuracy of the AI-generated responses.
+---
 
-Adapting the current dialogue structure to support real-time interaction with the AI
-The initial dialogue system was not designed for real-time interaction with an AI. The conversational architecture had to be rethought to allow fluid, dynamic exchanges by integrating calls to the Albert API within the existing workflow.
+## 🔮 Vision
 
-## Impact
+This POC lays the foundation for turning Albert into a **true AI co-pilot** within RESANA:  
+Not only reactive to prompts — but capable of **proactively assisting** users in their daily collaboration workflows.
 
-User Pain Points:
-How to easily find a document in RESANA?
-Users struggle to quickly locate specific documents in a growing volume of information. Traditional keyword-based search becomes ineffective when the user doesn’t know the exact title, folder, or metadata of the document they’re looking for.
-
-How to summarize a set of documents in RESANA?
-When dealing with a large number of documents related to the same topic (e.g., in a project space or thematic GED), there’s no easy way to generate a contextual, automated summary that can support decision-making or enable rapid sharing.
-
-How to generate new document content from existing templates?
-Users often need to produce new content (such as meeting minutes, memos, or reports) based on existing documents. They expect a tool that can automate the generation of a structured draft using reference materials, while allowing them to tailor the tone and format as needed.
-
-## Next Steps
-
-Next Steps: Moving Toward Scalable Intelligence and Deeper Integration
-The first phase has validated both the feasibility and the added value of integrating Albert into the RESANA ecosystem. The next step is to scale up, industrialize, and deepen the use of AI to provide high-value, context-aware assistance.
-
-Key short-term objectives:
-
-1- Integration of a vector database into RESANA
-Explore embedding a native vector database within RESANA, allowing the Albert API to query indexed data directly. The goal is to reduce heavy data transfers and increase both speed and response accuracy.
-
-2- Structuring and isolating data using metadata and filters
-Define a model to partition and control access to data using filters, metadata, and access rules, in order to guide and secure the interaction with Albert.
-
-3- Fine-tuning prompts to support deeper data analysis
-Optimize the prompts to enable more advanced data analysis and open the door to new functional use cases such as decision support, project assistance, or automated generation of specialized content.
-
-4- Identify asynchronous automation opportunities
-Deploy mechanisms that:
-
-- Automatically summarize activity over a given time period (e.g., a weekly summary for a space or project)
-- Provide intelligent summaries of notifications received by a user
-- Automatically feed existing RESANA content into the Albert API, creating an up-to-date initial dataset that’s immediately usable.
-
-This roadmap (initiative) aims to transform integration Albert with RESANA into a proactive, intelligent co-pilot, not just reactive to queries, but capable of anticipating user needs and assisting in day-to-day collaborative workflows.
+---
