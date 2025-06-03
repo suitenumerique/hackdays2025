@@ -1,64 +1,73 @@
-
 # 🏆 Final Submission for Doc Spec
 
-## Project
-Import existing documents into Docs
+## Project: DOCX to La Suite Docs Importer
 
-## Project Description
-- Line out the overall process and challenges of successfully moving existing documents to Docs
-- Implement a PoC for importing ".docx" files into Docs
+### Goal
 
-## Contributors
+Build a proof-of-concept for importing `.docx` files into La Suite Docs, enabling users to migrate existing Microsoft Word documents into the new collaborative editor.
+
+## 📄 Project Description
+- mplement a working import pipeline from `.docx` to La Suite Docs.
+- Provide insight into the challenges of migrating legacy documents.
+- Offer a foundation for broader document format support in the future.
+
+## 👥 Contributors
 <a href="https://github.com/ericwout-overheid">@ericwout-overheid</a>, <a href="https://github.com/hhappel">@hhappel</a>, <a href="https://github.com/mountainborn">@mountainborn</a>, <a href="https://github.com/StephanMeijer">@StephanMeijer</a>
 
-## Code base
-- Document conversion: https://github.com/docspec-hackathon/import-api
-- Docs UI integration: https://github.com/docspec-hackathon/docs
+## 🧠 Codebase
+- Conversion backend (API): https://github.com/docspec-hackathon/import-api
+- Docs integration (UI): https://github.com/docspec-hackathon/docs
 
-## Deliverables 
-(Provide a link to a live demo, if you have one)
-(Add screenshots (image, gif or video) and presentation deck to `/assets`)
+## 📦 Deliverables 
 
-### Screencast
+### 🎬 Screencast
 TBD
 
-### Migration process overview
-An overview describing aspects in the migration of documents to Docs (highlighting implemented aspects in green):
+### Processes
+
+This section outlines the key workflows and drafts developed to support document migration into La Suite Docs.
+
+#### 🗺️ Migration process overview
+
+A high-level visual diagram showing the full migration pipeline from `.docx` to La Suite Docs. Components already implemented are highlighted in green:
+
 ![Overview describing aspects in the migration of Documents to Docs (highlighting implemented aspects)](assets/lasuite-docs-migration-big-picture.drawio-highlighted.png)
 
-The diagram is further explained in another [README.md](https://github.com/docspec-hackathon/documentation/blob/main/README.md)
+For a detailed breakdown of each step and design decision, see the dedicated [README](https://github.com/docspec-hackathon/documentation/blob/main/README.md).
 
-### Document conversion reporting format (DRCF)
-Draft available as [document-conversion-reporting-format.md](https://github.com/docspec-hackathon/documentation/blob/main/document-conversion-reporting-format.md)
+#### 📄 Document conversion reporting format (DRCF)
+Draft is available as [document-conversion-reporting-format.md](https://github.com/docspec-hackathon/documentation/blob/main/document-conversion-reporting-format.md)
 
-## Key Achievements
-- Converting ".docx" files (including headings, tables, bullet lists, ordered lists, and images) into the Docs (BlockNote) format
-- Adding am import button and drop-zone into the Docs UI
-- Providing a report about conversion issues to the user
-- Mapping out the overall process of switching a document base to Docs
+## ✅ Key Achievements
+- Converting ".docx" files (including paragraphs, text and styling, headings, tables, bullet lists, ordered lists, and images) into the La Suite Docs (BlockNote) format.
+- Added import button and drag-and-drop functionality to Docs UI
+- Creating a draft for generated human-readable reports for conversion issues (not implemented in proof-of-concept).
+- Defined and documented a clear migration path to La Suite Docs.
 
-## Challenges Overcome
+## ⚔️ Challenges Overcome
 (What was difficult? What did you solve?)
 
-- Working out a plan for 9 interested people
-- Creating a focused plan from excellent broad ideas (kill off your darlings)
-- Grind down the ".docx" specification
-- Found some small BlockNote issues which were subsequently patched by the BlockNote team
-- Getting used to limited network bandwidth and working around that
+- Coordinating and aligning a 9-person team in a short time frame
+- Narrowing down ambitious ideas into a focused MVP (kill off your darlings)
+- Reverse-engineering parts of the `.docx` format and BlockNote spec
+- Identifying and reporting bugs in BlockNote - subsequently patched upstream.
+- Working under bandwidth constraints and working around that.
 
-## Impact
-(Who will benefit from your project?)
+## 🌍 Impact
 
-- All users of Docs which have pre-existing ".docx" documents (may be applicable to Drive users as well)
-- IT deciders which want to understand the full process of moving to Docs
-- Developers writing imports for other document types or sources
-- BlockNote improved due to fixing the issues we found
+This project benefits:
 
-## Next Steps
-(If you were to continue, what next steps or developments would you envision?)
+- **End-users** of La Suite Docs with pre-existing and/or legacy `.docx` files.
+- **IT decision-makers** assessing migration feasibility.
+- **Developers** working on importers for other formats or systems.
+- **The BlockNote ecosystem,** via community-reported improvements.
 
-- Converting additional aspects of ".docx" to Docs (e.g., external links, quotations, code block)
-- Adding support for OpenDocument ".odt" to Docs conversion
-- Adding some "convert to Docs" option to La Suite Drive
-- Further refining the document conversion reporting format
-- Allow to show document conversion issues inline in Docs
+## 🔮 Next Steps
+
+If further developed, we envision:
+
+- Adding support for more `.docx` features (e.g., links, quotes, code blocks)
+- Supporting OpenDocument (`.odt`) format
+- Integrating "Convert to Docs" directly into La Suite Drive
+- Improving the Document Conversion Report Format (DCRF) into a structured standard (e.g., JSON + UI mapping).
+- Displaying conversion warnings and errors inline in the Docs UI.
