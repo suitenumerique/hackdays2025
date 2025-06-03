@@ -4,7 +4,7 @@ import streamlit as st
 from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
 from openai import OpenAI
-from prompt_template import json_exemple, prompt_generic, slide1_template
+from prompt_template import json_exemple, prompt_generic, slide1_template, last_slide_template
 
 
 def main():
@@ -21,6 +21,7 @@ def main():
     final_prompt = prompt_template.format(
         json_example=json_exemple,
         slide1_template=slide1_template,
+        last_slide_template=last_slide_template,
         client_request="Créer moi une présentation sur la souvereinité numérique",
     )
 
