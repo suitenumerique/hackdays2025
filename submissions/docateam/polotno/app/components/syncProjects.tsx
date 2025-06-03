@@ -1,7 +1,8 @@
 import { observer } from 'mobx-react-lite';
-import { InputGroup } from '@blueprintjs/core';
+import { InputGroup, Button, Dialog } from '@blueprintjs/core';
 import { SectionTab } from 'polotno/side-panel';
 import { MdFolder } from 'react-icons/md';
+import { WiStars } from 'react-icons/wi';
 import {fetchSyncedProjects, type SyncedProject} from '../api/syncedProjects';
 import React from "react";
 
@@ -43,8 +44,50 @@ export const SyncedProjectsPanel = observer(({ store }) => {
     }
   };
 
+  const [isModalOpen, setIsModalOpen] =  React.useState(false);
+  const [prompt, setPrompt] =  React.useState('');
+
+  const handleCreateWithAI = () => {
+    console.log('Prompt saisi :', prompt);
+    // Ajoutez ici la logique pour utiliser le prompt avec l'IA
+    setIsModalOpen(false);
+  };
+
   return (
       <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+
+        <Button
+            intent="success"
+            onClick={() => setIsModalOpen(true)}
+            style={{ margin: '10px' }}
+        >
+          Créer avec l'IA
+          <WiStars size={24} />
+        </Button>
+
+        <Dialog
+            isOpen={isModalOpen}
+            onClose={() => setIsModalOpen(false)}
+            title="Créer avec l'IA"
+        >
+          <div className="bp4-dialog-body">
+            <p>Saisissez un prompt pour générer un projet :</p>
+            <InputGroup
+                placeholder="Entrez votre prompt ici..."
+                value={prompt}
+                onChange={(e) => setPrompt(e.target.value)}
+            />
+          </div>
+          <div className="bp4-dialog-footer">
+            <div className="bp4-dialog-footer-actions">
+              <Button onClick={() => setIsModalOpen(false)}>Annuler</Button>
+              <Button intent="primary" onClick={handleCreateWithAI}>
+                Générer
+              </Button>
+            </div>
+          </div>
+        </Dialog>
+
         <InputGroup
             leftIcon="search"
             placeholder="Rechercher..."
@@ -72,7 +115,7 @@ export const SyncedProjectsPanel = observer(({ store }) => {
 export const CustomSyncedProjects = {
   name: 'synced-projects',
   Tab: (props) => (
-      <SectionTab name="Projets" {...props}>
+      <SectionTab name="Projects" {...props}>
         <MdFolder />
       </SectionTab>
   ),
