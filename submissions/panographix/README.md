@@ -28,6 +28,9 @@ Public servants can now simply share an interactive, real-time view of their Gri
 
 ## Deliverables
 
+[Demo video](https://vimeo.com/1090202299?share=copy)
+
+
 [Panographix - DINUM - 2025.pdf](https://raw.githubusercontent.com/Theodo-GovTech/hackdays2025/refs/heads/panographix-submission/submissions/panographix/assets/pitch_deck.pdf)
 
 
