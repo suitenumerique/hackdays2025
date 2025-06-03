@@ -17,6 +17,8 @@ https://github.com/workadventure/workadventure/pull/4888
 (Provide a link to a live demo, if you have one)
 (Add screenshots (image, gif or video) and presentation deck to `/assets`)
 
+https://github.com/user-attachments/assets/d4532a1c-7089-4dd1-a64c-0fb20a91a714
+
 ## Key Achievements
 - Seamless integration of La Suite Docs into WorkAdventure using iframe zones. 
 - Contextual access to files depending on the user’s location in the virtual space (e.g. meeting rooms, desks).
@@ -38,3 +40,4 @@ https://github.com/workadventure/workadventure/pull/4888
 - Integrate voice/video zones with contextual document previews (e.g. "open meeting doc" when entering a bubble).
 - Better authentication handling
 - Integrate other LaSuite tools
+- Choose the file to share in the area (can be a personal one)
