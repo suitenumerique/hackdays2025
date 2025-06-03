@@ -45,7 +45,16 @@ These screenshots show a personal Nextcloud instance with the custom Gaufre (fro
 
 ### Grist attachment upload through forms
 
-*To be documented*
+Allow submit attachment in Form view.
+
+![Form](./assets/add-attachments-form/step4.png)
+
+[More informations](./assets/add-attachments-form/README.md)
+
+### Add Virus scan provider
+
+Currently, Grist not support Virus checking during attachment upload.
+Add a provider abstraction to scan uploaded attachment with provider and delete it if a virus is detected.
 
 ## Key Achievements
 
