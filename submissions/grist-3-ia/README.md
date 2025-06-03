@@ -8,7 +8,7 @@ An Albert AI Chatbot implementation in Grist
 
 **Seamlessly Interact with Your Data Using the Albert API**
 
-While Grist Labs provides a built-in AI agent, it comes with several limitations—such as the inability to integrate custom agents, and limited assurances around data privacy and digital sovereignty, especially when using commercial AI models.
+While Grist Labs provides a built-in AI agent, it comes with several limitations—such as the inability to integrate custom agents, and limited assurances around data privacy and digital sovereignty with its use of a commercial AI model (ChatGPT).
 
 To address these issues, we developed a custom AI chatbot powered by Albert, fully integrated into Grist via a custom widget. Our solution prioritizes flexibility, user control, and data confidentiality.
 
