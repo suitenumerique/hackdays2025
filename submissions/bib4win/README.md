@@ -17,7 +17,7 @@ and custom inline content.
 - [@flipvh](https://github.com/flipvh)
 - [@matthewlipski](https://github.com/matthewlipski)
 
-Special thanks to Maeva that joined us lately!
+Special thanks to Maeva that joined us on the second day!
 
 - [@Maeva-Calmettes](https://github.com/Maeva-Calmettes)
 
@@ -41,7 +41,7 @@ https://github.com/TypeCellOS/BlockNote/pull/1732/
 
 ## Key Achievements
 
-Docs now integrates two new `/` commands:
+Docs now integrates two new `/` slash commands:
 
 - `/reference` (aliased to `/cite`) to integrate a citation in the text flow
   using a [DOI](https://fr.wikipedia.org/wiki/Digital_Object_Identifier). Once
@@ -52,27 +52,20 @@ Docs now integrates two new `/` commands:
 
 ## Challenges Overcome
 
-There was no real technical difficulties, more organisational challenges as we
-are a big team!
+Governmental organization have many researchers. However, these important end-users can't use La Suite Docs if there isn't any support for bibliography functionality. And if they don't use it, there is also less spillover effect for students to start using it.
 
-That being said, one problem we had to face was that the project mostly relies
-on the BlockNote project; hence we needed to use temporary builds of this
-dependency to integrate and test them in our Docs' fork.
-
-The second issue we didn't expect is that there is no high-quality libraries to
-deal with citations or Zotero, maybe there is room for improvement here.
+We need to get the researcher/professor/instructor to use Docs. 
 
 ## Impact
 
-Most **researchers** and **students** need to integrate a bibliography in their
-writings. It has been reported that it's a **must-have** for them to use Docs.
-If we provide a user-friendly [Zotero](https://www.zotero.org) integration, we
-will provide a _de facto_ solution allowing them to step out from proprietary
-non-sovereign solutions.
+There are around 500k **public sector researchers** working and **5m students** in just France and Germany. With an estimated 10% using [Zotero](https://www.zotero.org), there is a direct target audience of roughly 550k users.
+
+In general, this bibliography plugin with Zotero connect option can be validation for end-users and organizations that La Suite Docs can be more user-friendly for the public sector compared to for example Google Docs. La Suite Docs with a Bibliography plugin allows more organizations to step out from proprietary non-sovereign solutions.
 
 ## Next Steps
 
-- This contribution should be distributed as standalone package on top of the
+- Convince La Suite Docs to support Docs templates and a plugin/extension system. Because organizations are likely to want to control if and how to enable a Bibliograpy tool.
+- This contribution will be distributed as standalone package on top of the
   official BlockNote distribution.
 - The Zotero integration should be part of this package.
 - Bibliography items should be editable in bibtex format.
