@@ -1,5 +1,5 @@
 # Complete your Final submission:
-- [ ] Clone the repo
+- [ ] Fork the repo
 - [ ] Create a branch with your team name
 - [ ] Find your team's folder in [/submissions]
 - [ ] Fill the README.md file inside your team's folder without modifying the titles structure
