@@ -30,6 +30,10 @@ This project is based on [NLdoc (GitLab)](https://gitlab.com/logius/nldoc). More
 
 ### 🎬 Screencast
 
+**High quality video below GIF**
+
+![Import of DOCX documents](assets/demo.gif)
+
 [See/download the source document.](assets/docspec-demo.docx)
 
 The video demonstrates several user interaction flows for uploading and importing files.
