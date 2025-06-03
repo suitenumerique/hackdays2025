@@ -19,6 +19,7 @@ To address these issues, we developed a custom AI chatbot powered by Albert, ful
 ## Code base
 
 Frontend : https://github.com/tasinttttttt/grist---ai
+
 Backend API : https://github.com/Nicolassaint/api-grist-ai-hackdays
 
 ## Deliverables
