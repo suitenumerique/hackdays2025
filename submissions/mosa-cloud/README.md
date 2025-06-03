@@ -31,6 +31,9 @@ The <b>La Suite Launchpad</b> is your starting point in the La Suite ecosystem. 
 ## Deliverables
 
 <a href="https://demo.mosa.cloud">Live demo</a>
+
+---
+
 <img src="https://raw.githubusercontent.com/mosacloud/hackdays-submission/refs/heads/main/submissions/mosa-cloud/assets/screenshot.jpg" />
 
 ## Key Achievements
