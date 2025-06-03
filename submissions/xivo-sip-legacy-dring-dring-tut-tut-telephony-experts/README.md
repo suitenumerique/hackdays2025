@@ -17,7 +17,7 @@ It displays a dialpad directly embeded in Tchap UI without any external widget i
 [link to repo](https://gitlab.com/avencall/xivo-connect/matrix-xivo-bridge/-/tree/hackdays2025-minimal-setup)
 
 ## Deliverables 
-<video src="./assets/demo.mp4" width="600" height="340"></video>
+![Demo](./assets/demo.gif)
 
 ## Key Achievements
 - Allow make calls from/to any external phone number
