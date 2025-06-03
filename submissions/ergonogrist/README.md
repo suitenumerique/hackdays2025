@@ -1,30 +1,35 @@
 # 🏆 Final Submission for ErgonoGrist
 
 ## Project
+
 Improve the UX of Grist features
 
 ## Project Description
-1. Enable markdown for doc tour.
-2. Documentation of the "Gaufre" for Grist
-3. Enable Attachment for public forms
 
+1. Enable Markdown for [document tours](https://support.getgrist.com/document-tours/)
+2. Documentation of the ["Gaufre"](https://integration.lasuite.numerique.gouv.fr/guides/gaufre/) for Grist
+3. Enable sending attachments through [Grist forms](https://www.getgrist.com/forms/)
 
 ## Contributors
+
 <a href="https://github.com/tayflo">@tayflo</a>, <a href="https://github.com/mrdev023">@mrdev023</a>, <a href="https://github.com/ogui11aume">@ogui11aume</a>, <a href="https://github.com/mclegrand">@mclegrand</a>
 
 ## Code base
-1. markdown for GristDocTour 
+
+1. Markdown for GristDocTour 
    1. [grist-core#1653](https://github.com/gristlabs/grist-core/pull/1653) - Allow markdown in GristDocTour
 2. Gaufre
    1. [integration#26](https://github.com/suitenumerique/integration/pull/26) - Allow Gaufre customization, fix relative URL for static html, Github action to build and host it on github pages
    2. [ui-kit#81](https://github.com/suitenumerique/ui-kit/pull/81) - Allow to pass a custom gaufre.js URL through ui-kit uses of Gaufre in `<LaGaufre>`
-   3. [drive#205](https://github.com/suitenumerique/drive/pull/205) - Passes an env variable to drive to use a custom gaufre.js in drive - depends on 2.
-   4. [docs#1038](https://github.com/suitenumerique/docs/pull/1038) - Passes an env variable to drive to use a custom gaufre.js in docs
-   5. [Tests](https://github.com/suitenumerique/integration/commit/266a7af9c7fcd1e3bce85ca09a4dfa8c556965a3) - modification of gaufre contents to point to my hosted services
+   3. [drive#205](https://github.com/suitenumerique/drive/pull/205) - Pass an env variable to drive to use a custom gaufre.js in drive - depends on 2
+   4. [docs#1038](https://github.com/suitenumerique/docs/pull/1038) - Pass an env variable to drive to use a custom gaufre.js in docs
+   5. [Tests](https://github.com/suitenumerique/integration/commit/266a7af9c7fcd1e3bce85ca09a4dfa8c556965a3) - Modification of Gaufre contents to point to my hosted services
+3. Form attachments
+   1. *To be documented*
 
 ## Deliverables 
 
-### Markdown for Grist
+### Markdown for GristDocTour
 
 [Documentation and presentation](assets/markdown-for-gristdoctour/deliverable1.md)
 
@@ -32,29 +37,35 @@ Improve the UX of Grist features
 
 ### Custom Gaufre
 
-These screenshot show my nextcloud instance with the custom gaufre (from 5.) and an addition of the Gaufre to my local instance of grist.
+These screenshot show my nextcloud instance with the custom gaufre (from 5.) and an addition of the Gaufre to my local instance of Grist.
+
 ![Nextcloud, with a custom Gaufre](assets/nextcloud.png)
 
 ![Grist, with a custom Gaufre](assets/gristgaufre.png)
 
-### Grist file upload
+### Grist attachment upload through forms
 
 
 ## Key Achievements
+
 (Highlight the main features or breakthroughs)
 
 ## Challenges Overcome
+
 * Enabling attachments in form in a way that respect Grist principles
-* Putting together all the knowledge necessary to configure the waffle (some assets are on private repository in the deployment phase)
+* Putting together all the knowledge necessary to configure the Gaufre (some assets are on private repository in the deployment phase)
 
 ## Impact
-* Contributes to Grist-core the feature attachment in Grist forms (pull-request). 
-  * All community
+
+* Contribute to Grist-core the feature sending attachments through Grist forms (pull-request), a feature regulargy asked for by users (see [grist-core issue #886](https://github.com/gristlabs/grist-core/issues/886))
+  * Benefits the whole Grist community
   * Better UX for file submission
-* Contributes to Grist-core the feature MarkDown in GristDocTour, a very 💗 Grist feature
-  * All community
+* Contribute to Grist-core the feature MarkDown in GristDocTour, a very 💗 Grist feature
+  * Benefits the whole Grist community
   * Better UX for documenting the presentation of Grist documents
-* Contribute a reusable easily-added integration UI component for locally hosted set of services
+* Make the Gaufre a reusable easily-added integration UI component for locally hosted set of services
 
 ## Next Steps
-* Follow-up on pull requests to Grist-core
+
+* Follow-up on pull requests to [gristlabs/grist-core](https://github.com/gristlabs/grist-core)
+* Improve attachments sending button design, in order to fit Grist design system (see [design proposal](./assets/grist_form-send-attachment_no-file-selected.png))
