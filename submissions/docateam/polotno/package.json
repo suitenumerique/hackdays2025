@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "partykit dev --live",
+    "dev": "partykit dev --live --port 1999",
     "deploy": "partykit deploy"
   },
   "dependencies": {
+    "@blueprintjs/core": "^5.19.0",
     "partysocket": "^1.0.0",
     "polotno": "^2.4.19",
     "react": "^18.2.0",

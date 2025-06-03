@@ -15,6 +15,7 @@ import { createStore, type StoreType } from 'polotno/model/store';
 // if you bundler doesn't support such import you can use css from CDN (see bellow)
 import '@blueprintjs/core/lib/css/blueprint.css';
 import React from 'react';
+import {PhotosPanel, PhotosSection} from "./components/photos";
 
 const store = createStore({
   key: 'your-key',
@@ -70,7 +71,7 @@ export const App = ({ store }: { store: StoreType }) => {
   return (
     <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
       <SidePanelWrap>
-        <SidePanel store={store} />
+        <SidePanel store={store} sections={[PhotosSection]} />
       </SidePanelWrap>
       <WorkspaceWrap>
         <Toolbar store={store} downloadButtonEnabled />
