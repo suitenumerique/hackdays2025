@@ -51,6 +51,9 @@ Allow submit attachment in Form view.
 
 [More informations](./assets/add-attachments-form/README.md)
 
+Future good changes:
+ - Improve current file input style because the icon is very small. It can be more ergonomic if the icon is more bigger.
+
 ### Add Virus scan provider
 
 Currently, Grist not support Virus checking during attachment upload.
