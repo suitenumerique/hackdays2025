@@ -22,9 +22,21 @@ Build a proof-of-concept for importing `.docx` files into La Suite Docs, enablin
 
 ### 🎬 Screencast
 
-[See/download video.](assets/demo.mp4)
+[See/download the source document.](assets/docspec-demo.docx)
 
-[Alternative way of playing can be found here: https://vimeo.com/1090099210](https://vimeo.com/1090099210)
+The video demonstrates several distinct user interaction flows for uploading files.
+
+The first is the drag-and-drop flow, where users can effortlessly drag files from their device into a designated drop zone on the interface. This initiates the upload process automatically and provides a fast, intuitive experience.
+
+The second flow involves using a dedicated upload dialog or modal. In this scenario, users trigger the upload by clicking a button, which opens a file picker. They can either select files manually or drag them into the dialog, offering flexibility in how files are chosen.
+
+The third flow covers multi-file uploads. Here, users can upload multiple files at once, either via the dialog or drag-and-drop. This flow demonstrates the system’s ability to handle batch processing and concurrent uploads efficiently.
+
+Finally, the video includes the error handling flow, showcasing how the system responds when something goes wrong.
+
+[See/download video.](assets/demo2.mp4)
+
+[Alternative way of playing can be found here: https://vimeo.com/1090109520](https://vimeo.com/1090109520)
 
 ### Processes
 
