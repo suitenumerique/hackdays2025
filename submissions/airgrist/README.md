@@ -25,6 +25,8 @@ Check out a preview of the tool: https://imgur.com/a/fDW10Po
 ## Key Achievements
 
 ## Challenges Overcome
+ - Matching AirTable and GRIST data types
+ - CORS headers in a static web app scenario
 
 ## Impact
 
