@@ -1,11 +1,14 @@
 # 🏆 Final Submission for WorkAdventure
 
-## Final Project Description
-(Summarize your project as it stands at the end)
+## Project
+Integrating La Suite in a 2D virtual world
 
-## Team
-- **Lead**: @moufmouf
-- **Members**: @moufmouf, @ydiarra - Looking for more hackers!
+## Project Description
+Allow using docs and spreadsheets right in your 2D virtual office.
+
+
+## Contributors
+<a href="https://github.com/ydiarra">@ydiarra</a>, <a href="https://github.com/moufmouf">@moufmouf</a>, <a href="https://github.com/MaisonHub">@MaisonHub</a>
 
 ## Code base
 (Provide a link to your Git repository)

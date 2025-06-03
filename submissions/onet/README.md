@@ -1,11 +1,14 @@
 # 🏆 Final Submission for OneT
 
-## Final Project Description
-(Summarize your project as it stands at the end)
+## Project
+SovereignCloudSuite
 
-## Team
-- **Lead**: @gcollongues
-- **Members**: @dmdevito, @PokePong, @gcollongues, @CedricElie, @TuncayBilgi
+## Project Description
+Deploy La Suite on SecNumCloud infrastructure with Kubernetes
+
+
+## Contributors
+<a href="https://github.com/gcollongues">@gcollongues</a>, <a href="https://github.com/snaaak">@snaaak</a>, <a href="https://github.com/fp3rr">@fp3rr</a>, <a href="https://github.com/pokepong_">@pokepong_</a>, <a href="https://github.com/tuncaybilgi">@tuncaybilgi</a>, <a href="https://github.com/dmdevito">@dmdevito</a>
 
 ## Code base
 (Provide a link to your Git repository)
