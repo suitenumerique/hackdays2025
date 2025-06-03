@@ -19,7 +19,6 @@ https://github.com/lluli/docs
 (Add screenshots (image, gif or video) and presentation deck to `/assets`)
 
 ## Key Achievements
-Successfully prototyped and integrated an AI fact-checking tool directly into the Docs interface
 Built and deployed a modular API using Python and supports locally hosted LLMs via Ollama and Open AI backends
 Real-time factual scoring system with source transparency (links + explanation)
 Collaborated with DINUM and La Suite to align with European digital sovereignty goals
