@@ -21,8 +21,8 @@ We have a [Pull Request](https://github.com/opf/suitenumerique-docs/pull/1) with
 In addition we provide a [PoC](https://github.com/opf/suitenumerique-docs/pull/4) of how to integrate the docs stack into an local dev stack with OpenProject, Keycloak and other services, using the same SSO authentication for server-to-server communication.
 
 ## Deliverables
-*(Provide a link to a live demo, if you have one)
-(Add screenshots (image, gif or video) and presentation deck to `/assets`)*
+
+[Docs - OpenProject integration](./assets/demo_docs_integration.mp4)
 
 ## Key Achievements
 - A working two-way integration between Docs and OpenProject using open, enterprise-grade standards (eg. OpenID Connect)
