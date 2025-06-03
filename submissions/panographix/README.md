@@ -26,9 +26,12 @@ Public servants can now simply share an interactive, real-time view of their Gri
 ## Code base
 [(Link to our forked repo)](https://github.com/Theodo-GovTech/lasuite-docs)
 
-## Deliverables 
-(Provide a link to a live demo, if you have one)
-(Add screenshots (image, gif or video) and presentation deck to `/assets`)
+## Deliverables
+
+[Panographix - DINUM - 2025.pdf](https://github.com/user-attachments/files/20574790/Panographix.-.DINUM.-.2025.pdf)
+
+
+![INTERNAL-MEMO-Docs-06-03-2025_03_52_PM](https://github.com/user-attachments/assets/c8fdf034-813c-40b6-a605-6da9905b4a60)
 
 ## Key Achievements
 Public servants can now easily :
