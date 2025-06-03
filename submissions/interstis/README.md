@@ -56,6 +56,10 @@ A working prototype is available on the internal **Interstis testing platform**,
 
 ### 📸 Screenshots
 
+#### 🔹 Video demo parcours
+
+![Sample parcours](./assets/demo_poc_parcours.webm)
+
 #### 🔹 Sample Dialogues with Albert
 ![Dialog Hackdays](./assets/dialog_with_IA.png)
 
