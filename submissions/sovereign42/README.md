@@ -8,7 +8,7 @@ Plugin for OpenXchange email client that evaluates the risk of received emails
 
 
 ## Contributors
-<a href="https://github.com/Frenzla">@Frenzla</a>, <a href="https://github.com/JeanBRen">@JeanBRen</a>, <a href="https://github.com/Heliossd">@Heliossd</a>, <a href="https://github.com/msima0">@msima0</a>, <a href="https://github.com/extrymes">@extrymes</a>
+<a href="https://github.com/Frenzla">@Frenzla</a>, <a href="https://github.com/JeanBRen">@JeanBRen</a>, <a href="https://github.com/Helios5D">@Helios5D</a>, <a href="https://github.com/msima0">@msima0</a>, <a href="https://github.com/extrymes">@extrymes</a>
 
 ## Code base
 (Provide a link to your Git repository)
