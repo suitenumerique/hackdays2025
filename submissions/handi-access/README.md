@@ -21,6 +21,7 @@ Pull Request:
 - [Page 403 - the page title](https://github.com/suitenumerique/docs/pull/1042)
 - [Importance of the lang attribute on HTML elements](https://github.com/suitenumerique/docs/pull/1037)
 - [Dropdown menus - option selection : ajout aria-hidden sur les icônes](https://github.com/suitenumerique/docs/pull/1036)
+- [Share document modal](https://github.com/suitenumerique/docs/pull/1045)
 
 ## Challenges Overcome
 It was difficult to install Docs et deploy it on our work PC.
