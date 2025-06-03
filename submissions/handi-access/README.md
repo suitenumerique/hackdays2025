@@ -6,25 +6,31 @@ Improve accessibility for Docs
 ## Project Description
 Docs needs to be accessible to all. Let's fix the issues taggued with the tag accessibilty
 
-
 ## Contributors
-<a href="https://github.com/Appryll/">@Appryll</a>
+[@Appryll](https://github.com/Appryll/),[@Comete99](https://github.com/Comete99),[@lcanagui](https://github.com/lcanagui)
 
 ## Code base
-(Provide a link to your Git repository)
+[Code base](https://github.com/Appryll/docs.git)
 
 ## Deliverables 
 (Provide a link to a live demo, if you have one)
 (Add screenshots (image, gif or video) and presentation deck to `/assets`)
 
 ## Key Achievements
-(Highlight the main features or breakthroughs)
+Pull Request:
+- [Page 403 - the page title](https://github.com/suitenumerique/docs/pull/1042)
+- [Importance of the lang attribute on HTML elements](https://github.com/suitenumerique/docs/pull/1037)
+- [Dropdown menus - option selection : ajout aria-hidden sur les icônes](https://github.com/suitenumerique/docs/pull/1036)
 
 ## Challenges Overcome
-(What was difficult? What did you solve?)
+It was difficult to install Docs et deploy it on our work PC.
 
 ## Impact
-(Who will benefit from your project?)
+People who have some difficulties to read on screen use screen readers. Accessibilité improve the quality of the transcription for differents use case.
+- Error page title: Having clear page titles makes navigation and page identification easier and, most importantly, makes the user experience more efficient.
+- Lang attribute: Screen readers use this information to determine the pronunciation of text. Without this attribute, a screen reader might pronounce French with an English accent. This also helps search engines index content. Translation tools can more easily identify the source language and suggest translations.
+- Drop down menus: The selection made in dropdown menus must be announced to screen readers.
 
 ## Next Steps
-(If you were to continue, what next steps or developments would you envision?)
+- Continue to implement accessibility issues !
+- Ask the [The Open FUN Design System](https://github.com/openfun/cunningham) if their component are accessible. There is no annotation for the little cross to close the modal object for example. 
