@@ -444,3 +444,12 @@
 - **Description**: Sentinal scans uploaded files to detect confidential data, personal information (PII), or classified content, and automatically labels them for secure storage and collaboration.
 
 - **Contributors**: [@naofel1](https://github.com/naofel1), [@mbehrami](https://github.com/mbehrami)
+
+
+## Devoteam
+
+- **Project**: All-in-one Drive / Slides
+
+- **Description**: La Suite tools but improved with AI
+
+- **Contributors**: [@kcap02DVT](https://github.com/kcap02DVT), [@Ghanemamari](https://github.com/Ghanemamari),[@VnoelDVT](https://github.com/VnoelDVT)
