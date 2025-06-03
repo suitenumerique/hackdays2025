@@ -204,7 +204,7 @@
 
 - **Description**: Docs needs to be accessible to all. Let's fix the issues taggued with the tag `accessibilty` 
 
-- **Contributors**: [@Appryll](https://github.com/Appryll/)
+- **Contributors**: [@Appryll](https://github.com/Appryll/),[@Comete99](https://github.com/Comete99),[@lcanagui](https://github.com/lcanagui)
 
 
 ## One Point
