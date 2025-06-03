@@ -64,7 +64,7 @@ export default function HomePage() {
       </Head>
       <HomeGutter>
         <Hero
-          logo={<img src={logoIcon.src} alt="DocLogo" width={64} />}
+          logo={<img src={logoIcon.src} alt="DocLogo" width={150} />}
           banner={banner.src}
           title={t("home.title")}
           subtitle={t("home.subtitle")}
