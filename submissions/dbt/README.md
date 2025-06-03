@@ -20,7 +20,7 @@ https://github.com/lluli/docs
 
 ## Key Achievements
 Successfully prototyped and integrated an AI fact-checking tool directly into the Docs interface
-Built and deployed a modular API using Python and Ollama 3.1 for LLM-driven text analysis
+Built and deployed a modular API using Python and supports locally hosted LLMs via Ollama and Open AI backends
 Real-time factual scoring system with source transparency (links + explanation)
 Collaborated with DINUM and La Suite to align with European digital sovereignty goals
 
@@ -29,12 +29,14 @@ Balancing speed and accuracy in the fact-checking model
 Ensuring reliable source extraction and scoring within limited time constraints
 Integrating seamlessly into the Docs platform while respecting data protection and transparency principles
 Managing multiple language/model dependencies and preparing for multilingual use cases
+
 ## Impact
 FactVerifAI supports anyone working in collaborative document environments: journalists, policymakers, educators, researchers by enhancing trust and accountability. It contributes to European digital sovereignty by offering a sovereign, open-source, privacy-respecting alternative to fact-checking solutions embedded in non-European platforms.
 
 ## Next Steps
-Improve the AI model’s ability to handle nuance and context (e.g., satire, ambiguous claims)
-Develop a more intuitive and informative UI for source display
-Expand support for multiple European languages
+Integrating seamlessly into the Docs platform while respecting data protection and transparency principles
+Expand support for multiple languages
 Optimize performance and scalability for wider public deployment
+Adding more LLM backends such as Agno Framework
+Integrating the feature with a RAG system and allowing users to fact check full documents
 Conduct user testing with public sector teams across the EU to refine UX and functionality
