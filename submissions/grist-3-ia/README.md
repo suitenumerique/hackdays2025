@@ -24,7 +24,7 @@ Backend API : https://github.com/Nicolassaint/api-grist-ai-hackdays
 
 ## Deliverables
 
-https://taha-130.github.io/Grist-loves-AI
+![](assets/grist-ai-screenshot.png)
 
 ## Key Achievements
 
