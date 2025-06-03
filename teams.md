@@ -444,3 +444,20 @@
 - **Description**: Sentinal scans uploaded files to detect confidential data, personal information (PII), or classified content, and automatically labels them for secure storage and collaboration.
 
 - **Contributors**: [@naofel1](https://github.com/naofel1), [@mbehrami](https://github.com/mbehrami)
+
+
+## Devoteam
+
+- **Project**: All-in-one Drive / Slides
+
+- **Description**: La Suite tools but improved with AI
+
+- **Contributors**: [@kcap02DVT](https://github.com/kcap02DVT), [@Ghanemamari](https://github.com/Ghanemamari),[@VnoelDVT](https://github.com/VnoelDVT)
+
+## La Suite Portal
+
+- **Project**: All-in-one Drive / Slides
+
+- **Description**: LaSuite portal is the place where users can start their day. It combines all information from laSuite services and others into a manageable and organized dashboard.
+
+- **Conrtributors**: [@cocopops-fr](https://github.com/cocopops-fr), [@Corentin-BTS](https://github.com/Corentin-BTS), [@benbuckscg](https://github.com/benbuckscg), [@berrydenhartog](https://github.com/berrydenhartog)
