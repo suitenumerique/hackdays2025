@@ -19,10 +19,10 @@ Improve the UX of Grist features
 1. Markdown for GristDocTour 
    1. [grist-core#1653](https://github.com/gristlabs/grist-core/pull/1653) - Allow markdown in GristDocTour
 2. Gaufre
-   1. [integration#26](https://github.com/suitenumerique/integration/pull/26) - Allow Gaufre customization, fix relative URL for static html, Github action to build and host it on github pages
+   1. [integration#26](https://github.com/suitenumerique/integration/pull/26) - Allow Gaufre customization, fix relative URL for static html, Github action to build and host it on github pages, and provide full documentation on how to use it
    2. [ui-kit#81](https://github.com/suitenumerique/ui-kit/pull/81) - Allow to pass a custom gaufre.js URL through ui-kit uses of Gaufre in `<LaGaufre>`
-   3. [drive#205](https://github.com/suitenumerique/drive/pull/205) - Pass an env variable to drive to use a custom gaufre.js in drive - depends on 2
-   4. [docs#1038](https://github.com/suitenumerique/docs/pull/1038) - Pass an env variable to drive to use a custom gaufre.js in docs
+   3. [drive#205](https://github.com/suitenumerique/drive/pull/205) - Pass an env variable to Drive to use a custom gaufre.js - depends on 2
+   4. [docs#1038](https://github.com/suitenumerique/docs/pull/1038) - Pass an env variable to Docs to use a custom gaufre.js
    5. [Tests](https://github.com/suitenumerique/integration/commit/266a7af9c7fcd1e3bce85ca09a4dfa8c556965a3) - Modification of Gaufre contents to point to my hosted services
 3. Form attachments
    1. *To be documented*
