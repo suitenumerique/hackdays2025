@@ -1,14 +1,18 @@
-# 🏆 Final Submission for mosa.cloud
+# 🏆 Final Submission for Sentinel
+
+- **Project**: 
+- **Description**: 
+
+- **Contributors**: [@naofel1](https://github.com/naofel1), [@mbehrami](https://github.com/mbehrami)
 
 ## Project
-La Suite Launchpad
+Smart Document Classifier for Drive
 
 ## Project Description
-A personal dashboard that centralises user's activity across La Suite apps
-
+Sentinal scans uploaded files to detect confidential data, personal information (PII), or classified content, and automatically labels them for secure storage and collaboration.
 
 ## Contributors
-<a href="https://github.com/nielscodes">@nielscodes</a>, <a href="https://github.com/CasperHollemans">@CasperHollemans</a>, <a href="https://github.com/rielzzapps">@rielzzapps</a>, <a href="https://github.com/AleVale">@AleVale</a>
+<a href="https://github.com/naofel1">@naofell</a>, <a href="https://github.com/mbehrami">@mbehrami</a>
 
 ## Code base
 (Provide a link to your Git repository)
