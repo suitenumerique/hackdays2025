@@ -1,17 +1,57 @@
-interface Project {
+interface SyncProject {
   filename: string;
   file: Blob,
 }
 
 const bucketName = 'drive-media-storage';
 
-export const syncProject = async (project: Project) => {
+export const syncProject = async (project: SyncProject) => {
   const payload = {
     type: 'file',
     filename: project.filename,
   };
 
   try {
+    // Vérification si le fichier existe déjà
+    const checkResponse = await fetch(
+        'http://localhost:8071/api/v1.0/items/9cb24815-9e14-4585-a508-34188d64fba4/children/?page_size=100000&ordering=-type%2C-created_at&type=file',
+        {
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Token ${localStorage.getItem('DRIVE_TOKEN')}`
+          },
+        }
+    );
+
+    if (!checkResponse.ok) {
+      throw new Error('Erreur lors de la vérification de l\'existence du fichier');
+    }
+
+    const checkData = await checkResponse.json();
+    const existingFile = checkData.results.find((item: { filename: string }) => item.filename === project.filename);
+
+    if (existingFile) {
+      console.log('Le fichier existe déjà, suppression en cours...');
+
+      // Suppression du fichier existant
+      const deleteResponse = await fetch(
+          `http://localhost:8071/api/v1.0/items/${existingFile.id}/`,
+          {
+            method: 'DELETE',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': `Token ${localStorage.getItem('DRIVE_TOKEN')}`
+            },
+          }
+      );
+
+      if (!deleteResponse.ok) {
+        throw new Error('Erreur lors de la suppression du fichier existant');
+      }
+
+      console.log('Fichier existant supprimé avec succès.');
+    }
+
     // Envoi des métadonnées
     const metadataResponse = await fetch(
         'http://localhost:8071/api/v1.0/items/9cb24815-9e14-4585-a508-34188d64fba4/children/',

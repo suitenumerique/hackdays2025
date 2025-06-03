@@ -1,12 +1,12 @@
 import React from 'react';
 import { Button } from '@blueprintjs/core';
-import {syncProject} from "../api/project";
+import {syncProject} from "../api/sync-project";
 
 export const SaveButton = ({ store }) => {
   const saveProject = async () => {
     try {
       await syncProject({
-        filename: 'project.json',
+        filename: 'my_project.json',
         file: JSON.stringify(store.toJSON()),
       })
       alert('Projet sauvegardé avec succès!');
