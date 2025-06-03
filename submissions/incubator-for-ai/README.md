@@ -1,10 +1,12 @@
 # 🏆 Final Submission for Incubator for AI
 
 ## Project
-@Drive: semantic search for the documents you store in Drive.
+![image](assets/at_drive.png)
+
+**@Drive**: semantic search for the documents you store in Drive.
 
 ## Project Description
-Create an API to search within a user's documents in Drive, and demonstrate integration with:
+We've created an API to search within a user's documents in Drive, and demonstrated integration with:
 * the Drive UI
 * Meet
 * Slack
