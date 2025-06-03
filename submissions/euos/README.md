@@ -17,10 +17,12 @@ Create a soverign operating system for the public sector.
 https://gitlab.com/eu-os/eu-os (We need on-prem)
 
 ## Deliverables 
-
+![Desktop 1](./euos-desktop.png)
+![Desktop 2](./euos-desktop.png)
+![Laptop Demo](./demo.jpg)
 
 ## Key Achievements
-(Highlight the main features or breakthroughs)
+
 
 ## Challenges Overcome
 (What was difficult? What did you solve?)
