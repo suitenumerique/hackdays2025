@@ -25,8 +25,8 @@ Improve the UX of Grist features
    4. [docs#1038](https://github.com/suitenumerique/docs/pull/1038) - Pass an env variable to Docs to use a custom gaufre.js
    5. [Tests](https://github.com/suitenumerique/integration/commit/266a7af9c7fcd1e3bce85ca09a4dfa8c556965a3) - Modification of Gaufre contents to point to personal hosted services
 3. Add Form attachment
-  1. [Form Attachment Support](https://github.com/gristlabs/grist-core/pull/1655)
-  2. [Virus Scan Provider](https://github.com/gristlabs/grist-core/pull/1654)
+   1. [grist-core#1655](https://github.com/gristlabs/grist-core/pull/1655) - Add support for attachments in forms
+   2. [grist-core#1654](https://github.com/gristlabs/grist-core/pull/1654) - Add Virus scan provider
 
 ## Deliverables
 
