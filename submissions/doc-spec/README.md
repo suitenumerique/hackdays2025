@@ -7,7 +7,7 @@
 Build a proof-of-concept for importing `.docx` files into La Suite Docs, enabling users to migrate existing Microsoft Word documents into the new collaborative editor.
 
 ## 📄 Project Description
-- mplement a working import pipeline from `.docx` to La Suite Docs.
+- Implement a working import pipeline from `.docx` to La Suite Docs.
 - Provide insight into the challenges of migrating legacy documents.
 - Offer a foundation for broader document format support in the future.
 
@@ -21,7 +21,10 @@ Build a proof-of-concept for importing `.docx` files into La Suite Docs, enablin
 ## 📦 Deliverables 
 
 ### 🎬 Screencast
-TBD
+
+[See/download video.](assets/demo.mp4)
+
+[Alternative way of playing can be found here: https://vimeo.com/1090099210](https://vimeo.com/1090099210)
 
 ### Processes
 
