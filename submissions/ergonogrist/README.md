@@ -7,7 +7,7 @@ Improve the UX of Grist features
 ## Project Description
 
 1. 🗺️ Enable Markdown for [document tours](https://support.getgrist.com/document-tours/)
-2. 🧇 Documentation of the ["Gaufre"](https://integration.lasuite.numerique.gouv.fr/guides/gaufre/) for Grist
+2. 🧇 Improve documentation and reusability of the ["Gaufre"](https://integration.lasuite.numerique.gouv.fr/guides/gaufre/) in grist, docs, and drive
 3. 📤 Enable sending attachments through [Grist forms](https://www.getgrist.com/forms/)
 
 ## Contributors
