@@ -1,9 +1,11 @@
 import { observer } from 'mobx-react-lite';
-import { InputGroup } from '@blueprintjs/core';
+import { InputGroup, Button, Dialog } from '@blueprintjs/core';
 import { SectionTab } from 'polotno/side-panel';
 import { MdFolder } from 'react-icons/md';
+import { WiStars } from 'react-icons/wi';
 import {fetchSyncedProjects, type SyncedProject} from '../api/syncedProjects';
 import React from "react";
+import { generateAndSaveProject } from '../api/ia';
 
 export const SyncedProjectsPanel = observer(({ store }) => {
   const [projects, setProjects] = React.useState<SyncedProject[]>([]);
@@ -43,8 +45,62 @@ export const SyncedProjectsPanel = observer(({ store }) => {
     }
   };
 
+  const [isModalOpen, setIsModalOpen] =  React.useState(false);
+  const [prompt, setPrompt] =  React.useState('Fais une présentation sur le bac de Français');
+  const [isLoading, setIsLoading] = React.useState(false);
+
+  const handleCreateWithAI = async () => {
+    try {
+      setIsLoading(true);
+      console.log('Prompt saisi :', prompt);
+      await generateAndSaveProject(prompt, store);
+      await loadProjects();
+      alert('Projet généré et sauvegardé dans Fichiers avec succès !');
+    } catch (error) {
+      console.error('Erreur lors de la génération du projet avec l\'IA :', error);
+      alert('Une erreur est survenue lors de la génération du projet.');
+    } finally {
+      setIsLoading(false);
+      setIsModalOpen(false);
+    }
+  };
+
   return (
       <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+
+        <Button
+            intent="success"
+            onClick={() => setIsModalOpen(true)}
+            style={{ margin: '10px' }}
+        >
+          Créer avec l'IA
+          <WiStars size={24} />
+        </Button>
+
+        <Dialog
+            isOpen={isModalOpen}
+            onClose={() => setIsModalOpen(false)}
+            title="Créer avec l'IA"
+        >
+          <div className="bp4-dialog-body">
+            <p>Saisissez un prompt pour générer un projet :</p>
+            <InputGroup
+                placeholder="Entrez votre prompt ici..."
+                value={prompt}
+                onChange={(e) => setPrompt(e.target.value)}
+            />
+            {isLoading && <div className="loader">Chargement...</div>}
+          </div>
+          <div className="bp4-dialog-footer">
+            <div className="bp4-dialog-footer-actions">
+              <Button onClick={() => setIsModalOpen(false)}>Annuler</Button>
+              <Button intent="primary" onClick={handleCreateWithAI}>
+                Générer
+              </Button>
+            </div>
+          </div>
+        </Dialog>
+
         <InputGroup
             leftIcon="search"
             placeholder="Rechercher..."
@@ -72,7 +128,7 @@ export const SyncedProjectsPanel = observer(({ store }) => {
 export const CustomSyncedProjects = {
   name: 'synced-projects',
   Tab: (props) => (
-      <SectionTab name="Projets" {...props}>
+      <SectionTab name="Projects" {...props}>
         <MdFolder />
       </SectionTab>
   ),

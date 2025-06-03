@@ -6,7 +6,7 @@
         "success": "Copied to clipboard",
         "error": "Failed to copy to clipboard"
       },
-      "app_title": "Slides",
+      "app_title": "Prez",
       "app_description": "Slides management",
       "welcome": "Welcome",
       "logout": "Logout",

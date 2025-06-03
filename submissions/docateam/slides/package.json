@@ -16,6 +16,7 @@
     "@tanstack/react-table": "8.20.6",
     "@viselect/react": "3.9.0",
     "clsx": "2.1.1",
+    "dns": "^0.2.2",
     "i18next": "24.2.2",
     "next": "15.2.3",
     "next-i18next": "15.4.2",

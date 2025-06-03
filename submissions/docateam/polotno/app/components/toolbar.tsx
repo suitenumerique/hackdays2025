@@ -8,10 +8,10 @@ const ActionControls = ({ store }) => {
   const saveProject = async () => {
     try {
       await syncProject({
-        filename: 'my_project.json',
+        filename: 'bac_francais.json',
         file: JSON.stringify(store.toJSON()),
       })
-      alert('Projet sauvegardé avec succès!');
+      alert('Projet sauvegardé avec succès dans Fichiers !');
     } catch (error) {
       console.error('Erreur lors de la sauvegarde du projet:', error);
       alert('Erreur lors de la sauvegarde du projet.');
