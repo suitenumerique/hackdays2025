@@ -16,6 +16,7 @@ import { createStore, type StoreType } from 'polotno/model/store';
 import '@blueprintjs/core/lib/css/blueprint.css';
 import React from 'react';
 import {PhotosPanel, PhotosSection} from "./components/photos";
+import {SaveButton} from "./components/saveButton";
 
 const store = createStore({
   key: 'your-key',
@@ -70,6 +71,9 @@ export const App = ({ store }: { store: StoreType }) => {
 
   return (
     <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', padding: '10px' }}>
+        <SaveButton store={store} />
+      </div>
       <SidePanelWrap>
         <SidePanel store={store} sections={[PhotosSection]} />
       </SidePanelWrap>
