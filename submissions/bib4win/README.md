@@ -36,6 +36,9 @@ https://github.com/TypeCellOS/BlockNote/pull/1732/
 
 ## Deliverables
 
+### Slidedeck 
+![](./assets/slidedeck.pdf)
+
 ### Workflow
 
 ![](./assets/add_reference_0.png)
