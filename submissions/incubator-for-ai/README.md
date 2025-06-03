@@ -10,7 +10,7 @@ We've created an API to search within a user's documents in Drive, and demonstra
 * the Drive UI
 * Meet
 * Slack
-* Claude
+* Claude-Desktop
 
 ## Contributors
 <a href="https://github.com/duncanjbrown">@duncanjbrown</a>, <a href="https://github.com/nmenezes0">@nmenezes0</a>, <a href="https://github.com/gecburton">@gecburton</a>, <a href="https://github.com/rachaelcodes">@rachaelcodes</a>
@@ -22,8 +22,10 @@ We've created an API to search within a user's documents in Drive, and demonstra
 
 
 ## Deliverables
-### Drive API endpoint
+
+### Drive API endpoint & MCP Proxy
 ![image](assets/drive_search_api.png)
+
 ### Drive UI integration
 ![image](assets/drive_search_interface_results.png)
 
@@ -43,13 +45,13 @@ _Video not working? [The file is here](assets/slackbot-recording.mov)_
 _Video not working? [The file is here](assets/claude-demo.mov)_
 
 ## Key Achievements
-Enabling semantic search throughout all documents in Drive and enabling users to do this in the frontend.
+Enabling semantic search throughout all documents in Drive and enabling users to query their documents in the frontend.
 
 Demonstrating that it is possible to integrate @drive search with other La Suite Numerique apps and external apps.
 
 Specific examples from the hackathon:
 
-* Claude
+* Claude-Desktop
 * Slack
 * Meet
 
