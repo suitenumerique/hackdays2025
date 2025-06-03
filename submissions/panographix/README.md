@@ -1,7 +1,7 @@
 # 🏆 Final Submission for Panographix
 
 ## Project
-![Panographix - Tables and graphs in Docs](https://github.com/user-attachments/assets/d1f8d596-d22a-4c19-bbcd-04545082d669)
+![Panographix - Tables and graphs in Docs](https://raw.githubusercontent.com/Theodo-GovTech/hackdays2025/refs/heads/panographix-submission/submissions/panographix/assets/banner.png)
 
 ## Project Description
 
@@ -28,10 +28,10 @@ Public servants can now simply share an interactive, real-time view of their Gri
 
 ## Deliverables
 
-[Panographix - DINUM - 2025.pdf](https://github.com/user-attachments/files/20574790/Panographix.-.DINUM.-.2025.pdf)
+[Panographix - DINUM - 2025.pdf](https://raw.githubusercontent.com/Theodo-GovTech/hackdays2025/refs/heads/panographix-submission/submissions/panographix/assets/pitch_deck.pdf)
 
 
-![INTERNAL-MEMO-Docs-06-03-2025_03_52_PM](https://github.com/user-attachments/assets/c8fdf034-813c-40b6-a605-6da9905b4a60)
+![INTERNAL-MEMO-Docs-06-03-2025_03_52_PM](https://raw.githubusercontent.com/Theodo-GovTech/hackdays2025/refs/heads/panographix-submission/submissions/panographix/assets/screenshot.png)
 
 ## Key Achievements
 Public servants can now easily :
