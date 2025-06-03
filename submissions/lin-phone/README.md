@@ -11,20 +11,27 @@ Provide Tchap users with the possibility to call real phone numbers over the int
 <a href="https://github.com/jehandelalune">@jehandelalune</a>, <a href="https://github.com/a-jogy">@a-jogy</a>
 
 ## Code base
-(Provide a link to your Git repository)
+
+* https://github.com/a-jorgy/element-web-phone-call/tree/feature/add_phone_call_with_linphone_web
+* https://gitlab.linphone.org
 
 ## Deliverables 
-(Provide a link to a live demo, if you have one)
-(Add screenshots (image, gif or video) and presentation deck to `/assets`)
+* [demo screenshot](assets/Linphone%20screenshot.png)
+* [demo video](assets/Tchap%20phone%20call%20during%20hackaton.MOV)
 
 ## Key Achievements
-(Highlight the main features or breakthroughs)
+* Provides Tchap users with phone connectivity using open source software.
 
 ## Challenges Overcome
-(What was difficult? What did you solve?)
+* Adapt webRTC media streams to SIP trunk provider regular RTP.
+* Use Element Widget for In-room access to dialer
+* Hack Element to add a Global Call button. 
 
 ## Impact
-(Who will benefit from your project?)
+* Add phone call capability to « La suite ».
+* Main impact is about user experience. Even if technically doable to have different applications for regular phone calls and for chat (I.E Element/Tchap), with a deep user interface integration, it would be quite obvious for Tchap users to place phone calls without having to switch to an other app.
+
 
 ## Next Steps
-(If you were to continue, what next steps or developments would you envision?)
+* Single sign on using OIDC
+* Incoming calls based on Matrix service API
