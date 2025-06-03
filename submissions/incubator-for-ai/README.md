@@ -16,6 +16,8 @@ Create an API to search within a user's documents in Drive, and demonstrate inte
 ## Code base
 [i.AI fork of suitenumerique/drive](https://github.com/i-dot-ai/drive)
 
+[Slack integration](https://github.com/i-dot-ai/slack-drive-search)
+
 
 ## Deliverables
 ### Drive API endpoint
@@ -31,11 +33,25 @@ Create an API to search within a user's documents in Drive, and demonstrate inte
 
 <video src="https://github.com/user-attachments/assets/8da4234b-5124-43d3-8a22-257ec66b3178" controls></video>
 
+### Claude integration
+
+<video src="https://private-user-images.githubusercontent.com/23265724/450806742-322a45d4-9801-4a54-b5cc-9eac3e85e863.mov" controls></video>
+
 ## Key Achievements
-(Highlight the main features or breakthroughs)
+Enabling semantic search throughout all documents in Drive and enabling users to do this in the frontend.
+
+Demonstrating that it is possible to integrate @drive search with other La Suite Numerique apps and external apps.
+
+Specific examples from the hackathon:
+
+* Claude
+* Slack
+* Meet
 
 ## Challenges Overcome
-(What was difficult? What did you solve?)
+Setting up and getting to grips with an unknown codebase in a limited time.
+Getting semantic search working in Drive.
+Integration with other services: Meet, Claude, Slack.
 
 ## Impact
 Anyone who knows the information they need is stored in Drive, but just can't remember where it is can now search for it easily. By using semantic search, users don't even need to match the exact text in the document or remember the file name.
