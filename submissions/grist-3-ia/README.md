@@ -40,9 +40,9 @@ We managed to structure our solution around the following workflow:
 
 ## Challenges Overcome
 
-We assembled a team with diverse technical backgrounds and perspectives, united by a shared interest in exploring AI integration within Grist.
+Our team is made of diverse technical backgrounds and perspectives, united by a shared interest in exploring AI integration within Grist.
 
-Initially, we faced challenges in defining the project scope and understanding the limits and capabilities of the available APIs and tools. After extensive experimentation, we finally found out an effective approach: instead of having Albert interact with API methods directly, we had it generate SQL queries. This shift unlocked a powerful and elegant way to bridge AI and Grist data operations.
+Initially, we faced challenges in defining the project scope and understanding the limits and capabilities of the available APIs and tools. After extensive experimentation, we finally found out an effective approach: instead of having Albert interact with API methods directly, we had it generate SQL queries. This shift unlocked a scalable and elegant way to bridge AI and Grist data operations.
 
 ## Impact
 
