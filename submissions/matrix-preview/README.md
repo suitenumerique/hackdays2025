@@ -8,7 +8,7 @@ Currently, Matrix clients send URLs in plaintext to the server to generate link 
 
 Our project aims to restore full end-to-end encryption integrity by implementing client-side URL preview generation in the secure messaging app Element X for Android. By performing URL fetching and metadata extraction directly on the user's device, we eliminate the need to transmit URLs to the server, ensuring that no private link data ever leaves the encrypted context.
 
-This enhancement maintains a smooth user experience (with link previews) while reinforcing user privacy and Matrix's core commitment to secure communication.
+This enhancement preserves a seamless user experience with link previews, while reinforcing user privacy and upholding Matrix’s core commitment to secure communication.
 
 
 ## Contributors
