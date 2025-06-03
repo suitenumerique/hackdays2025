@@ -8,23 +8,32 @@ Implement Docs as a Canvas in Albert Conversation. So that user can interact wit
 
 
 ## Contributors
-<a href="https://github.com/eliott07">@eliott07</a>, <a href="https://github.com/anthonyjacquelim">@anthonyjacquelim</a>, <a href="https://github.com/naxxos">@naxxos</a>
+<a href="https://github.com/eliott07">@eliott07</a>, <a href="https://github.com/anthonyjacquelim">@anthonyjacquelim</a>, <a href="https://github.com/YousefED
+">@YousefED</a>, <a href="https://github.com/naxxos">@naxxos</a>
 
 ## Code base
-(Provide a link to your Git repository)
+[Assistant IA](https://github.com/etalab-ia/albert-conversation/tree/hackathon)
 
 ## Deliverables 
 (Provide a link to a live demo, if you have one)
 (Add screenshots (image, gif or video) and presentation deck to `/assets`)
 
 ## Key Achievements
-(Highlight the main features or breakthroughs)
+Interactive Side-Panel for document creation: Automatically launches a dedicated, editable window when document generation is initiated, enabling real-time user interaction.
+
+- Intelligent side-panel activation: The system proactively opens the interactive editing panel when it infers the user's intent to modify or review AI-generated content, ensuring a fluid and intuitive workflow.
+- Intuitive Docs-style editing experience: Features a user-friendly interface within the side-panel, offering familiar Docs-like rich-text editing capabilities for effortless content manipulation and formatting.
+- In-situ AI-Powered content enhancement: Users can leverage sophisticated AI tools (e.g., rephrasing, summarization, expansion, prompting) directly within the interactive content window, streamlining the editorial process.
+- Chat-driven global document operations: Enables users to perform document-wide transformations (e.g., adjusting tone, changing style, applying formatting across sections) via natural language commands in the primary chat interface.
+- Seamless Docs integration: Facilitates one-click export of the finalized, AI-enhanced document directly to Docs, ensuring interoperability and user convenience.
 
 ## Challenges Overcome
-(What was difficult? What did you solve?)
+- Robust Integration of BlockNoteJS Editor: Successfully engineered the integration of the BlockNoteJS rich-text editor within our AI Assistant's architecture, overcoming new technology stack to provide a stable and responsive editing environment.
+- Bridging custom AI with BlockNoteJS
+- Maintaining cross-modal contextual coherence: Engineered a robust solution for preserving and applying conversational context from the chat interface to AI-driven content modifications within the BlockNoteJS editor. This ensures that user instructions in chat translate accurately and relevantly to actions in the document.
 
 ## Impact
-(Who will benefit from your project?)
+Accelerating document creation for diverse users: This project dramatically simplifies and accelerates the entire document lifecycle—from initial drafting to final polish—for a broad type of public servant jobs. By embedding intelligent AI assistance directly into a fluid editing environment, we lower the barrier to content creation, reduce repetitive tasks, and empower users to produce higher-quality documents more efficiently. The core benefit is a synergistic human-AI collaboration that transforms document workflows.
 
 ## Next Steps
 (If you were to continue, what next steps or developments would you envision?)
