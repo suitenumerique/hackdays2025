@@ -6,7 +6,7 @@ Docs Bibliography.
 
 ## Project Description
 
-Add bibliography generation and a citation tool to Docs using a custom block
+A bibliography generation and a citation tool to Docs using a custom block
 and custom inline content.
 
 ## Contributors
@@ -52,15 +52,15 @@ Docs now integrates two new `/` slash commands:
 
 ## Challenges Overcome
 
-Governmental organization have many researchers. However, these important end-users can't use La Suite Docs if there isn't any support for bibliography functionality. And if they don't use it, there is also less spillover effect for students to start using it.
+Governmental organization have many researchers. However, these important end-users can't use La Suite Docs if there is no support for references and an automated bibliography. And if they don't use it, there is also less spillover effect for students to start using it.
 
-We need to get the researcher/professor/instructor to use Docs. 
+We need to get the researcher/professor/instructor to use Docs and students will follow-up. 
 
 ## Impact
 
-There are around 500k **public sector researchers** working and **5m students** in just France and Germany. With an estimated 10% using [Zotero](https://www.zotero.org), there is a direct target audience of roughly 550k users.
+We have 500k **public sector researchers** and **5m students** in just France and Germany. With an estimated 10% using [Zotero](https://www.zotero.org), there is a direct target audience of roughly 550k users.
 
-In general, this bibliography plugin with Zotero connect option can be validation for end-users and organizations that La Suite Docs can be more user-friendly for the public sector compared to for example Google Docs. La Suite Docs with a Bibliography plugin allows more organizations to step out from proprietary non-sovereign solutions.
+In general, this bibliography plugin with Zotero connect option can be validation for users and organizations that La Suite Docs can be more user-friendly for the public sector compared to for example Google Docs. La Suite Docs with a Bibliography plugin allows more organizations to step out from proprietary non-sovereign solutions.
 
 ## Next Steps
 
