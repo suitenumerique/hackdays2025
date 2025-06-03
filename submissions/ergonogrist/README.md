@@ -67,7 +67,8 @@ Future good changes:
 
 ## Key Achievements
 
-(Highlight the main features or breakthroughs)
+* Succeeded in fixing 3 Grist issues identified by the team 
+* Submitted 8 pull requests to official repositories
 
 ## Challenges Overcome
 
@@ -88,3 +89,15 @@ Future good changes:
 
 * Follow-up on pull requests to [gristlabs/grist-core](https://github.com/gristlabs/grist-core)
 * Improve attachments sending button design, in order to fit Grist design system (see [design proposal](./assets/grist_form-send-attachment_no-file-selected.png))
+
+### Other identified issues 
+
+* [Grist] Loading spinner when rendering widgets to avoid "white screen" effect which is not a desirable UX.
+* [Grist] Dans les formulaires, la recherche ne fonctionne pas (ni sur le formulaire, ni sur raw data)
+* [Grist] Fix search within forms. 
+  * Drop-down only loads 30 options (checkboxes)
+  * Dropdown from lists only loads 1000 entries 
+* [Grist] Copy a widget from one page to another
+* [Grist] Anchors to navigate in history. (actual behavior is anchor appears briefly and disappears)
+* [Grist] Expose user objet in forms
+* [Grist] Settings for webhooks to filter payload being sent and choose expected HTTP return codes that are handled 
