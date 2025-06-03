@@ -55,6 +55,7 @@ Allow submit attachment in Form view.
 
 Currently, Grist not support Virus checking during attachment upload.
 Add a provider abstraction to scan uploaded attachment with provider and delete it if a virus is detected.
+With Form attachment feature, it's important to scan new file to avoid malicious files to uploaded in public form.
 
 ## Key Achievements
 
