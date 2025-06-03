@@ -41,12 +41,18 @@ In addition we provide a [PoC](https://github.com/opf/suitenumerique-docs/pull/4
 
 ## Challenges Overcome
 
-- docs dev stack is currently focused on development on `localhost`
-  - running multiple compose stacks at once requires to run docker services without exposed ports and behind domain names
-  - we updated the docker compose (and the Makefile slightly) to enable a full docker based dev env, where the services are located behind a reverse proxy
-  - we enabled hot relaods for developing the frontend inside a docker service (thanks Manuel!!!)
+- Docs dev stack is currently focused on development on `localhost`
+  - Running multiple compose stacks at once requires to run docker services without exposed ports and behind domain names
+  - We updated the docker compose (and the Makefile slightly) to enable a full docker based dev env, where the services are located behind a reverse proxy
+  - We enabled hot relaods for developing the frontend inside a docker service (thanks Manuel!!!)
+
 - the apps of la suite are not using token exchange to communicate between services
-  - we reconfigured our own keycloak, so that the `impress` client has a custom client scope, enabling access tokens issued to `docs` being accepted by OpenProject for server-to-server communication
+  - We reconfigured our own keycloak, so that the `impress` client has a custom client scope, enabling access tokens issued to `docs` being accepted by OpenProject for server-to-server communication
+
+- We were able to take a BlockNote extension from one codebase to another with minimal changes, moving the whole UI and behaviour.
+
+- Running infrastructure changes and updates between three developers and still able to parallelize work
+
 
 ## Impact
 - Users can use Docs the way it was intended, for collaboration and note-taking, but then go from that draft text to a concrete, actionable project plan in OpenProject. This makes it easy for users to go from brainstorming and iterating to structured, organised action easily and without significant barriers.
