@@ -4,7 +4,9 @@
 Improve the UX of Grist features
 
 ## Project Description
-Documentation of the waffle for Grist  / Enable Attachment for public forms / Enable markdown for doc tour.
+1. Enable markdown for doc tour.
+2. Documentation of the waffle for Grist
+2. Enable Attachment for public forms
 
 
 ## Contributors
@@ -21,10 +23,16 @@ Documentation of the waffle for Grist  / Enable Attachment for public forms / En
 (Highlight the main features or breakthroughs)
 
 ## Challenges Overcome
-(What was difficult? What did you solve?)
+* Enabling attachments in form in a way that respect Grist principles
+* Putting together all the knowledge necessary to configure the waffle (some assets are on private repository in the deployment phase)
 
 ## Impact
-(Who will benefit from your project?)
+* Contributes to Grist-core the feature attachment in Grist forms (pull-request). 
+  * All community
+  * Better UX for file submission
+* Contributes to Grist-core the feature MarkDown in GristDocTour, a very 💗 Grist feature
+  * All community
+  * Better UX for documenting the presentation of Grist documents
 
 ## Next Steps
-(If you were to continue, what next steps or developments would you envision?)
+* Follow-up on pull requests to Grist-core
