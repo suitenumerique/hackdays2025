@@ -13,7 +13,8 @@ Improve the UX of Grist features
 <a href="https://github.com/tayflo">@tayflo</a>, <a href="https://github.com/mrdev023">@mrdev023</a>, <a href="https://github.com/ogui11aume">@ogui11aume</a>, <a href="https://github.com/mclegrand">@mclegrand</a>
 
 ## Code base
-1. markdown for GristDocTour https://github.com/ogui11aume/grist-core/tree/markdown-for-gristdoctour
+1. markdown for GristDocTour 
+   1. [grist-core#1653](https://github.com/gristlabs/grist-core/pull/1653) - Allow markdown in GristDocTour
 2. Gaufre
    1. [integration#26](https://github.com/suitenumerique/integration/pull/26) - Allow Gaufre customization, fix relative URL for static html, Github action to build and host it on github pages
    2. [ui-kit#81](https://github.com/suitenumerique/ui-kit/pull/81) - Allow to pass a custom gaufre.js URL through ui-kit uses of Gaufre in `<LaGaufre>`
@@ -22,6 +23,12 @@ Improve the UX of Grist features
    5. [Tests](https://github.com/suitenumerique/integration/commit/266a7af9c7fcd1e3bce85ca09a4dfa8c556965a3) - modification of gaufre contents to point to my hosted services
 
 ## Deliverables 
+
+### Markdown for Grist
+
+[Documentation and presentation](assets/markdown-for-gristdoctour/deliverable1.md)
+
+![GristDocTour - step 1](assets/markdown-for-gristdoctour/gristdoctour-slide1.png)
 
 ### Custom Gaufre
 
