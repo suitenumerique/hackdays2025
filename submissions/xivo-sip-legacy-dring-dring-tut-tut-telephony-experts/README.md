@@ -19,8 +19,10 @@ It displays a dialpad directly embeded in Tchap UI without any external widget i
 ## Deliverables 
 ![Demo](./assets/demo.gif)
 
+link to video [demo.mp4](./assets/demo.mp4)
+
 ## Key Achievements
-- Allow make calls from/to any external phone number
+- Allow make calls to any external phone number
 - Interoperability between softphony (Tchap) and existing deskphones in the same workplace
 
 ## Challenges Overcome
@@ -33,6 +35,7 @@ However here, main concern was to start the bridge with a minimal setup (synapse
 All workplaces where exists a mix of legacy PSTN deskphones, conference room devices, DECT... and Tchap softphony. The main goal of this POC is to show that we can help in change management by merging telephony in unified communication tool.
 
 ## Next Steps
+- Be able to handle incoming calls without custom Synapse module
 - Use livekit instead of SIP.js to be Element Call ready
 - Don't use (only) PSTN existing MSC but a custom dialpad embeded to a telephony widget.
 - Move some features of XiVO synapse module to XiVO widget (history, phone directory, call forwarding, device selection...)
