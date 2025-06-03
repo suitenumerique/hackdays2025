@@ -14,10 +14,10 @@ Build a proof-of-concept for importing `.docx` files into La Suite Docs, enablin
 
 ## 👥 Contributors
 
-- 🇳🇱 @ericwout-overheid (Eric)
-- 🇩🇪 @hhappel (Hans-Jörg)
-- 🇷🇴 @mountainborn (Silviu)
-- 🇳🇱 @StephanMeijer (Stephan)
+- 🇳🇱 [@ericwout-overheid](https://github.com/ericwout-overheid) (Eric)
+- 🇩🇪 [@hhappel](https://github.com/hhappel) (Hans-Jörg)
+- 🇷🇴 [@mountainborn](https://github.com/mountainborn) (Silviu)
+- 🇳🇱 [@StephanMeijer](https://github.com/StephanMeijer) (Stephan Meijer)
 
 ## 🧠 Codebase
 
