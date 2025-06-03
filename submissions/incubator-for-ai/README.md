@@ -66,7 +66,9 @@ Anyone who knows the information they need is stored in Drive, but just can't re
 Opening up the API to other applications takes Drive functionality beyond the immediate application, putting it at the centre of many workflows. 
 
 ## Next Steps
-* Clean up code and make sure it's secure
+* Clean up and test code. Make sure it's secure
+* Adopt more code patterns from the existing codebase
+  * e.g. using the `StandardDriver` for making fetch requests in the UI
 * Opening up integrations with other applications
   * e.g. find your documents from Docs
 * Offering filtering options
