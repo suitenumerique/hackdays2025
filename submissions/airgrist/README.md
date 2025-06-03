@@ -11,24 +11,26 @@ User facing migration UI that allows users to migrate from Airtable to Grist
 
 ## Code base
 
-GitHub : https://github.com/reedery/AirGrist
+<a href="https://github.com/reedery/airgrist">AirGrist - GitHub</a>
 
 ## Deliverables
 
+<!--
 (Provide a link to a live demo, if you have one)
 (Add screenshots (image, gif or video) and presentation deck to `/assets`)
+-->
 
 ## Key Achievements
-(Highlight the main features or breakthroughs)
 
 ## Challenges Overcome
-(What was difficult? What did you solve?)
 
 ## Impact
-(Who will benefit from your project?)
+
+Help European data sovereignty by creating an open source tool to effectively migrate data out of Airtable and into Grist (open source).
 
 ## Next Steps
 
+- Enable use of this tool inside of a Grist Widget for simpler user authentication.
 - Error Recovery: Automatic retry mechanisms for failed migrations
 - Data Validation: Pre-migration data quality checks
 - Batch Processing: Optimize large dataset transfers
