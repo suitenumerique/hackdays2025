@@ -6,14 +6,16 @@ Improve the UX of Grist features
 ## Project Description
 1. Enable markdown for doc tour.
 2. Documentation of the waffle for Grist
-2. Enable Attachment for public forms
+3. Enable Attachment for public forms
 
 
 ## Contributors
 <a href="https://github.com/tayflo">@tayflo</a>, <a href="https://github.com/mrdev023">@mrdev023</a>, <a href="https://github.com/ogui11aume">@ogui11aume</a>, <a href="https://github.com/mclegrand">@mclegrand</a>
 
 ## Code base
-(Provide a link to your Git repository)
+1. markdown for GristDocTour https://github.com/ogui11aume/grist-core/tree/markdown-for-gristdoctour
+2. waffle
+   1.  
 
 ## Deliverables 
 (Provide a link to a live demo, if you have one)
