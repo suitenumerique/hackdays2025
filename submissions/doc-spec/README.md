@@ -13,7 +13,11 @@ Build a proof-of-concept for importing `.docx` files into La Suite Docs, enablin
 - Offer a foundation for broader document format support in the future.
 
 ## 👥 Contributors
-<a href="https://github.com/ericwout-overheid">@ericwout-overheid</a>, <a href="https://github.com/hhappel">@hhappel</a>, <a href="https://github.com/mountainborn">@mountainborn</a>, <a href="https://github.com/StephanMeijer">@StephanMeijer</a>
+
+- 🇳🇱 @ericwout-overheid (Eric)
+- 🇩🇪 @hhappel (Hans-Jörg)
+- 🇷🇴 @mountainborn (Silviu)
+- 🇳🇱 @StephanMeijer (Stephan)
 
 ## 🧠 Codebase
 
