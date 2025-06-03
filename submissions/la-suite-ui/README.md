@@ -8,23 +8,33 @@ Theme generator UI that create custom accessible color palettes in a few clicks
 
 
 ## Contributors
-<a href="https://github.com/rl-83">@rl-83</a>, <a href="https://github.com/NathanVss">@NathanVss</a>, <a href="https://github.com/PanchoutNathan">@PanchoutNathan</a>
+<a href="https://github.com/rl-83">@rl-83</a>, <a href="https://github.com/PanchoutNathan">@PanchoutNathan</a>
 
 ## Code base
-(Provide a link to your Git repository)
+https://github.com/PanchoutNathan/co11ors
 
 ## Deliverables 
-(Provide a link to a live demo, if you have one)
+
 (Add screenshots (image, gif or video) and presentation deck to `/assets`)
 
 ## Key Achievements
-(Highlight the main features or breakthroughs)
 
-## Challenges Overcome
-(What was difficult? What did you solve?)
+- Generate complete color palettes from one or two base colors
+- Export palettes to JSON format for instantaneous use in LaSuite's UI kit
 
-## Impact
-(Who will benefit from your project?)
+## Challenges Addressed
 
-## Next Steps
-(If you were to continue, what next steps or developments would you envision?)
+- Resolved accessibility issues where theme changes could break contrast ratios and button accessibility
+- Simplified the complex and time-consuming process of creating custom themes for LaSuite apps
+- Generated palettes automatically create light and dark modes without separate theme configuration
+
+## Project Impact
+The tool benefits two key user groups:
+
+- Designers: Saves time in color palette generation
+- Developers: Enables easy color generation without requiring deep knowledge of color theory or UI design principles
+
+## Future Development Plans
+
+- Add JSON import functionality for palette modification
+- Develop a Figma plugin to directly import palettes into LaSuite's UI kit Figma file
