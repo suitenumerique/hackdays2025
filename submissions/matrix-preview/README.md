@@ -23,7 +23,8 @@ https://github.com/ranass/matrix-rust-sdk
 (Add screenshots (image, gif or video) and presentation deck to `/assets`)
 
 ## Key Achievements
-Display the secure URL previews securely in Element X Android messages (Matrix client for Android).
+Securely display URL previews within messages in Element X, the Matrix client for Android.
+
 
 ## Challenges Overcome
 Our team faced several technical challenges during this project:
