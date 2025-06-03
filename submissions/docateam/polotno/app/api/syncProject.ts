@@ -1,6 +1,8 @@
+import {APP_BASE} from "../config";
+
 interface SyncProject {
   filename: string;
-  file: Blob,
+  file: string,
 }
 
 const bucketName = 'drive-media-storage';
@@ -14,7 +16,7 @@ export const syncProject = async (project: SyncProject) => {
   try {
     // Vérification si le fichier existe déjà
     const checkResponse = await fetch(
-        'http://localhost:8071/api/v1.0/items/9cb24815-9e14-4585-a508-34188d64fba4/children/?page_size=100000&ordering=-type%2C-created_at&type=file',
+        `${APP_BASE}:8071/api/v1.0/items/9cb24815-9e14-4585-a508-34188d64fba4/children/?page_size=100000&ordering=-type%2C-created_at&type=file`,
         {
           headers: {
             'Content-Type': 'application/json',
@@ -35,7 +37,7 @@ export const syncProject = async (project: SyncProject) => {
 
       // Suppression du fichier existant
       const deleteResponse = await fetch(
-          `http://localhost:8071/api/v1.0/items/${existingFile.id}/`,
+          `${APP_BASE}:8071/api/v1.0/items/${existingFile.id}/`,
           {
             method: 'DELETE',
             headers: {
@@ -54,7 +56,7 @@ export const syncProject = async (project: SyncProject) => {
 
     // Envoi des métadonnées
     const metadataResponse = await fetch(
-        'http://localhost:8071/api/v1.0/items/9cb24815-9e14-4585-a508-34188d64fba4/children/',
+        `${APP_BASE}:8071/api/v1.0/items/9cb24815-9e14-4585-a508-34188d64fba4/children/`,
         {
           method: 'POST',
           headers: {
@@ -85,7 +87,7 @@ export const syncProject = async (project: SyncProject) => {
     formData.append("file", project.file);
 
     // Envoi des données à MinIO
-    const minioResponse = await fetch(`http://localhost:9000/${bucketName}`, {
+    const minioResponse = await fetch(`${APP_BASE}:9000/${bucketName}`, {
       method: 'POST',
       body: formData,
     });
@@ -97,7 +99,7 @@ export const syncProject = async (project: SyncProject) => {
     console.log('Données envoyées avec succès à MinIO:', await minioResponse.text());
 
     // Appel pour signaler la fin de l'upload
-    const uploadEndedResponse = await fetch(`http://localhost:8071/api/v1.0/items/${metadatas.id}/upload-ended/`, {
+    const uploadEndedResponse = await fetch(`${APP_BASE}:8071/api/v1.0/items/${metadatas.id}/upload-ended/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

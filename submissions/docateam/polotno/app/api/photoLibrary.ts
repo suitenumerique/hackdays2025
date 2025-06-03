@@ -1,3 +1,5 @@
+import {APP_BASE} from "../config";
+
 export interface PhotoLibraryResponse {
   count: number;
   next: string | null;
@@ -55,7 +57,7 @@ export interface PhotoItem {
 }
 
 export const fetchPhotos = async () => {
-  const response = await fetch('http://localhost:8071/api/v1.0/items/b3e8038b-6310-4a10-8815-99aadabb6e17/children/?page_size=10&ordering=-type%2C-created_at', {
+  const response = await fetch(`${APP_BASE}:8071/api/v1.0/items/b3e8038b-6310-4a10-8815-99aadabb6e17/children/?page_size=10&ordering=-type%2C-created_at`, {
     headers: {
       'Authorization': `Token ${localStorage.getItem('DRIVE_TOKEN')}`
     }

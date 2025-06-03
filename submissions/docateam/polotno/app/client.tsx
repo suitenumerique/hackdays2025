@@ -4,19 +4,18 @@ import { onPatch, applyPatch } from 'mobx-state-tree';
 import PartySocket from 'partysocket';
 import usePartySocket from 'partysocket/react';
 import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
-import { Toolbar } from 'polotno/toolbar/toolbar';
 import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
-import { SidePanel } from 'polotno/side-panel';
+import { SidePanel, DEFAULT_SECTIONS } from 'polotno/side-panel';
 import { Workspace } from 'polotno/canvas/workspace';
 
 import { createStore, type StoreType } from 'polotno/model/store';
 
-// import css styles from blueprint framework (used by polotno)
-// if you bundler doesn't support such import you can use css from CDN (see bellow)
 import '@blueprintjs/core/lib/css/blueprint.css';
 import React from 'react';
-import {PhotosPanel, PhotosSection} from "./components/photos";
-import {SaveButton} from "./components/saveButton";
+import {CustomPhotosSection} from "./components/photos";
+import {CustomSyncedProjects} from "./components/syncProjects";
+import {CustomToolbar} from "./components/toolbar";
+import {ElementsSection, SizeSection, TextSection} from "polotno/side-panel/side-panel";
 
 const store = createStore({
   key: 'your-key',
@@ -71,14 +70,11 @@ export const App = ({ store }: { store: StoreType }) => {
 
   return (
     <PolotnoContainer style={{ width: '100vw', height: '100vh' }}>
-      <div style={{ display: 'flex', justifyContent: 'center', padding: '10px' }}>
-        <SaveButton store={store} />
-      </div>
       <SidePanelWrap>
-        <SidePanel store={store} sections={[PhotosSection]} />
+        <SidePanel store={store} sections={[CustomSyncedProjects, TextSection, ElementsSection, CustomPhotosSection, SizeSection]} />
       </SidePanelWrap>
       <WorkspaceWrap>
-        <Toolbar store={store} downloadButtonEnabled />
+        <CustomToolbar store={store} downloadButtonEnabled />
         <Workspace store={store} />
         <ZoomButtons store={store} />
       </WorkspaceWrap>
