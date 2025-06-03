@@ -22,6 +22,7 @@ Pull Request:
 - [Importance of the lang attribute on HTML elements](https://github.com/suitenumerique/docs/pull/1037)
 - [Dropdown menus - option selection : ajout aria-hidden sur les icônes](https://github.com/suitenumerique/docs/pull/1036)
 - [Share document modal](https://github.com/suitenumerique/docs/pull/1045)
+- [add role navigation and semantic list to left panel nav](https://github.com/suitenumerique/docs/pull/1047)
 
 ## Challenges Overcome
 It was difficult to install Docs et deploy it on our work PC.
@@ -31,6 +32,8 @@ People who have some difficulties to read on screen use screen readers. Accessib
 - Error page title: Having clear page titles makes navigation and page identification easier and, most importantly, makes the user experience more efficient.
 - Lang attribute: Screen readers use this information to determine the pronunciation of text. Without this attribute, a screen reader might pronounce French with an English accent. This also helps search engines index content. Translation tools can more easily identify the source language and suggest translations.
 - Drop down menus: The selection made in dropdown menus must be announced to screen readers.
+- Decorative icons must be hidden in order to not be read by screen readers
+- Navigation: use list enable the capacity to count the number of element in the navigation menu
 
 ## Next Steps
 - Continue to implement accessibility issues !
