@@ -15,9 +15,11 @@ Clear, contextual warnings and actionable tips help users make smarter decisions
 ## Code base
 🪄 Our repository : https://github.com/extrymes/project-hackdays2025
 
-## Deliverables 
-(Provide a link to a live demo, if you have one)
-(Add screenshots (image, gif or video) and presentation deck to `/assets`)
+## Deliverables
+🎖️ Examples : 
+
+![Image couldn't failed](assets/capture_2.png)
+![CImage couldn't load](assets/capture_1.png)
 
 ## Key Achievements
 🚀 What We Built in 48 Hours:
