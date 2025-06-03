@@ -44,13 +44,13 @@ The platform serves two core missions:
 - **UX/UI Design:** Aurélien  
 - **Product Owner:** Lucie
 
----
+
 
 ## Code Base
 
-- [ ] Provide a link to your Git repository (inclure la branche pertinente)
+- https://github.com/betagouv/ComparIA/tree/feature/docs-integration-complete
 
----
+
 
 ## Deliverables
 
@@ -72,7 +72,7 @@ The platform serves two core missions:
 
 ![La Suite + comparIA-ap6fhokaypnn88omtx67eqihey](https://github.com/user-attachments/assets/75192a70-86aa-4b20-9767-27383404349a)
 
----
+
 
 ## Key Achievements
 
@@ -83,7 +83,7 @@ The platform serves two core missions:
 ✅ *EXTRA:* Made mockups for Compar:IA integrations into Docs and other La Suite tools
 
 
----
+
 
 ## Challenges Overcome
 
@@ -107,7 +107,7 @@ The platform serves two core missions:
 - Ensured sensitive data is handled properly  
 - Users retain full control over whether their documents contribute to model improvement
 
----
+
 
 ## Impact
 
@@ -120,7 +120,7 @@ Can build better LLMs for the French public sector. Already in touch with major 
 
 > 💫 Hopefully: **one more super cool product for La Suite**—Compar:IA!
 
----
+
 
 ## Next Steps
 
