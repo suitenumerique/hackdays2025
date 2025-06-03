@@ -57,6 +57,10 @@ Currently, Grist not support Virus checking during attachment upload.
 Add a provider abstraction to scan uploaded attachment with provider and delete it if a virus is detected.
 With Form attachment feature, it's important to scan new file to avoid malicious files to uploaded in public form.
 
+Future good changes:
+ - Add a "state" for all files uploaded. "pending", "validated", "malicious", ... and UI to show this state to the user in Grid View.
+ - Autocleanup all references of a deleted file in all documents to avoid broke UI.
+
 ## Key Achievements
 
 (Highlight the main features or breakthroughs)
