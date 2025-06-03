@@ -23,7 +23,7 @@ We worked on the existing "page hierarchy" branch as it provided essential featu
 ![Result](./assets/05-result.png)
 
 ### Video
-
+[Demo video](./assets/notion-to-docs-demo.webm)
 
 ## Key Achievements
 - Implemented authentication and integration with the Notion API
