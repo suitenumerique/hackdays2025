@@ -15,11 +15,10 @@ Docs × OpenProject Integration
 - Parimal Satyal (<a href="https://github.com/psatyal">@psatyal</a>)
 
 ## Code base
-On GitHub: [https://github.com/opf/suitenumerique-docs/pull/1](https://github.com/opf/suitenumerique-docs/pull/1)
 
-The original repository is a fork of Docs but with the added integration with OpenProject. This link is a pull request with the additional code.
+We have a [Pull Request](https://github.com/opf/suitenumerique-docs/pull/1) with the changes to docs, introducing new blocks and functionality for the integration.
 
-[Add other links?]
+In addition we provide a [PoC](https://github.com/opf/suitenumerique-docs/pull/4) of how to integrate the docs stack into an local dev stack with OpenProject, Keycloak and other services, using the same SSO authentication for server-to-server communication.
 
 ## Deliverables
 *(Provide a link to a live demo, if you have one)
@@ -41,7 +40,13 @@ The original repository is a fork of Docs but with the added integration with Op
 - Take text (even rough text) and use an integrated LLM/AI to convert it into a standardised format (eg. a user story based an existing template/form and linguistic style)
 
 ## Challenges Overcome
-- (Please fill it in, devs)
+
+- docs dev stack is currently focused on development on `localhost`
+  - running multiple compose stacks at once requires to run docker services without exposed ports and behind domain names
+  - we updated the docker compose (and the Makefile slightly) to enable a full docker based dev env, where the services are located behind a reverse proxy
+  - we enabled hot relaods for developing the frontend inside a docker service (thanks Manuel!!!)
+- the apps of la suite are not using token exchange to communicate between services
+  - we reconfigured our own keycloak, so that the `impress` client has a custom client scope, enabling access tokens issued to `docs` being accepted by OpenProject for server-to-server communication
 
 ## Impact
 - Users can use Docs the way it was intended, for collaboration and note-taking, but then go from that draft text to a concrete, actionable project plan in OpenProject. This makes it easy for users to go from brainstorming and iterating to structured, organised action easily and without significant barriers.
@@ -49,7 +54,9 @@ The original repository is a fork of Docs but with the added integration with Op
 - Our approach of using open enterprise-grade standards (in the back-end) and [BlockNote](https://www.BlockNotejs.org/) (in the front-end) lowers the barrier for deep integrations, which are other often costly and complex. This is important because scalable, reusable integrations make our open source ecosystem more useful, more attractive and more powerful.
 
 ## Next Steps
+
 - Extract the BlockNote extensions from our prototype into standalone, reusable components that can be easily documented, distributed and maintained
 - Explore further integration of Docs and Blocknote (possibly as the main editor for work package descriptions and comments) in OpenProject
 - Make it possible to embed complete work package queries defined in OpenProject within a Docs document
 - Develop our LLM/AI features so that... (please complete)
+- Introduce token exchange in the la suite stack 🚀
