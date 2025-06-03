@@ -13,7 +13,7 @@ Clear, contextual warnings and actionable tips help users make smarter decisions
 <a href="https://github.com/Frenzla">@Frenzla</a>, <a href="https://github.com/JeanBRen">@JeanBRen</a>, <a href="https://github.com/Helios5D">@Helios5D</a>, <a href="https://github.com/msima0">@msima0</a>, <a href="https://github.com/extrymes">@extrymes</a>
 
 ## Code base
-(Provide a link to your Git repository)
+🪄 Our repository : https://github.com/extrymes/project-hackdays2025
 
 ## Deliverables 
 (Provide a link to a live demo, if you have one)
@@ -49,6 +49,8 @@ Clear, contextual warnings and actionable tips help users make smarter decisions
 🌍 Who Benefits and Why It Matters:
 
 - 🆓 Fully open source, ensuring transparency, auditability, and long-term trust in public infrastructure
+
+- 👥 Everyone benefits: end users, public servants, IT administrators, companies, and collectivités all gain stronger, more understandable protection from phishing threats
 
 - 🧰 Designed to be lightweight, easy to deploy, and non-intrusive—ideal for large-scale institutional rollout
 
