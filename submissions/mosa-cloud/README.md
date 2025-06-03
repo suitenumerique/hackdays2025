@@ -31,7 +31,7 @@ The <b>La Suite Launchpad</b> is your starting point in the La Suite ecosystem. 
 ## Deliverables
 
 <a href="https://demo.mosa.cloud">Live demo</a>
-(Add screenshots (image, gif or video) and presentation deck to `/assets`)
+<img src="https://raw.githubusercontent.com/mosacloud/hackdays-submission/refs/heads/main/submissions/mosa-cloud/assets/screenshot.jpg" />
 
 ## Key Achievements
 
