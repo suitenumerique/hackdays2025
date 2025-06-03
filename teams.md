@@ -436,3 +436,11 @@
 - **Description**: Client side url previews on Matrix
 
 - **Contributors**: [@matmaul](https://github.com/matmaul),[@jonathanperret](https://github.com/jonathanperret),[@gdarquie](https://github.com/gdarquie),[@ranas](https://github.com/ranas)
+
+## Sentinel
+
+- **Project**: Smart Document Classifier for Drive
+
+- **Description**: Sentinal scans uploaded files to detect confidential data, personal information (PII), or classified content, and automatically labels them for secure storage and collaboration.
+
+- **Contributors**: [@naofel1](https://github.com/naofel1), [@mbehrami](https://github.com/mbehrami)
