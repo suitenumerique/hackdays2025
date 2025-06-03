@@ -7,6 +7,7 @@
 Build a proof-of-concept for importing `.docx` files into La Suite Docs, enabling users to migrate existing Microsoft Word documents into the new collaborative editor.
 
 ## 📄 Project Description
+
 - Implement a working import pipeline from `.docx` to La Suite Docs.
 - Provide insight into the challenges of migrating legacy documents.
 - Offer a foundation for broader document format support in the future.
@@ -15,8 +16,11 @@ Build a proof-of-concept for importing `.docx` files into La Suite Docs, enablin
 <a href="https://github.com/ericwout-overheid">@ericwout-overheid</a>, <a href="https://github.com/hhappel">@hhappel</a>, <a href="https://github.com/mountainborn">@mountainborn</a>, <a href="https://github.com/StephanMeijer">@StephanMeijer</a>
 
 ## 🧠 Codebase
+
 - Conversion backend (API): https://github.com/docspec-hackathon/import-api
 - Docs integration (UI): https://github.com/docspec-hackathon/docs
+
+This project is based on [NLdoc (GitLab)](https://gitlab.com/logius/nldoc). More information can be found on [nldoc.nl](https://nldoc.nl/).
 
 ## 📦 Deliverables 
 
@@ -86,3 +90,4 @@ If further developed, we envision:
 - Integrating "Convert to Docs" directly into La Suite Drive
 - Improving the Document Conversion Report Format (DCRF) into a structured standard (e.g., JSON + UI mapping).
 - Displaying conversion warnings and errors inline in the Docs UI.
+- Integrating the changes into the NLdoc codebase.
