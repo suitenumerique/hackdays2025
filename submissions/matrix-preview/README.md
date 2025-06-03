@@ -8,23 +8,24 @@ Client side url previews on Matrix
 
 
 ## Contributors
-<a href="https://github.com/matmaul">@matmaul</a>, <a href="https://github.com/jonathanperret">@jonathanperret</a>, <a href="https://github.com/gdarquie">@gdarquie</a>, <a href="https://github.com/ranas">@ranas</a>
+<a href="https://github.com/matmaul">@matmaul</a>, <a href="https://github.com/jonathanperret">@jonathanperret</a>, <a href="https://github.com/gdarquie">@gdarquie</a>, <a href="https://github.com/ranas">@ranas, <a href="https://github.com/yostyle">@yostyle</a>
 
 ## Code base
-(Provide a link to your Git repository)
+https://github.com/ranass/element-x-android
+https://github.com/ranass/matrix-rust-sdk
 
 ## Deliverables 
 (Provide a link to a live demo, if you have one)
 (Add screenshots (image, gif or video) and presentation deck to `/assets`)
 
 ## Key Achievements
-(Highlight the main features or breakthroughs)
+Display the secure URL previews securely in Element X Android messages (Matrix client for Android).
 
 ## Challenges Overcome
-(What was difficult? What did you solve?)
+improve skills on Rust, Matrix protocol, Element X.
 
 ## Impact
-(Who will benefit from your project?)
+All Element X users (more than 100k) could display a preview before clicking on a URL.
 
 ## Next Steps
-(If you were to continue, what next steps or developments would you envision?)
+
