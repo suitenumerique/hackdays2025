@@ -24,6 +24,7 @@ TBD
 
 ### Migration process overview
 An overview describing aspects in the migration of documents to Docs (highlighting implemented aspects in green):
+
 ![Overview describing aspects in the migration of Documents to Docs (highlighting implemented aspects)](/assets/lasuite-docs-migration-big-picture.drawio-highlighted.png)
 
 The diagram is further explained in another [README.md](https://github.com/docspec-hackathon/documentation/blob/main/README.md)
