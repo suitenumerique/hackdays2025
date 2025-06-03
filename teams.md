@@ -443,6 +443,8 @@
 
 - **Description**: Sentinal scans uploaded files to detect confidential data, personal information (PII), or classified content, and automatically labels them for secure storage and collaboration.
 
+- **Contributors**: [@naofel1](https://github.com/naofel1), [@mbehrami](https://github.com/mbehrami)
+
 ## XWiki/Cristal
 
 - **Lead**: [@ldubost](https://github.com/ldubost)
