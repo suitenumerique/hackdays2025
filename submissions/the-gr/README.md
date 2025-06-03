@@ -21,8 +21,9 @@ By combining NL-to-SQL models with a secure execution layer, the system enables 
 [- [GitHub repository] -](https://github.com/gaspardvilla/TheGR_Docs.git)
 
 ## Deliverables 
-*(Provide a link to a live demo, if you have one)*
-*(Add screenshots (image, gif or video) and presentation deck to `/assets`)*
+![🎬 - Docs AI Agent demo](./assets/docs_ai_agent_demo.mp4)
+![Docs AI Agent - Opened chat](./assets/homepage-with-ai-agent-chat-opened.jpg)
+![Docs AI Agent - Hidden geek feature](./assets/homepage-geek-view.jpg)
 
 ## Key Achievements
 *(Highlight the main features or breakthroughs)*
