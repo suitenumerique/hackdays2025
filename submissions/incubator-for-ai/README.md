@@ -22,7 +22,7 @@ Create an API to search within a user's documents in Drive, and demonstrate inte
 ### Drive integration
 ![image](assets/drive_search_interface_results.png)
 
-<video src="https://github.com/i-dot-ai/hackdays2025/raw/refs/heads/feature/i-ai-team-details/submissions/incubator-for-ai/assets/drive_search_interface_720.mp4" controls></video>
+<video src="https://github.com/user-attachments/assets/557ad7fd-6ddc-4449-aadc-160af46c83f1" controls></video>
 
 
 ## Key Achievements
