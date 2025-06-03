@@ -43,6 +43,7 @@ Draft available as [document-conversion-reporting-format.md](https://github.com/
 - Working out a plan for 9 interested people
 - Creating a focused plan from excellent broad ideas (kill off your darlings)
 - Grind down the ".docx" specification
+- Found some small BlockNote issues which were subsequently patched by the BlockNote team
 - Getting used to limited network bandwidth and working around that
 
 ## Impact
@@ -51,6 +52,7 @@ Draft available as [document-conversion-reporting-format.md](https://github.com/
 - All users of Docs which have pre-existing ".docx" documents (may be applicable to Drive users as well)
 - IT deciders which want to understand the full process of moving to Docs
 - Developers writing imports for other document types or sources
+- BlockNote improved due to fixing the issues we found
 
 ## Next Steps
 (If you were to continue, what next steps or developments would you envision?)
