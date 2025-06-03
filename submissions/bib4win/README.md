@@ -75,5 +75,6 @@ non-sovereign solutions.
 - This contribution should be distributed as standalone package on top of the
   official BlockNote distribution.
 - The Zotero integration should be part of this package.
+- Bibliography items should be editable in bibtex format.
 - Integrate [HAL](https://hal.science) / [ORCID](https://orcid.org) services to
   ease researcher's publication fetching.
