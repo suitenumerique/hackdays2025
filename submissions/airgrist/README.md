@@ -7,7 +7,7 @@ Migrate from Airtable to Grist
 User facing migration UI that allows users to migrate from Airtable to Grist
 
 ## Contributors
-<a href="https://github.com/gillesbl">@gillesbl</a>, <a href="https://github.com/reedery">@reedery</a>, <a href="https://github.com/nabla-c0d3">@nabla-c0d3</a>, <a href="https://github.com/mrrossiom">@mrrossiom</a>, <a href="https://github.com/revolunet">@revolunet</a>, <a href="https://github.com/dxb">@dxb</a>
+<a href="https://github.com/gillesbl">@gillesbl</a>, <a href="https://github.com/reedery">@reedery</a>, <a href="https://github.com/nabla-c0d3">@nabla-c0d3</a>, <a href="https://github.com/mrnossiom">@mrnossiom</a>, <a href="https://github.com/revolunet">@revolunet</a>, <a href="https://github.com/dxb">@dxb</a>
 
 ## Code base
 
