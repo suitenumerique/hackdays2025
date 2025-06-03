@@ -1,13 +1,21 @@
 # 🏆 Final Submission for {{name}}
 
-## Final Project Description
-(Summarize your project as it stands at the end)
+## Project
+{{project}}
+
+## Project Description
+{{description}}
+
+
+## Contributors
+{{contributors}}
 
 ## Code base
-(Provide link to your Git repository)
+(Provide a link to your Git repository)
 
-## Demo Link
-(Link to a live demo, a video or screenshots, and attach your pitch deck)
+## Deliverables 
+(Provide a link to a live demo, if you have one)
+(Add screenshots (image, gif or video) and presentation deck to `/assets`)
 
 ## Key Achievements
 (Highlight the main features or breakthroughs)
@@ -20,4 +28,3 @@
 
 ## Next Steps
 (If you were to continue, what next steps or developments would you envision?)
-

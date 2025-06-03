@@ -45,59 +45,27 @@ jobs:
           filters: |
             teams:
               - 'teams.md'
-            day1:
-              - 'submissions/**/day1/**'
-            day2:
-              - 'submissions/**/day2/**'
-            final:
-              - 'submissions/**/final/**'
+            submission:
+              - 'submissions/**'
 
       - name: Reject PRs touching both teams.md and submissions
         if: |
           steps.filter.outputs.teams == 'true' &&
-          (steps.filter.outputs.day1 == 'true' ||
-           steps.filter.outputs.day2 == 'true' ||
-           steps.filter.outputs.final == 'true')
+          steps.filter.outputs.submission == 'true'
         run: |
           echo "❌ You cannot edit teams.md and submit a file in the same PR."
           exit 1
 
-      - name: Reject PRs touching multiple days
-        run: |
-          day1="${{ steps.filter.outputs.day1 }}"
-          day2="${{ steps.filter.outputs.day2 }}"
-          final="${{ steps.filter.outputs.final }}"
-
-          touched_days=0
-          if [ "$day1" = "true" ]; then
-            touched_days=$((touched_days + 1))
-          fi
-          if [ "$day2" = "true" ]; then
-            touched_days=$((touched_days + 1))
-          fi
-          if [ "$final" = "true" ]; then
-            touched_days=$((touched_days + 1))
-          fi
-
-          if [ "$touched_days" -gt 1 ]; then
-            echo "❌ You can only submit for one day at a time (day1 OR day2 OR final)."
-            exit 1
-          fi
-
-          echo "✅ Submission concerns only one day."
-
       - name: Reject invalid PR type
         if: |
           steps.filter.outputs.teams == 'false' &&
-          steps.filter.outputs.day1 == 'false' &&
-          steps.filter.outputs.day2 == 'false' &&
-          steps.filter.outputs.final == 'false'
+          steps.filter.outputs.submission == 'false'
         run: |
           echo "❌ This PR does not match any of the allowed types (teams.md entry or submissions)."
           exit 1
 
       - name: Extract and validate team name
-        if: steps.filter.outputs.teams == 'false'
+        if: steps.filter.outputs.submission == 'true'
         id: teamname
         run: |
           team_names=$(git diff --name-only origin/main...HEAD | grep '^submissions/' | cut -d'/' -f2 | sort | uniq)
@@ -121,7 +89,7 @@ jobs:
           python3 .scripts/check_submissions.py
 
       - name: Label with team name
-        if: steps.filter.outputs.teams == 'false'
+        if: steps.filter.outputs.submission == 'true'
         run: |
           label="${{ env.TEAM_NAME }}"
           if ! gh label create "$label" --color "ededed" --description "Label for team $label"; then
@@ -137,23 +105,9 @@ jobs:
           labels: team
           github_token: "${{ secrets.GITHUB_TOKEN }}"
 
-      - name: Label as Day 1 submission
-        if: steps.filter.outputs.day1 == 'true'
+      - name: Label as Submission
+        if: steps.filter.outputs.submission == 'true'
         uses: actions-ecosystem/action-add-labels@v1
         with:
-          labels: day1
-          github_token: "${{ secrets.GITHUB_TOKEN }}"
-
-      - name: Label as Day 2 submission
-        if: steps.filter.outputs.day2 == 'true'
-        uses: actions-ecosystem/action-add-labels@v1
-        with:
-          labels: day2
-          github_token: "${{ secrets.GITHUB_TOKEN }}"
-
-      - name: Label as Final submission
-        if: steps.filter.outputs.final == 'true'
-        uses: actions-ecosystem/action-add-labels@v1
-        with:
-          labels: final
+          labels: submission
           github_token: "${{ secrets.GITHUB_TOKEN }}"

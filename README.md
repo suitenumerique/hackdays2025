@@ -21,3 +21,5 @@ It’s your turn — time to build your team, explore challenges, show your skil
 - When you're ready, join a team or create a new one by making a [pull request editing](teams.md).
 
 ### Happy hacking! 🚀
+## 📄 [Event documentation](https://impress-staging.beta.numerique.gouv.fr/docs/94003084-ef31-4272-876e-ce25577ef804/)
+For you participants! (Progam, WIFI, Tech Docs etc.)
