@@ -27,7 +27,7 @@ export default function DefaultPage() {
             <div className="explorer__content" style={{ padding: "0px" }}>
               <React.Suspense fallback={<div>Chargement...</div>}>
                 <iframe
-                  src="http://192.168.9.38:1999/"
+                  src="http://localhost:1999/"
                   title="External Content"
                   style={{ width: "100%", height: "800px", border: "none" }}
                   loading="lazy"

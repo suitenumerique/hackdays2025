@@ -1,1 +1,1 @@
-export const APP_BASE = 'http://192.168.9.38';
+export const APP_BASE = 'http://localhost';
