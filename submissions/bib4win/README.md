@@ -36,8 +36,22 @@ https://github.com/TypeCellOS/BlockNote/pull/1732/
 
 ## Deliverables
 
-(Provide a link to a live demo, if you have one)
-(Add screenshots (image, gif or video) and presentation deck to `/assets`)
+### Workflow
+
+![](./assets/add_reference_0.png)
+![](./assets/add_reference_1.png)
+![](./assets/add_reference_2.png)
+![](./assets/add_reference_3.png)
+![](./assets/add_reference_4.png)
+![](./assets/add_reference_5.png)
+
+### Components
+
+![](./assets/drop_down.png)
+![](./assets/reference_menu_doi.png)
+![](./assets/reference_menu_doi_filled.png.png)
+![](./assets/reference_menu_zotero.png)
+![](./assets/temporary_reference_block.png)
 
 ## Key Achievements
 
