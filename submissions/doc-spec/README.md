@@ -50,6 +50,8 @@ Finally, the video includes the error handling flow, showcasing how the system r
 
 [Alternative way of playing can be found here: https://vimeo.com/1090109520](https://vimeo.com/1090109520)
 
+ℹ️ **In the future, using NLdoc technologies, this system of importing and conversion can also be used for PDF and OpenDocument (`.odt`). The NLdoc platform makes it scalable by using queueing, Server Sent Events and deploying via Kubernetes.**
+
 ### Processes
 
 This section outlines the key workflows and drafts developed to support document migration into La Suite Docs.
@@ -98,4 +100,5 @@ If further developed, we envision:
 - Integrating "Convert to Docs" directly into La Suite Drive
 - Improving the Document Conversion Report Format (DCRF) into a structured standard (e.g., JSON + UI mapping).
 - Displaying conversion warnings and errors inline in the Docs UI.
-- Integrating the changes into the NLdoc codebase.
+
+ℹ️ **In the future, using NLdoc technologies, this system of importing and conversion can also be used for PDF and OpenDocument (`.odt`). The NLdoc platform makes it scalable by using queueing, Server Sent Events and deploying via Kubernetes.**
