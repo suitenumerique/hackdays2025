@@ -26,7 +26,15 @@ https://github.com/ranass/matrix-rust-sdk
 Display the secure URL previews securely in Element X Android messages (Matrix client for Android).
 
 ## Challenges Overcome
-improve skills on Rust, Matrix protocol, Element X.
+Our team faced several technical challenges during this project:
+
+- Learning Rust: Since part of the Element X stack and the Matrix Rust SDK are written in Rust, we had to quickly ramp up our understanding of the language, its ownership model, and async patterns.
+
+- Understanding the Matrix Protocol: Gaining a deep understanding of how Matrix handles encrypted messages, link previews, and client-server interactions was crucial to ensure our approach aligned with its end-to-end encryption principles.
+
+- Working with the Matrix Rust SDK: Integrating with the SDK required us to understand its structure, APIs, and how it handles encrypted events, media fetching, and client-side rendering.
+
+- Navigating the Element X Android Architecture: Element X Android is built with a modern but complex architecture (Jetpack Compose, Rust bindings, reactive UI patterns). Getting up to speed and finding the right extension points to integrate our client-side preview logic was a significant challenge.
 
 ## Impact
 All Element X users (more than 100k) could display a preview before clicking on a URL.
