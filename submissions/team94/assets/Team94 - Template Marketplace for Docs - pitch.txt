@@ -1,0 +1,17 @@
+We'd like to propose the addition of a template marketplace for the Docs application.
+The goal is to allow users to create a document from an existing template.
+
+For end users, this will simplify document creation, resulting in time saving and increased productivity. It will also allow them to focus on content rather than formatting. Finally, there is a brand or community-driven benefit: templates help reflect the identity and culture of a community/brand through the structure and appearance of its documents.
+
+As for the functionality, here is what we’ve (more or less) achieved:
+ * Document duplication
+ * Creating a document from a template
+ * Creating a template from an existing document
+ 
+As an additional achievement, slightly aside the main feature, we encountered some many installation issues with the project on our professional Windows laptops, that two of us worked on creating a Windows installation script (Powershell script similar to the Make one already existing), that is available in our project.
+
+This template marketplace feature, via its collaborative and sharing dimension, is an opportunity for the Docs community to grow.
+Our vision for the future is to 
+ * provide a fully functional management of the templates, with edition, deletion, sharing, popularity.
+ * enhance the list of available templates
+ * enhance the list of widgets available to write a document
