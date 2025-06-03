@@ -32,7 +32,7 @@ The diagram is further explained in another [README.md](https://github.com/docsp
 Draft available as [document-conversion-reporting-format.md](https://github.com/docspec-hackathon/documentation/blob/main/document-conversion-reporting-format.md)
 
 ## Key Achievements
-- Converting ".docx" files (including headings, tables, bullet lists, and images) into the Docs (BlockNote) format
+- Converting ".docx" files (including headings, tables, bullet lists, ordered lists, and images) into the Docs (BlockNote) format
 - Adding am import button and drop-zone into the Docs UI
 - Providing a report about conversion issues to the user
 - Mapping out the overall process of switching a document base to Docs
@@ -55,7 +55,7 @@ Draft available as [document-conversion-reporting-format.md](https://github.com/
 ## Next Steps
 (If you were to continue, what next steps or developments would you envision?)
 
-- Converting additional aspects of ".docx" to Docs (e.g., ordered lists, quotations, code block)
+- Converting additional aspects of ".docx" to Docs (e.g., external links, quotations, code block)
 - Adding support for OpenDocument ".odt" to Docs conversion
 - Adding some "convert to Docs" option to La Suite Drive
 - Further refining the document conversion reporting format
