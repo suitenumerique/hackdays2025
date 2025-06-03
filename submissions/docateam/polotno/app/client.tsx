@@ -4,7 +4,7 @@ import { onPatch, applyPatch } from 'mobx-state-tree';
 import PartySocket from 'partysocket';
 import usePartySocket from 'partysocket/react';
 import { PolotnoContainer, SidePanelWrap, WorkspaceWrap } from 'polotno';
-import { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
+importimport { ZoomButtons } from 'polotno/toolbar/zoom-buttons';
 import { SidePanel, DEFAULT_SECTIONS } from 'polotno/side-panel';
 import { Workspace } from 'polotno/canvas/workspace';
 
@@ -75,9 +75,7 @@ export const App = ({ store }: { store: StoreType }) => {
       </SidePanelWrap>
       <WorkspaceWrap>
         <CustomToolbar store={store} downloadButtonEnabled />
-        <Workspace store={store} />
-        <ZoomButtons store={store} />
-      </WorkspaceWrap>
+    </WorkspaceWrap>
     </PolotnoContainer>
   );
 };
