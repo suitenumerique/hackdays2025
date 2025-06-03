@@ -6,11 +6,14 @@
 **@Drive**: semantic search for the documents you store in Drive.
 
 ## Project Description
-We've created an API to search within a user's documents in Drive, and demonstrated integration with:
-* the Drive UI
-* Meet
+
+We have added semantic-search functionality to `drive`.
+
+The ability to search documents in drive is exposed to users using a new REST endpoint to:
+* The existing La-Suite Docs User Interface
+* La-Suite's Visio/Meet
 * Slack
-* Claude-Desktop
+and via an [MCP](https://www.anthropic.com/news/model-context-protocol) Proxy service to Claude-Desktop such that Documents can be treated as an AI Agent.
 
 ## Contributors
 <a href="https://github.com/duncanjbrown">@duncanjbrown</a>, <a href="https://github.com/nmenezes0">@nmenezes0</a>, <a href="https://github.com/gecburton">@gecburton</a>, <a href="https://github.com/rachaelcodes">@rachaelcodes</a>
@@ -55,6 +58,8 @@ Specific examples from the hackathon:
 * Slack
 * Meet
 
+Claude Desktop required us to use a new protocol called MCP. MCP is in early stages of development and has lots of issues and doesnt not yet well integrate with the web framework used by `Docs`, we overcame this with a proxy service
+
 ## Challenges Overcome
 Setting up and getting to grips with an unknown codebase in a limited time.
 Getting semantic search working in Drive.
@@ -78,3 +83,4 @@ Opening up the API to other applications takes Drive functionality beyond the im
   * e.g. date created
 * Creating a similar API for other SuiteNumerique services
   * e.g. search through your meeting transcripts with @Meet
+* Integrate access to `Docs` into the UK's GOV-AI framework
