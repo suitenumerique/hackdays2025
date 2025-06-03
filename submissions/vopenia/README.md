@@ -11,20 +11,39 @@ Provide accurate and real-time transcripts for accessibility, better collaborati
 <a href="https://github.com/bsenard">@bsenard</a>, <a href="https://github.com/RaphReynaud">@RaphReynaud</a>, <a href="https://github.com/@4thlabs">@4thlabs</a>, <a href="https://github.com/@codlab">@codlab</a>
 
 ## Code base
-(Provide a link to your Git repository)
+https://github.com/vopenia-io/meet/tree/feature/realtime-transcription
+https://github.com/vopenia-io/transcription-agent
+https://github.com/vopenia-io/hackdays2025-kotlin-client
 
 ## Deliverables 
-(Provide a link to a live demo, if you have one)
-(Add screenshots (image, gif or video) and presentation deck to `/assets`)
+Screenshots / Video / slides in /assets
 
 ## Key Achievements
-(Highlight the main features or breakthroughs)
+  - Python agent that joins LiveKit room automatically
+  - Transcribes / Translate participant speech using Gladia
+  - Displays transcript / translation in Meet web client
+  - Live subtitle rendering on mobile apps (iOS/Android)
+
 
 ## Challenges Overcome
-(What was difficult? What did you solve?)
+  - LiveKit agent originally designed for single-language STT
+  - Modified agent to support multilingual transcription using Gladia
+  - Frontend development
+  - Gladia Max Session number
+  - VAD latency 
+  - Noise Cancelling
+
 
 ## Impact
-(Who will benefit from your project?)
+  - Breaking barriers for Europeans with disabilities
+  - Enabling global teams and remote education
+  - Cross-cultural communication enhancement
+  - Tomorrow, Real-time translation with preserved voice/tone
+  - Low-latency multi-language support (100 languages)
+
 
 ## Next Steps
-(If you were to continue, what next steps or developments would you envision?)
+  - Integrate open-source STT models like Whisper or Unmute
+  - Add Text-to-Speech (TTS) for fully accessible conversations
+  - Explore Croissant LLM for translation fallback
+
