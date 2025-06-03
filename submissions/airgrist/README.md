@@ -15,6 +15,8 @@ User facing migration UI that allows users to migrate from Airtable to Grist
 
 ## Deliverables
 
+Check out a preview of the tool: https://imgur.com/a/fDW10Po
+
 <!--
 (Provide a link to a live demo, if you have one)
 (Add screenshots (image, gif or video) and presentation deck to `/assets`)
