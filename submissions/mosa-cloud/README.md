@@ -1,10 +1,10 @@
 # 🏆 Final Submission for mosa.cloud
 
 ## Project
-Epicentre
+La Suite Launchpad
 
 ## Project Description
-A personal dashboard that centralises activity across La Suite apps
+A personal dashboard that centralises user's activity across La Suite apps
 
 
 ## Contributors
