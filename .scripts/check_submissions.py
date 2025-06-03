@@ -23,7 +23,9 @@ def extract_heading_structure(file_path, team_data=None):
                 if team_data:
                     # Replace each {{key}} in the heading with the corresponding value from team_data
                     for key, value in team_data.items():
-                        heading_text = heading_text.replace(f"{{{{{key}}}}}", value)
+                        if isinstance(value, list):
+                            value = ', '.join(value)  # join lists like contributors into a string
+                        heading_text = heading_text.replace(f"{{{{{key}}}}}", str(value))
                 headings.append((len(match.group(1)), heading_text))
     return headings
 
@@ -41,7 +43,7 @@ def check_headings():
 
     # Loop through the teams and check their submissions
     for team in teams:
-        team_slug = slugify(team["name"])  # Assuming you're using slugs for team names
+        team_slug = slugify(team["name"])
         team_path = os.path.join(SUBMISSIONS_DIR, team_slug)
 
         if not os.path.isdir(team_path):

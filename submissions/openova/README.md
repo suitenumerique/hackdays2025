@@ -1,11 +1,14 @@
 # 🏆 Final Submission for OpeNova
 
-## Final Project Description
-(Summarize your project as it stands at the end)
+## Project
+RAG on Drive
 
-## Team
-- **Lead**: Alexandre Amate
-- **Members**: Alexandre Amate, Timothy Greil, Hugo Poquet
+## Project Description
+Store shared files as vector database so they can query an LLM pipeline
+
+
+## Contributors
+<a href="https://github.com/AlexandreAmate">@AlexandreAmate</a>, <a href="https://github.com/Roswell1208">@Roswell1208</a>, <a href="https://github.com/tgreil">@tgreil</a>
 
 ## Code base
 (Provide a link to your Git repository)

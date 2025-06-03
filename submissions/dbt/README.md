@@ -1,11 +1,14 @@
 # 🏆 Final Submission for DBT
 
-## Final Project Description
-(Summarize your project as it stands at the end)
+## Project
+FactVerifAI
 
-## Team
-- **Lead**: @nboyse
-- **Members**: @nboyse, @TomMacca, @richiebird, @a-i-flo, @lluli
+## Project Description
+Add fact checking to Docs with AI.
+
+
+## Contributors
+<a href="https://github.com/a-i-slo">@a-i-slo</a>, <a href="https://github.com/lluli">@lluli</a>, <a href="https://github.com/nboyse">@nboyse</a>, <a href="https://github.com/dalebird">@dalebird</a>, <a href="https://github.com/developwithtom">@developwithtom</a>
 
 ## Code base
 (Provide a link to your Git repository)

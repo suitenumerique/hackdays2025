@@ -1,11 +1,14 @@
-# 🏆 Final Submission for EU OS
+# 🏆 Final Submission for EU-OS
 
-## Final Project Description
-(Summarize your project as it stands at the end)
+## Project
+EU-OS
 
-## Team
-- **Lead**: @rriemann
-- **Members**: see https://gitlab.com/eu-os/eu-os.gitlab.io/-/issues/31#current-team
+## Project Description
+Linux for the desktop in the public sector
+
+
+## Contributors
+<a href="https://github.com/neuhaus">@neuhaus</a>, <a href="https://github.com/camilem">@camilem</a>, <a href="https://github.com/antheas">@antheas</a>, <a href="https://github.com/jdum">@jdum</a>, <a href="https://github.com/rriemann">@rriemann</a>, <a href="https://github.com/gallb1-system">@gallb1-system</a>, <a href="https://github.com/CsekeSec">@CsekeSec</a>
 
 ## Code base
 (Provide a link to your Git repository)

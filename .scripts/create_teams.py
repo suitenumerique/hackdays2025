@@ -11,7 +11,7 @@ SUBMISSIONS_DIR = "submissions"
 TEMPLATE_DIR = ".scripts/templates"
 
 def parse_teams():
-    """Parse the teams and extract team name, lead, members, and idea."""
+    """Parse the teams and extract team name, contributors, project, and description."""
     with open(TEAMS_FILE, encoding="utf-8") as f:
         markdown_text = f.read()
 
@@ -45,9 +45,9 @@ def parse_teams():
             # Start a new team
             current_team = {
                 "name": element.get_text().strip(),
-                "lead": None,
-                "members": [],
-                "idea": None
+                "contributors": None,
+                "project": None,
+                "description": None
             }
         elif element.name == 'ul' and current_team:
             for li in element.find_all('li'):
@@ -56,7 +56,15 @@ def parse_teams():
                     key, value = text.split(":", 1)
                     key = key.strip().lower()
                     value = value.strip()
-                    if key in {"lead", "members", "idea"}:
+                    if key in {"contributors", "project", "description"}:
+                        # For contributors, preserve markdown formatting
+                        if key == "contributors":
+                            value = li.decode_contents().strip()
+                            # Strip out the <p><strong>Contributors</strong>: part
+                            value = re.sub(r'<p><strong>Contributors</strong>:\s*', '', value)
+                            value = re.sub(r'</p>$', '', value)
+                            # Add a space after each comma
+                            value = re.sub(r',', ', ', value)
                         current_team[key] = value
 
     # Add the last team if one exists
@@ -67,12 +75,10 @@ def parse_teams():
     for team in teams:
         if not team['name']:
             raise ValueError(f"Team name is missing for a team.")
-        if not team['lead']:
-            raise ValueError(f"Team lead is missing for team '{team['name']}'.")
-        if not team['members']:
-            raise ValueError(f"Members are missing for team '{team['name']}'.")
-        if not team['idea']:
-            raise ValueError(f"Idea is missing for team '{team['name']}'.")
+        if not team['contributors']:
+            raise ValueError(f"Contributors are missing for team '{team['name']}'.")
+        if not team['project']:
+            raise ValueError(f"Project is missing for team '{team['name']}'.")
 
     return teams
 
@@ -110,10 +116,9 @@ def replace_placeholders(file_path, team):
         content = f.read()
 
     for key, value in team.items():
-        placeholder = f'{{{{{key}}}}}'  # builds {{name}}, {{idea}}, etc.
-        if isinstance(value, list):
-            value = ', '.join(value)  # join lists like members into a string
-        content = content.replace(placeholder, str(value))
+        placeholder = f'{{{{{key}}}}}'  # builds {{name}}, {{project}}, etc.
+        # Contributors is always a string, so just use as-is
+        content = content.replace(placeholder, str(value) if value is not None else "")
 
     with open(file_path, 'w', encoding='utf-8') as f:
         f.write(content)
@@ -143,9 +148,9 @@ def main(dry_run=False):
         for idx, team in enumerate(teams, start=1):
             print(f"\nTeam {idx}:")
             print(f"  Name: {team['name']}")
-            print(f"  Lead: {team['lead']}")
-            print(f"  Members: {team['members']}")
-            print(f"  Idea: {team['idea']}")
+            print(f"  Contributors: {team['contributors']}")
+            print(f"  Project: {team['project']}")
+            print(f"  Description: {team['description']}")
         print("\nDry run completed!")
     else:
         print("Creating folder structure and copying templates...")

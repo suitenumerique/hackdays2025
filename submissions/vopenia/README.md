@@ -1,11 +1,14 @@
-# 🏆 Final Submission for Vopenia
+# 🏆 Final Submission for VOPENIA
 
-## Final Project Description
-(Summarize your project as it stands at the end)
+## Project
+Meet Real Time Transcription
 
-## Team
-- **Lead**: @bsenard
-- **Members**: @bsenard, @RaphReynaud, @4thlabs  , @codlab
+## Project Description
+Provide accurate and real-time transcripts for accessibility, better collaboration and record-keeping
+
+
+## Contributors
+<a href="https://github.com/bsenard">@bsenard</a>, <a href="https://github.com/RaphReynaud">@RaphReynaud</a>, <a href="https://github.com/@4thlabs">@4thlabs</a>, <a href="https://github.com/@codlab">@codlab</a>
 
 ## Code base
 (Provide a link to your Git repository)

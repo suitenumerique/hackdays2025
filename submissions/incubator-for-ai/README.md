@@ -1,11 +1,14 @@
 # 🏆 Final Submission for Incubator for AI
 
-## Final Project Description
-(Summarize your project as it stands at the end)
+## Project
+Search Drive
 
-## Team
-- **Lead**: @gecBurton
-- **Members**: @duncanjbrown, @nmenezes0, @rachaelcodes, @gecBurton
+## Project Description
+Search inside the users document (pdf, docx, xlsx)
+
+
+## Contributors
+<a href="https://github.com/duncanjbrown">@duncanjbrown</a>, <a href="https://github.com/nmenezes0">@nmenezes0</a>, <a href="https://github.com/gecburton">@gecburton</a>, <a href="https://github.com/rachaelcodes">@rachaelcodes</a>
 
 ## Code base
 (Provide a link to your Git repository)
