@@ -11,20 +11,30 @@ Allow using docs and spreadsheets right in your 2D virtual office.
 <a href="https://github.com/ydiarra">@ydiarra</a>, <a href="https://github.com/moufmouf">@moufmouf</a>, <a href="https://github.com/MaisonHub">@MaisonHub</a>
 
 ## Code base
-(Provide a link to your Git repository)
+https://github.com/workadventure/workadventure/pull/4888
 
 ## Deliverables 
 (Provide a link to a live demo, if you have one)
 (Add screenshots (image, gif or video) and presentation deck to `/assets`)
 
 ## Key Achievements
-(Highlight the main features or breakthroughs)
+- Seamless integration of La Suite Docs into WorkAdventure using iframe zones. 
+- Contextual access to files depending on the user’s location in the virtual space (e.g. meeting rooms, desks).
+- Multi-user collaboration tested live within the map.
 
 ## Challenges Overcome
-(What was difficult? What did you solve?)
+- Synchronizing authentication flows between WorkAdventure and La Suite securely within iframe contexts.
+- Make Docs working in an iframe
+- Automatically create a document when creating the zone
+- Ensuring responsiveness and a smooth UX across different screen sizes and devices.
+- Making it intuitive for non-technical users to interact with the system.
 
 ## Impact
-(Who will benefit from your project?)
-
+- Remote teams using WorkAdventure for daily collaboration now have access to an open-source productivity suite without leaving the environment.
+- Educational institutions and hackathon organizers can offer a unified space for interaction and documentation.
+- Enhances the attractiveness of both WorkAdventure and La Suite by demonstrating real, valuable synergy.
 ## Next Steps
-(If you were to continue, what next steps or developments would you envision?)
+
+- Integrate voice/video zones with contextual document previews (e.g. "open meeting doc" when entering a bubble).
+- Better authentication handling
+- Integrate other LaSuite tools
