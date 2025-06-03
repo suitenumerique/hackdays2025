@@ -1,0 +1,64 @@
+.explorer__topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: white;
+}
+
+.explorer__topbar__left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.explorer__topbar__right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Style spécifique pour le bouton principal */
+.explorer__topbar__right button {
+  background-color: #0063cb;
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.presentation-card {
+  max-width: 300px;
+    margin: 5px;
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.badge-ai, .badge-cc {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.badge-ai {
+  background-color: #EEF2FF;
+  color: #4F46E5;
+}
+
+.badge-cc {
+  background-color: #F0FDF4;
+  color: #15803D;
+}
+
+.aspect-video {
+  aspect-ratio: 16/9;
+  background: beige;
+}

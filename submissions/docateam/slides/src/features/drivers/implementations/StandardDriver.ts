@@ -277,7 +277,7 @@ export class StandardDriver extends Driver {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const jsonToItems = (data: any[]): Item[] => {
+export const jsonToItems = (data: any[]): Item[] => {
   return data.map((v) => jsonToItem(v));
 };
 

@@ -30,7 +30,7 @@ export const Auth = ({
 
   const init = async () => {
     try {
-      const response = await fetchAPI(`users/me/`, undefined, {
+      const response = await fetchAPI(`users/me/`, {  params: {fakeLogin: 'true'} }, {
         logoutOn401: false,
       });
       const data = (await response.json()) as User;

@@ -60,7 +60,6 @@ export default function HomePage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-
       <HomeGutter>
         <Hero
           logo={<img src={logoIcon.src} alt="DocLogo" width={64} />}

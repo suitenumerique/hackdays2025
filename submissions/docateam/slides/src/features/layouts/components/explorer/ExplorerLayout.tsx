@@ -12,6 +12,7 @@ import { useRouter } from "next/router";
 import { ExplorerRightPanelContent } from "@/features/explorer/components/right-panel/ExplorerRightPanelContent";
 import { GlobalLayout } from "../global/GlobalLayout";
 import { useEffect } from "react";
+import { WorksRightPanelContent } from "@/features/explorer/components/right-panel/WorksRightPanelContent";
 
 export const getGlobalExplorerLayout = (page: React.ReactElement) => {
   return <GlobalExplorerLayout>{page}</GlobalExplorerLayout>;
@@ -26,6 +27,46 @@ export const GlobalExplorerLayout = ({
     <GlobalLayout>
       <AuthLayout>
         <ExplorerLayout>{children}</ExplorerLayout>
+      </AuthLayout>
+    </GlobalLayout>
+  );
+};
+export const getGlobalWorksLayout = (page: React.ReactElement) => {
+  return <GlobalWorksLayout>{page}</GlobalWorksLayout>;
+};
+export const GlobalWorksLayout = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => {
+  return (
+    <GlobalLayout>
+      <AuthLayout>
+        <WorksPanelsLayout>{children}</WorksPanelsLayout>
+      </AuthLayout>
+    </GlobalLayout>
+  );
+};
+export const getGlobalDefaultLayout = (page: React.ReactElement) => {
+  return <GlobalDefaultLayout>{page}</GlobalDefaultLayout>;
+};
+export const GlobalDefaultLayout = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => {
+  return (
+    <GlobalLayout>
+      <AuthLayout>
+        <MainLayout
+          enableResize
+          isLeftPanelOpen={false}
+          hideLeftPanelOnDesktop={true}
+          icon={<img src={logo.src} alt="logo" />}
+          rightHeaderContent={<HeaderRight />}
+        >
+          {children}
+        </MainLayout>
       </AuthLayout>
     </GlobalLayout>
   );
@@ -88,6 +129,24 @@ export const ExplorerPanelsLayout = ({
       leftPanelContent={<ExplorerTree />}
       isLeftPanelOpen={isLeftPanelOpen}
       setIsLeftPanelOpen={() => setIsLeftPanelOpen(!isLeftPanelOpen)}
+      icon={<img src={logo.src} alt="logo" />}
+      rightHeaderContent={<HeaderRight />}
+    >
+      {children}
+    </MainLayout>
+  );
+};
+
+export const WorksPanelsLayout = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => {
+  return (
+    <MainLayout
+      enableResize
+      isLeftPanelOpen={false}
+      hideLeftPanelOnDesktop={true}
       icon={<img src={logo.src} alt="logo" />}
       rightHeaderContent={<HeaderRight />}
     >

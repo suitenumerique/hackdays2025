@@ -10,6 +10,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ExplorerSearchButton } from "@/features/explorer/components/ExplorerSearchButton";
 import { getDriver } from "@/features/config/Config";
+import { useRouter } from "next/router";
 
 export const Header = () => {
   return (
@@ -24,33 +25,45 @@ export const HeaderRight = () => {
   const { user } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
+  const router = useRouter();
+
   return (
     <>
       {user && (
-        <DropdownMenu
-          options={[
-            {
-              label: t("logout"),
-              icon: <span className="material-icons">logout</span>,
-              callback: logout,
-            },
-          ]}
-          isOpen={isOpen}
-          onOpenChange={setIsOpen}
-        >
+        <>
           <Button
             color="primary-text"
-            onClick={() => setIsOpen(!isOpen)}
-            icon={
-              <span className="material-icons">
-                {isOpen ? "arrow_drop_up" : "arrow_drop_down"}
-              </span>
-            }
-            iconPosition="right"
+            onClick={() => router.push("/works")}
+            icon={<span className="material-icons">home</span>}
+            className="mr-2"
           >
-            {t("my_account")}
+            {t("homeMenu")}
           </Button>
-        </DropdownMenu>
+          <DropdownMenu
+            options={[
+              {
+                label: t("logout"),
+                icon: <span className="material-icons">logout</span>,
+                callback: logout,
+              },
+            ]}
+            isOpen={isOpen}
+            onOpenChange={setIsOpen}
+          >
+            <Button
+              color="primary-text"
+              onClick={() => setIsOpen(!isOpen)}
+              icon={
+                <span className="material-icons">
+                  {isOpen ? "arrow_drop_up" : "arrow_drop_down"}
+                </span>
+              }
+              iconPosition="right"
+            >
+              {t("my_account")}
+            </Button>
+          </DropdownMenu>
+        </>
       )}
       <LanguagePicker />
       <LaGaufre />

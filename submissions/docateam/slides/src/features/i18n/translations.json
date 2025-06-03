@@ -1,12 +1,13 @@
 {
   "en": {
     "translation": {
+      "homeMenu": "Home",
       "clipboard": {
         "success": "Copied to clipboard",
         "error": "Failed to copy to clipboard"
       },
-      "app_title": "Files",
-      "app_description": "Files management",
+      "app_title": "Slides",
+      "app_description": "Slides management",
       "welcome": "Welcome",
       "logout": "Logout",
       "my_account": "My Account",
@@ -16,8 +17,8 @@
         }
       },
       "home": {
-        "title": "Easy storage and sharing",
-        "subtitle": "Store and share your files easily in a cloud collaborative space."
+        "title": "Intuitive and collaborative slide creation",
+        "subtitle": "Create, organize, and share your presentations easily with your team in a collaborative cloud workspace."
       },
       "authentication": {
         "error": {
@@ -30,6 +31,7 @@
         "image": "Image",
         "other": "Other",
         "pdf": "PDF",
+        "slide": "Slide",
         "powerpoint": "Presentation",
         "audio": "Audio",
         "video": "Video",
@@ -44,12 +46,12 @@
       "explorer": {
         "rightPanel": {
           "multipleSelection": {
-            "text": "Multiple files selected",
-            "alt": "Multiple files selected image"
+            "text": "Multiple Slides selected",
+            "alt": "Multiple Slides selected image"
           },
           "empty": {
-            "text": "No files selected",
-            "alt": "No files selected image"
+            "text": "No Slides selected",
+            "alt": "No Slides selected image"
           },
           "sharing": "Sharing",
           "share": "Share",
@@ -58,13 +60,15 @@
           "created_at": "Created at",
           "size": "Size",
           "created_by": "Created by",
-          "description": "Description"
+          "description": "Description",
+          "openWorkspace": "Open New Workspace",
+          "createByAI": "Create by AI"
         },
         "grid": {
           "name": "Name",
           "last_update": "Last Update",
           "empty": {
-            "caption": "Drop your files here",
+            "caption": "Drop your Slides here",
             "cta": "Or click \"Create\""
           },
           "no_url": "This resource does not have an URL",
@@ -99,7 +103,7 @@
           },
           "import": {
             "label": "Import",
-            "files": "Import files",
+            "Slides": "Import Slides",
             "folders": "Import folders"
           },
           "workspace": {
@@ -181,7 +185,7 @@
           },
           "create": {
             "title": "New workspace",
-            "description": "A workspace allows you to organize your files in a team.",
+            "description": "A workspace allows you to organize your Slides in a team.",
             "cancel": "Cancel",
             "submit": "Create workspace"
           },
@@ -203,12 +207,12 @@
             }
           },
           "upload": {
-            "toast": "Drop your files here to transfer them in {{title}}",
-            "files": {
+            "toast": "Drop your Slides here to transfer them in {{title}}",
+            "Slides": {
               "description_one": "{{count}} file being transferred",
-              "description_other": "{{count}} files being transferred",
+              "description_other": "{{count}} Slides being transferred",
               "description_done_one": "{{count}} file transferred",
-              "description_done_other": "{{count}} files transferred"
+              "description_done_other": "{{count}} Slides transferred"
             }
           },
           "delete": {
@@ -244,12 +248,13 @@
   },
   "fr": {
     "translation": {
+      "homeMenu": "Accueil",
       "clipboard": {
         "success": "Copié dans le presse-papiers",
         "error": "Échec de la copie dans le presse-papiers"
       },
-      "app_title": "Fichiers",
-      "app_description": "Gestion de fichiers",
+      "app_title": "Prez",
+      "app_description": "Gestion de Prez",
       "welcome": "Bienvenue",
       "logout": "Déconnexion",
       "my_account": "Mon Compte",
@@ -259,8 +264,8 @@
         }
       },
       "home": {
-        "title": "Stockage et partage faciles",
-        "subtitle": "Stockez et partagez vos fichiers simplement dans un espace cloud collaboratif synchronisé."
+        "title": "Création de slides intuitive et collaborative",
+        "subtitle": "Créez, organisez et partagez facilement vos présentations avec votre équipe dans un espace cloud collaboratif."
       },
       "authentication": {
         "error": {
@@ -287,8 +292,8 @@
       "explorer": {
         "rightPanel": {
           "multipleSelection": {
-            "text": "Plusieurs fichiers sélectionnés",
-            "alt": "Image de plusieurs fichiers sélectionnés"
+            "text": "Plusieurs Prez sélectionnés",
+            "alt": "Image de plusieurs Prez sélectionnés"
           },
           "empty": {
             "text": "Aucun fichier sélectionné",
@@ -301,13 +306,15 @@
           "created_at": "Création",
           "size": "Poids",
           "created_by": "Créé par",
-          "description": "Description"
+          "description": "Description",
+          "openWorkspace": "Open New Workspace",
+          "createByAI": "Create by AI"
         },
         "grid": {
           "name": "Nom",
           "last_update": "Dernière modification",
           "empty": {
-            "caption": "Déposez vos fichiers ici",
+            "caption": "Déposez vos Prez ici",
             "cta": "Ou cliquez sur \"Créer\""
           },
           "no_url": "Cette ressource n'a pas d'URL",
@@ -341,7 +348,7 @@
           "search": "Rechercher",
           "import": {
             "label": "Importer",
-            "files": "Importer des fichiers",
+            "Slides": "Importer des Prez",
             "folders": "Importer des dossiers"
           },
           "create": {
@@ -424,7 +431,7 @@
           },
           "create": {
             "title": "Nouvel espace",
-            "description": "Un espace vous permet d'organiser vos fichiers en équipe.",
+            "description": "Un espace vous permet d'organiser vos Prez en équipe.",
             "cancel": "Annuler",
             "submit": "Créer l'espace"
           },
@@ -446,13 +453,13 @@
             }
           },
           "upload": {
-            "toast": "Déposez vos fichiers ici pour les transférer dans {{title}}",
-            "toast_no_rights": "Vous n'avez pas les droits nécessaires pour transférer des fichiers dans {{title}}",
-            "files": {
+            "toast": "Déposez vos Prez ici pour les transférer dans {{title}}",
+            "toast_no_rights": "Vous n'avez pas les droits nécessaires pour transférer des Prez dans {{title}}",
+            "Slides": {
               "description_one": "{{count}} fichier en cours de transfert",
-              "description_other": "{{count}} fichiers en cours de transfert",
+              "description_other": "{{count}} Prez en cours de transfert",
               "description_done_one": "{{count}} fichier transféré",
-              "description_done_other": "{{count}} fichiers transférés"
+              "description_done_other": "{{count}} Prez transférés"
             }
           },
           "delete": {

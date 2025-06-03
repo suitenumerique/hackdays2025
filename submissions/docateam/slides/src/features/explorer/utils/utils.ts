@@ -1,5 +1,7 @@
-import { getDriver } from "@/features/config/Config";
-import { Item, ItemType } from "@/features/drivers/types";
+// import { getDriver } from "@/features/config/Config";
+import { jsonToItems } from "@/features/drivers/implementations/StandardDriver";
+// import { Item, ItemType } from "@/features/drivers/types";
+import { Item } from "@/features/drivers/types";
 import i18n from "@/features/i18n/initI18n";
 /**
  * Temporary solution to redirect to the last visited item, by default the personal root folder.
@@ -8,12 +10,16 @@ import i18n from "@/features/i18n/initI18n";
  * TODO: Use localStorage maybe
  */
 export const gotoLastVisitedItem = async () => {
-  const items = await getDriver().getItems({ type: ItemType.FOLDER });
-  if (!items.length) {
+  // const items = await getDriver().getItems({ type: ItemType.FOLDER });
+  const response = await fetch("https://dummyjson.com/c/2419-890c-4982-a8a8");
+  const data = await response.json();
+  const itemss = jsonToItems(data.results);
+
+  if (!itemss.length) {
     console.error("No items found, so cannot redirect to last visited item");
     return;
   }
-  window.location.href = `/explorer/items/${items[0].id}`;
+  window.location.href = `/works`;
 };
 
 /** TODO: test */
@@ -60,16 +66,21 @@ export const getExtension = (item: Item, useTitle = false) => {
   return parts.pop()!;
 };
 
-
 export const formatSize = (size: number) => {
-  const units = ['B', 'KB', 'MB', 'GB', 'TB', 'PB'];
+  const units = ["B", "KB", "MB", "GB", "TB", "PB"];
   let convertedSize = size;
   let unitIndex = 0;
-  
+
   while (convertedSize >= 1024 && unitIndex < units.length - 1) {
     convertedSize /= 1024;
     unitIndex++;
   }
-  
-  return `${convertedSize < 10 ? convertedSize.toFixed(2) : convertedSize < 100 ? convertedSize.toFixed(1) : Math.round(convertedSize)} ${units[unitIndex]}`;
+
+  return `${
+    convertedSize < 10
+      ? convertedSize.toFixed(2)
+      : convertedSize < 100
+      ? convertedSize.toFixed(1)
+      : Math.round(convertedSize)
+  } ${units[unitIndex]}`;
 };

@@ -24,6 +24,17 @@ export const fetchAPI = async (
   init?: RequestInit & { params?: Record<string, string> },
   options?: fetchAPIOptions
 ) => {
+  // Check for fake login mode
+  if (
+    init?.params?.fakeLogin &&
+    localStorage.getItem("fakeLoginActive") === "true"
+  ) {
+    const response = await fetch("https://mocki.io/v1/3eb19480-642a-471c-b315-cf6a3ec4b9b8");
+    if (response.ok) {
+      return response;
+    }
+  }
+
   const apiUrl = new URL(`${baseApiUrl("1.0")}${input}`);
   if (init?.params) {
     Object.entries(init.params).forEach(([key, value]) => {
