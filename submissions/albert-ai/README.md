@@ -14,8 +14,9 @@ Implement Docs as a Canvas in Albert Conversation. So that user can interact wit
 [Assistant IA - Hackathon branch](https://github.com/etalab-ia/albert-conversation/tree/hackathon)
 
 ## Deliverables 
-(Provide a link to a live demo, if you have one)
-(Add screenshots (image, gif or video) and presentation deck to `/assets`)
+<img width="1427" alt="image" src="https://github.com/user-attachments/assets/da459e56-919c-4b4d-bb14-5e493d803805" />
+<img width="1427" alt="image" src="https://github.com/user-attachments/assets/17251ccb-2d87-479a-8b14-e7b5b8c94495" />
+<img width="1427" alt="image" src="https://github.com/user-attachments/assets/485b4833-ac20-4bb7-822c-605ad13c57a2" />
 
 ## Key Achievements
 Interactive Side-Panel for document creation: Automatically launches a dedicated, editable window when document generation is initiated, enabling real-time user interaction.
