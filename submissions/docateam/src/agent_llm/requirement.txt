@@ -3,3 +3,5 @@ uvicorn
 python-dotenv
 openai
 pydantic
+langchain-core
+streamlit
