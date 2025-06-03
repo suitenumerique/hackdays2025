@@ -42,3 +42,4 @@ Help European data sovereignty by creating an open source tool to effectively mi
 - Data Validation: Pre-migration data quality checks
 - Batch Processing: Optimize large dataset transfers
 - Migration History: Track and manage previous migrations
+- CLI: make it also a CLI for standalone use
