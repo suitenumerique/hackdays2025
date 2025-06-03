@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modèle de Langage IA Auto-Correctif</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='chat_style.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='carbon_style.css') }}">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.9.3/dist/dsfr.min.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="min-h-screen bg-gradient">
+    <!-- Header -->
+    <header class="header">
+    <!-- 🔙 Bouton retour à côté du titre -->
+    <button onclick="window.location.href='/'" class="back-button">
+      ⬅️ Menu principal
+  </button>
+      <div class="header-content">
+        <div class="header-title">
+          <i data-lucide="brain" class="icon blue"></i>
+          <h1>IA Auto-Correctif</h1>
+        </div>
+        <p class="subtitle">Un système intelligent qui ajuste les prompts, réduit les hallucinations pour des réponses rapides et fiables.</p>
+        {% include 'carbon_counter.html' %}
+        <p class="instruction">Sélectionnez un prompt pour commencer l'évaluation</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Features Section -->
+      <div class="features">
+        <div class="feature-card">
+          <i data-lucide="sparkles" class="icon blue"></i>
+          <h2>Auto-Correction</h2>
+          <p>Amélioration automatique des prompts pour des résultats optimaux.</p>
+        </div>
+        <div class="feature-card">
+          <i data-lucide="shield-check" class="icon blue"></i>
+          <h2>Anti-Hallucination</h2>
+          <p>Réduction des réponses erronées et incohérentes.</p>
+        </div>
+        <div class="feature-card">
+          <i data-lucide="check-circle" class="icon blue"></i>
+          <h2>Haute Précision</h2>
+          <p>Résultats fiables et pertinents à chaque fois.</p>
+        </div>
+      </div>
+                <!-- Custom Use Case Section -->
+                <div class="custom-usecase">
+                  <label>Cas d'usage personnalisé :</label>
+                  <div class="usecase-input-wrapper">
+                    <input type="text" id="customUsecase" placeholder="Décrivez votre cas d'usage...">
+                <button class="next-page-btn fr-btn" id="nextPageBtn">
+                <i data-lucide="arrow-right" class="icon-sm"></i>
+                  Suivant
+                </button>
+                  </div>
+                </div>
+      <!-- Prompt Selection Interface -->
+      <div class="main-interface">
+        <div class="prompt-grid" id="prompt-grid">
+          <!-- Les prompts seront insérés dynamiquement via JavaScript -->
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="{{ url_for('static', filename='script_carbon.js') }}"></script>
+  <script src="{{ url_for('static', filename='script_chat.js') }}"></script>
+</body>
+</html>

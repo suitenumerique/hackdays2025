@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Générateur de Documents Administratifs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_docgen.css') }}">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="min-h-screen bg-gradient">
+    <header class="header">
+      <button onclick="window.location.href='/'" class="back-button">⬅️ Menu principal</button>
+      <div class="header-content">
+        <div class="header-title">
+          <i data-lucide="pen-tool" class="icon purple"></i>
+          <h1>DocGen IA</h1>
+        </div>
+        <p>Générateur de documents administratifs</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="main-interface">
+        <!-- Saisie de la demande -->
+        <div class="input-section">
+          <label>Votre demande :</label>
+          <textarea id="textInput" placeholder="Décrivez votre demande..." rows="4"></textarea>
+        </div>
+        <button id="generateBtn" class="generate-btn">Générer le document</button>
+
+        <!-- Résultat -->
+        <div id="resultSection" class="results hidden mt-6">
+          <button id="downloadBtn" class="download-btn">Télécharger en PDF</button>
+          <textarea id="generatedDoc" rows="10" class="w-full p-4 border rounded"></textarea>
+        </div>
+      </div>
+    </main>
+  </div>
+
+
+    <script src="{{ url_for('static', filename='script_docgen.js') }}"></script>
+  <script>lucide.replace()</script>
+</body>
+</html>

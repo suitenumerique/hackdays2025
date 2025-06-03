@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IA Auto-Correctif - Reformulation</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='chat_style.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='carbon_style.css') }}">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="min-h-screen bg-gradient">
+    <header class="header">
+      <button onclick="window.location.href='/chatbot'" class="back-button">← Retour aux Prompts</button>
+      <div class="header-content">
+        <div class="header-title">
+          <i data-lucide="brain" class="icon purple"></i>
+          <h1>IA Auto-Correctif</h1>
+        </div>
+        <p class="subtitle">Un système intelligent qui ajuste les prompts, réduit les hallucinations pour des réponses rapides et fiables.</p>
+        {% include 'carbon_counter.html' %}
+      </div>
+    </header>
+
+    <main class="container">
+      <h2 class="selected-prompt-title">Prompt sélectionné</h2>
+      <div class="selected-prompt-text">Sélectionnez un prompt pour commencer l'évaluation</div>
+
+      <button class="advanced-settings-toggle">
+        <i data-lucide="settings" class="icon-sm"></i>
+        Paramètres avancés
+      </button>
+
+      <div class="advanced-settings hidden">
+        <div class="card-container">
+          <!-- Modèle de Reformulation -->
+          <div class="model-selection-card">
+            <h3>Modèle de Reformulation</h3>
+            <div class="model-options">
+              <label class="model-option disabled">
+                <input type="radio" name="reform-model" value="A" disabled />
+                <span>Deepseek-r1-7B (Coming Soon)</span>
+              </label>
+              <label class="model-option">
+                <input type="radio" name="reform-model" value="B" checked />
+                <span>Deepseek-r1-14B</span>
+              </label>
+              <label class="model-option disabled">
+                <input type="radio" name="reform-model" value="C" disabled />
+                <span>Deepseek-r1-32B (Coming Soon)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Hyperparamètres -->
+          <div class="hyperparam-card">
+            <h3>Hyperparamètres</h3>
+            <div class="param-group">
+              <label>
+                Temperature
+                <span class="info-icon" title="La température contrôle la créativité du modèle">ℹ</span>
+                <div class="slider-container">
+                  <input type="range" id="reform-temp" min="0" max="100" value="70">
+                  <span class="reform-temp-value">0.7</span>
+                </div>
+              </label>
+              <label>
+                Top-p
+                <span class="info-icon" title="Le top-p limite la sélection aux tokens cumulant une probabilité p">ℹ</span>
+                <div class="slider-container">
+                  <input type="range" id="reform-top-p" min="0" max="100" value="70">
+                  <span class="reform-top-p-value">0.7</span>
+                </div>
+              </label>
+              <label>
+                Top-k
+                <span class="info-icon" title="Le top-k limite le nombre de tokens les plus probables">ℹ</span>
+                <div class="slider-container">
+                  <input type="range" id="reform-top-k" min="0" max="200" value="40">
+                  <span class="reform-top-k-value">40</span>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Boutons de Reformulation -->
+      <div class="reformulation-buttons">
+        <button class="reformulate-cot-button">Reformulation CoT</button>
+        <button class="reformulate-dcacot-button">
+          <i data-lucide="leaf" class="icon-sm">
+          </i>
+          Reformulation DCA CoT
+        </button>
+        <button class="reformulate-cod-button">Reformulation CoD</button>
+      </div>
+
+      <!-- Résultat de Reformulation -->
+      <div class="reformulation-result">
+        <h3>Prompt Reformulé</h3>
+        <div class="reformulation-content">Le prompt reformulé apparaîtra ici...</div>
+      </div>
+
+      <!-- Lien vers la page de génération -->
+
+        <button onclick="window.location.href='/generation'" class="next-button">Passer à la génération</button>
+      </a>
+    </main>
+  </div>
+  <script>
+    lucide.createIcons();
+  </script>
+  <script src="{{ url_for('static', filename='script_carbon.js') }}"></script>
+  <script src="{{ url_for('static', filename='script_chat.js') }}"></script>
+
+</body>
+</html>
