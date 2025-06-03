@@ -1,17 +1,24 @@
 # 🏆 Final Submission for The GR
 
 ## Project
-Docs AI agent
+Docs - AI agent for SQK commands
 
 ## Project Description
-AI assistant that queries your Docs activity
+This project aims to develop an AI-powered agent integrated into Docs that can manage and interact with the platform’s backend database using natural language commands.
+
+Instead of requiring technical administrators to write manual SQL queries, the AI agent translates natural language prompts into safe, executable SQL commands — helping with tasks like reporting, user management, system auditing, and performance monitoring.
+
+By combining NL-to-SQL models with a secure execution layer, the system enables non-technical admins and managers to access, analyze, and manage platform data efficiently, all from within the Docs interface.
 
 
 ## Contributors
-<a href="https://github.com/gaspardvilla">@gaspardvilla</a>, <a href="https://github.com/julienperia">@julienperia</a>, <a href="https://github.com/isaac">@isaac-gros</a>, <a href="https://github.com/zouicheomar">@zouicheomar</a>
+* Gaspard Villa ([@gaspardvilla](https://github.com/gaspardvilla))
+* Omar Zouiche ([@ZouicheOmar](https://github.com/zouicheomar))
+* Julien Peria ([@julienperia](https://github.com/julienperia))
+* Isaac Gros ([@isaac-gros](https://github.com/isaac-gros))
 
 ## Code base
-(Provide a link to your Git repository)
+[GitHub repository](https://github.com/gaspardvilla/TheGR_Docs.git)
 
 ## Deliverables 
 (Provide a link to a live demo, if you have one)
