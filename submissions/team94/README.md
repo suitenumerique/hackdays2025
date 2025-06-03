@@ -13,7 +13,7 @@ As a plus, we also worked on a generic Windows installation script that ease the
 <a href="https://github.com/Luka-Kupatadze">@Luka-Kupatadze</a>, <a href="https://github.com/Comete99">@Comete99</a>, <a href="https://github.com/jesptri">@jesptri</a>, <a href="https://github.com/jlemercier">@jlemercier</a>, <a href="https://github.com/fabricekossi">@fabricekossi</a>, <a href="https://github.com/rokssg">@rokssg</a>, <a href="https://github.com/Luc">@Luc</a>
 
 ## Code base
-https://github.com/rokssg/docs-ssg.git (branche do-not-merge/hackathon-2025-ssg)
+https://github.com/rokssg/docs-ssg/tree/do-not-merge/hackathon-2025-ssg
 
 ## Deliverables 
 (Provide a link to a live demo, if you have one)
