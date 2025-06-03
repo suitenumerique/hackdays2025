@@ -26,16 +26,19 @@ Create an API to search within a user's documents in Drive, and demonstrate inte
 ![image](assets/drive_search_interface_results.png)
 
 <video src="https://github.com/user-attachments/assets/557ad7fd-6ddc-4449-aadc-160af46c83f1" controls></video>
+_Video not working? [The file is here](assets/drive_search_interface_720.mp4)_
 
 ### Slack integration
 
 ![image](assets/slackbot-screenshot.png)
 
 <video src="https://github.com/user-attachments/assets/8da4234b-5124-43d3-8a22-257ec66b3178" controls></video>
+_Video not working? [The file is here](assets/slackbot-recording.mov)_
 
 ### Claude integration
 
 <video src="https://private-user-images.githubusercontent.com/23265724/450806742-322a45d4-9801-4a54-b5cc-9eac3e85e863.mov" controls></video>
+_Video not working? [The file is here](assets/claude-demo.mov)_
 
 ## Key Achievements
 Enabling semantic search throughout all documents in Drive and enabling users to do this in the frontend.
