@@ -1,30 +1,67 @@
-# 🏆 Final Submission for OpeNova
-
-## Project
+Final Submission for OpeNova
+Project
 RAG on Drive
 
-## Project Description
-Store shared files as vector database so they can query an LLM pipeline
+Project Description
+Store shared files as a vector database so they can be queried by an LLM pipeline. The goal is to enhance file search capabilities within a Drive-like platform by enabling semantic search, document clustering, and retrieval-augmented generation (RAG) functionalities using vector embeddings.
+
+Contributors
+@AlexandreAmate
+
+@Roswell1208
+
+@tgreil
 
 
-## Contributors
-<a href="https://github.com/AlexandreAmate">@AlexandreAmate</a>, <a href="https://github.com/Roswell1208">@Roswell1208</a>, <a href="https://github.com/tgreil">@tgreil</a>
+Code base
+👉 [GitHub Repository](url)
 
-## Code base
-(Provide a link to your Git repository)
+Deliverables
 
-## Deliverables 
-(Provide a link to a live demo, if you have one)
-(Add screenshots (image, gif or video) and presentation deck to `/assets`)
 
-## Key Achievements
-(Highlight the main features or breakthroughs)
+Key Achievements
+Implemented a Vector Database (ChromaDB) integrated into a Drive-like environment.
 
-## Challenges Overcome
-(What was difficult? What did you solve?)
+Built APIs to:
 
-## Impact
-(Who will benefit from your project?)
+Add documents to the vector store when uploaded to a workspace.
 
-## Next Steps
-(If you were to continue, what next steps or developments would you envision?)
+Delete documents when removed from the workspace.
+
+Query documents via an API with a given prompt and desired number of results.
+
+Created a CustomEmbeddingAPI supporting multiple embedding models.
+
+Integrated an OCR API for document text extraction (from images or scanned files).
+
+Designed the system to be LLM-agnostic: Any LLM can be plugged in for RAG tasks.
+
+Paved the way for contextual search within Drive, enhancing file discovery.
+
+Challenges Overcome
+Developed robust APIs for file management within the Vector DB.
+
+Solved technical hurdles around document ingestion and retrieval pipelines.
+
+Worked through Dockerization challenges (currently in progress).
+
+Ensured scalability by aligning the architecture with the Drive's storage model (dual storage: Drive + Vector DB).
+
+Impact
+This project empowers:
+
+End users: Improved document search via semantic understanding.
+
+Companies: Enhanced knowledge management and internal file retrieval.
+
+Developers: Plug-and-play API for integrating any LLM for RAG pipelines.
+
+Next Steps
+Finalize Docker integration for seamless deployment.
+
+Refine and test the end-to-end workflow within cloud environments.
+
+Expand the system to handle larger file volumes and streamlined clustering.
+
+Explore advanced features like document summarization, context-aware recommendations, and real-time indexing.
+
