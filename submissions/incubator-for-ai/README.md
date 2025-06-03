@@ -8,6 +8,7 @@ Create an API to search within a user's documents in Drive, and demonstrate inte
 * the Drive UI
 * Meet
 * Slack
+* Claude
 
 ## Contributors
 <a href="https://github.com/duncanjbrown">@duncanjbrown</a>, <a href="https://github.com/nmenezes0">@nmenezes0</a>, <a href="https://github.com/gecburton">@gecburton</a>, <a href="https://github.com/rachaelcodes">@rachaelcodes</a>
@@ -19,11 +20,16 @@ Create an API to search within a user's documents in Drive, and demonstrate inte
 ## Deliverables
 ### Drive API endpoint
 ![image](assets/drive_search_api.png)
-### Drive integration
+### Drive UI integration
 ![image](assets/drive_search_interface_results.png)
 
 <video src="https://github.com/user-attachments/assets/557ad7fd-6ddc-4449-aadc-160af46c83f1" controls></video>
 
+### Slack integration
+
+![image](assets/slackbot-screenshot.png)
+
+<video src="https://github.com/user-attachments/assets/8da4234b-5124-43d3-8a22-257ec66b3178" controls></video>
 
 ## Key Achievements
 (Highlight the main features or breakthroughs)
@@ -37,6 +43,7 @@ Anyone who knows the information they need is stored in Drive, but just can't re
 Opening up the API to other applications takes Drive functionality beyond the immediate application, putting it at the centre of many workflows. 
 
 ## Next Steps
+* Clean up code and make sure it's secure
 * Opening up integrations with other applications
   * e.g. find your documents from Docs
 * Offering filtering options
