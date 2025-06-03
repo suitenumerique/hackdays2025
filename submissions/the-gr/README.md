@@ -1,7 +1,7 @@
 # 🏆 Final Submission for The GR
 
 ## Project
-Docs - AI agent for SQL commands
+Docs - AI agent to convert user prompts to SQL queries in order to retrieve Docs instance data
 
 ## Project Description
 This project aims to develop an AI-powered agent integrated into Docs that can manage and interact with the platform’s backend database using natural language commands.
@@ -26,9 +26,10 @@ By combining NL-to-SQL models with a secure execution layer, the system enables 
 
 ## Key Achievements
 *(Highlight the main features or breakthroughs)*
-* AI agent that allows you to interact with your data base
+* AI agent chat that allows you to interact with your Docs instance database
 * Start from a natural language prompt, the AI agent will translate it into a SQL query and we translate the results into a natural language response corresponding to the initial prompt
-* Security layer to prevent any lethal modififcation of the databass
+* Security layer to prevent any lethal modififcation of the database
+* Hidden chat appearance feature (will you find it? 👀)
 
 ## Challenges Overcome
 *(What was difficult? What did you solve?)*
@@ -42,8 +43,9 @@ It also provides a tool to keep track of the database and its evolution over tim
 ## Next Steps
 *(If you were to continue, what next steps or developments would you envision?)*
 * Ensure access management of the database by managers
-* Enable modification and deletion for manager users
+* Enable modification and deletion for manager users (eg: share document between users, update document privacy etc.), with confirmation before update
 * Add a NL2PDF (or NL2Image) model at the end of the pipeline to generate a PDF report (or an image) corresponding to the initial prompt if the user requests it (i.e. "generate a PDF report (or an image) of the last 30 days of user activity" -> the AI agent will translate it into a SQL query and we translate the results into a PDF report (or an image))
+* Add on-demand small data vizualisations straight into the AI Agent chat
 
 * **Bonus :** Make a generalization of the agent that can produce new data bases from natural language prompts
 
