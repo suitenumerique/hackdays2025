@@ -12,7 +12,7 @@ This enhancement preserves a seamless user experience with link previews, while 
 
 
 ## Contributors
-<a href="https://github.com/matmaul">@matmaul</a>, <a href="https://github.com/jonathanperret">@jonathanperret</a>, <a href="https://github.com/gdarquie">@gdarquie</a>, <a href="https://github.com/ranas">@ranas, <a href="https://github.com/yostyle">@yostyle</a>
+<a href="https://github.com/matmaul">@matmaul</a>, <a href="https://github.com/jonathanperret">@jonathanperret</a>, <a href="https://github.com/gdarquie">@gdarquie</a>, <a href="https://github.com/ranass">@ranass, <a href="https://github.com/yostyle">@yostyle</a>
 
 ## Code base
 https://github.com/ranass/element-x-android
