@@ -1,7 +1,7 @@
-# 🚀 Day 1 Pitch Submission for {{name}}
+# 🚀 Day 1 Pitch Submission for DBT
 
 ## Project Idea
-{{idea}}
+Fact checking functionality for documents.
 
 ## Problem Statement
 (What problem are you solving?)
@@ -13,4 +13,4 @@
 (Brief description of your solution.)
 
 ## Tech Stack Proposal
-(Optional: technologies you plan to use)
+Python, 
