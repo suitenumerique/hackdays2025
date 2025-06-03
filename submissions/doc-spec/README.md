@@ -1,6 +1,8 @@
 # 🏆 Final Submission for Doc Spec
 
-## Project: DOCX to La Suite Docs Importer
+## Project: Importing Existing documents into La Suite Docs
+
+**What if we can import existing documents, such as Microsoft Word (`.docx`), OpenDocument (`.odt`) and PDF into La Suite Docs?**
 
 ### Goal
 
@@ -20,6 +22,7 @@ Build a proof-of-concept for importing `.docx` files into La Suite Docs, enablin
 - 🇳🇱 [@StephanMeijer](https://github.com/StephanMeijer) (Stephan Meijer)
 
 ## 🧠 Codebase
+
 
 - Conversion backend (API): https://github.com/docspec-hackathon/import-api
 - Docs integration (UI): https://github.com/docspec-hackathon/docs
