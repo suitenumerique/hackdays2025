@@ -6,13 +6,12 @@ Assistant AI x La Suite
 ## Project Description
 Implement Docs as a Canvas in Albert Conversation. So that user can interact with their Doc in Chat like interface powered by AI.
 
-
 ## Contributors
 <a href="https://github.com/eliott07">@eliott07</a>, <a href="https://github.com/anthonyjacquelim">@anthonyjacquelim</a>, <a href="https://github.com/YousefED
 ">@YousefED</a>, <a href="https://github.com/naxxos">@naxxos</a>
 
 ## Code base
-[Assistant IA](https://github.com/etalab-ia/albert-conversation/tree/hackathon)
+[Assistant IA - Hackathon branch](https://github.com/etalab-ia/albert-conversation/tree/hackathon)
 
 ## Deliverables 
 (Provide a link to a live demo, if you have one)
