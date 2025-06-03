@@ -1,5 +1,6 @@
 # 🏆 Final Submission — Interstis Hackdays
 
+## Project Description
 ## 🚀 Project: RESANA & Co
 
 **Integration of the Albert API into the RESANA collaborative platform**  
@@ -13,7 +14,7 @@
 
 ---
 
-## 🧱 Code Base Overview
+## 🧱 Code Base
 
 The code base is shared across all RESANA microservices and is not currently public.
 
@@ -27,15 +28,15 @@ This Proof of Concept (POC) integrates features from the **Albert API** through 
 
 ---
 
-## 🧠 Stack Technique
+### 🧠 Stack Technique
 
-### 1️⃣ Albert API Gateway Integration
+#### 1️⃣ Albert API Gateway Integration
 
 - **Prompt fine-tuning**: Adjusted to improve relevance of AI answers.
 - **Connection to RESANA documentation**: Real-time querying of internal data.
 - **Contextual document slicing**: Sends only relevant excerpts to the AI.
 
-### 2️⃣ Integration into RESANA
+#### 2️⃣ Integration into RESANA
 
 - **AI chat embedded into dialogues**: Real-time interaction with Albert via Node.js and PHP.
 - **Markdown support**: Enhanced readability of AI responses.
@@ -45,7 +46,7 @@ This Proof of Concept (POC) integrates features from the **Albert API** through 
 
 ---
 
-## 📦 Deliverables & Demo
+## 📦 Deliverables
 
 A working prototype is available on the internal **Interstis testing platform**, with full integration of **Albert API** in real-time.
 
@@ -103,7 +104,7 @@ Redesigned dialogue flow to support **live, dynamic AI responses**, integrated i
 
 ---
 
-## 🔍 User Problems Solved
+## 🔍 Impact
 
 1. **📁 How to easily find a document in RESANA?**  
    ➤ Contextual AI search allows smart filtering and relevance-based retrieval.
