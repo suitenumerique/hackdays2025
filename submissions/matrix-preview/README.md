@@ -4,7 +4,7 @@
 Secure url previews on Matrix
 
 ## Project Description
-Currently, Matrix clients send URLs in plaintext to the server to generate link previews. This practice breaks the principle of end-to-end encryption, as it exposes potentially sensitive data to the server.
+Currently, Matrix clients send URLs in plaintext to the server to generate link previews. This practice violates the principle of end-to-end encryption, as it exposes potentially sensitive data to the server.
 
 Our project aims to restore full end-to-end encryption integrity by implementing client-side URL preview generation in the secure messaging app Element X for Android. By performing URL fetching and metadata extraction directly on the user's device, we eliminate the need to transmit URLs to the server, ensuring that no private link data ever leaves the encrypted context.
 
