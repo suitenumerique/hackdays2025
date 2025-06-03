@@ -37,8 +37,14 @@ Our team faced several technical challenges during this project:
 
 - Navigating the Element X Android Architecture: Element X Android is built with a modern but complex architecture (Jetpack Compose, Rust bindings, reactive UI patterns). Getting up to speed and finding the right extension points to integrate our client-side preview logic was a significant challenge.
 
+- Learning Kotlin: Since the Element X project builds the app in Kotlin for Android and Swift for iOS, we use both versions depending on the team member's focus, but have chosen to concentrate on the Android version.
+
 ## Impact
-All Element X users (more than 100k) could display a preview before clicking on a URL.
+Our solution significantly improves user privacy for the hundreds of thousands of Element X users by enabling secure, end-to-end encrypted link previews. Until now, URLs had to be sent in plaintext to the server for preview generation, creating a privacy gap in an otherwise secure messaging system.
+
+By moving URL preview generation entirely to the client side, our approach ensures that link content stays fully encrypted and private. This reinforces Matrix’s core values of decentralization and privacy, while maintaining a seamless and rich user experience.
+
+Once integrated, this feature will bring stronger privacy guarantees to a wide user base without compromising usability—setting a new standard for secure messaging platforms.
 
 ## Next Steps
 Bridge the SDK and the mobile app to collect data needed to generate the preview.
