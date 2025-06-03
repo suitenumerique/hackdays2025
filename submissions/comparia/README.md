@@ -3,9 +3,10 @@
 ## Project
 
 **Integrating La Suite into Compar:IA and Compar:IA into La Suite**
-<p align="center">
+<p>
   <img src="https://github.com/user-attachments/assets/c889f03b-3662-4d5a-8e64-083d2ed5ae25" alt="comparIA x La Suite" width="400"/>
 </p>
+
 ## Project Description
 
 ### What is Compar:IA?
@@ -46,9 +47,13 @@ The platform serves two core missions:
 - **UX/UI Design:** Aurélien  
 - **Product Owner:** Lucie
 
+<p>
+  <img src="https://github.com/user-attachments/assets/1254eb47-2928-4821-b9a2-8442d10662bd" alt="comparIA x La Suite" width="400"/>
+</p>
 
 
 ## Code Base
+
 
 - https://github.com/betagouv/ComparIA/tree/feature/docs-integration-complete
 
@@ -63,21 +68,24 @@ The platform serves two core missions:
 ⭐️ Log into Compar:IA with ProConnect  
 ⭐️ Be able to reference documents in Docs inside Compar:IA prompts  
 
-📹 [Video and link to demo env.]
+📹 [Video]
+
+https://github.com/user-attachments/assets/bbc64724-a2d0-4bcf-bc56-f4acae746949
+
 
 ### Integrating Compar:IA into La Suite
 
 **🏗️ Integration of Compar:IA into Docs and Drive**
 
 ⭐️ Mockups for being able to use any model from Compar:IA in Docs 
-<p align="center">
+<p>
   <img src="https://github.com/user-attachments/assets/75192a70-86aa-4b20-9767-27383404349a" alt="La Suite + comparIA" width="600"/>
 </p>
 
 
 ⭐️ Mockups for seeing the environmental impact of using the model  
 
-<p align="center">
+<p>
   <img src="https://github.com/user-attachments/assets/3b79a1c4-da2a-41e6-9944-dd541a78d77e" alt="Docs x comparIA" width="600"/>
 </p>
 
