@@ -92,12 +92,11 @@ Future good changes:
 
 ### Other identified issues 
 
-* [Grist] Loading spinner when rendering widgets to avoid "white screen" effect which is not a desirable UX.
-* [Grist] Dans les formulaires, la recherche ne fonctionne pas (ni sur le formulaire, ni sur raw data)
-* [Grist] Fix search within forms. 
-  * Drop-down only loads 30 options (checkboxes)
-  * Dropdown from lists only loads 1000 entries 
+* [Grist] Loading spinner when rendering widgets to avoid "white screen" effect which is not a desirable UX
+* [Grist] Fix search within forms
+* [Grist] Fix Drop-down only loads 30 options (checkboxes)
+* [Grist] Fix Dropdown from lists only loads 1000 entries 
 * [Grist] Copy a widget from one page to another
-* [Grist] Anchors to navigate in history. (actual behavior is anchor appears briefly and disappears)
-* [Grist] Expose user objet in forms
-* [Grist] Settings for webhooks to filter payload being sent and choose expected HTTP return codes that are handled 
+* [Grist] Anchors to navigate in history (actual behavior is anchor appears briefly and disappears)
+* [Grist] Expose user object in forms
+* [Grist] Settings for webhooks to filter payload being sent and choose expected HTTP return codes that are handled
