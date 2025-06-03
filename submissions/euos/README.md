@@ -20,7 +20,7 @@ In this project, we attempt to apply these improvements to an OS meant for the p
     * Bulcsu Cseke
 
 ## Code base
-https://gitlab.com/eu-os/eu-os (We need on-prem)
+https://gitlab.com/eu-os/eu-os (We need on-prem so github is not an option; actions need to run on gitlab-ci)
 
 ## Deliverables 
 We deployed the final project on a laptop and installed foreman on a web server that can be used to manage it.
