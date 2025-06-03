@@ -6,7 +6,9 @@ import { baseApiUrl } from "../api/utils";
 import { APIError } from "../api/APIError";
 
 export const logout = () => {
-  window.location.replace(new URL("logout/", baseApiUrl()).href);
+  // window.location.replace(new URL("logout/", baseApiUrl()).href);
+  localStorage.setItem("fakeLoginActive", "false");
+  window.location.href ='/';
 };
 
 export const login = () => {
@@ -30,9 +32,13 @@ export const Auth = ({
 
   const init = async () => {
     try {
-      const response = await fetchAPI(`users/me/`, {  params: {fakeLogin: 'true'} }, {
-        logoutOn401: false,
-      });
+      const response = await fetchAPI(
+        `users/me/`,
+        { params: { fakeLogin: "true" } },
+        {
+          logoutOn401: false,
+        }
+      );
       const data = (await response.json()) as User;
       setUser(data);
       return data;
