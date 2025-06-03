@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "agent-llm"
+version = "0.1.0"
+description = ""
+authors = ["Clement Teulier <clement.teulier@openvalue.fr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+langchain-core = "^0.3.63"
+streamlit = "^1.45.1"
+dotenv = "^0.9.9"
+pydantic = "^2.11.5"
+fastapi = "^0.115.12"
+openai = "^1.82.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
