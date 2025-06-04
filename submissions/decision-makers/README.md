@@ -11,7 +11,7 @@ A tool designed to enhance meeting efficiency by integrating structured, time-li
 <a href="https://github.com/RichaoAlexandre">@RichaoAlexandre</a>, <a href="https://github.com/olah0la">@olah0la</a>, <a href="https://github.com/antoinehashbang">@antoinehashbang</a>, <a href="https://github.com/teonateodorescu">@teonateodorescu</a>, <a href="https://github.com/C-BdB">@C-BdB</a>
 
 ## Code base
-(Provide a link to your Git repository)
+[Convene](https://github.com/olah0la/convene)
 
 ## Deliverables 
 (Provide a link to a live demo, if you have one)
