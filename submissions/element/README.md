@@ -81,7 +81,8 @@ https://github.com/element-hq/aurora/pull/1
 ## Deliverables
 
 - Aurora.png in /assets
-
+- Hackdays Element X Web (Shared).pdf
+- Aurora.mov
 - <https://dangerousdemos.net>
 
 ## Key Achievements
