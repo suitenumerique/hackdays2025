@@ -1,0 +1,12 @@
+template: |
+  Cette demande concerne le ministère de {{ ministry }}.
+  Quel type de document doit être généré parmi : {{ doc_types|join(", ") }}.
+  Réponds seulement par le type exact de document.
+
+doc_types:
+  - lettre formelle
+  - mail administratif
+  - rapport
+  - dossier de subvention
+  - dossier complet
+  - note de service

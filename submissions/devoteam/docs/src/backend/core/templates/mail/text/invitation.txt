@@ -1,0 +1,16 @@
+{% load i18n static extra_tags %} {{ title }}
+
+{%trans 'Logo email' %} [{{logo_img}}]
+
+
+{{title|capfirst}}
+
+{{message|capfirst}} {{document_title}} [{{link}}]
+
+{% trans "Open"%} [{{link}}]
+
+
+
+{% blocktrans %} Docs, your new essential tool for organizing, sharing and collaborating on your documents as a team. {% endblocktrans %}
+
+{% blocktrans %} Brought to you by {{brandname}} {% endblocktrans %}

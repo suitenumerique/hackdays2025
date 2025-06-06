@@ -1,0 +1,42 @@
+{
+  "name": "impress",
+  "version": "3.3.0",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "packages/*",
+      "servers/*"
+    ]
+  },
+  "scripts": {
+    "APP_IMPRESS": "yarn workspace app-impress",
+    "APP_E2E": "yarn workspace app-e2e",
+    "I18N": "yarn workspace packages-i18n",
+    "COLLABORATION_SERVER": "yarn workspace server-y-provider",
+    "app:dev": "yarn APP_IMPRESS run dev",
+    "app:start": "yarn APP_IMPRESS run start",
+    "app:build": "yarn APP_IMPRESS run build",
+    "app:test": "yarn APP_IMPRESS run test",
+    "ci:build": "yarn APP_IMPRESS run build:ci",
+    "e2e:test": "yarn APP_E2E run test",
+    "lint": "yarn APP_IMPRESS run lint && yarn APP_E2E run lint && yarn workspace eslint-config-impress run lint && yarn I18N run lint && yarn COLLABORATION_SERVER run lint",
+    "i18n:extract": "yarn I18N run extract-translation",
+    "i18n:deploy": "yarn I18N run format-deploy && yarn APP_IMPRESS prettier",
+    "i18n:test": "yarn I18N run test",
+    "test": "yarn server:test && yarn app:test",
+    "server:test": "yarn COLLABORATION_SERVER run test"
+  },
+  "resolutions": {
+    "@types/node": "22.15.21",
+    "@types/react": "19.1.5",
+    "@types/react-dom": "19.1.5",
+    "@typescript-eslint/eslint-plugin": "8.32.1",
+    "@typescript-eslint/parser": "8.32.1",
+    "eslint": "8.57.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "typescript": "5.8.3",
+    "yjs": "13.6.27"
+  }
+}
