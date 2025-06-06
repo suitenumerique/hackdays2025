@@ -11,20 +11,26 @@ A tool designed to enhance meeting efficiency by integrating structured, time-li
 <a href="https://github.com/RichaoAlexandre">@RichaoAlexandre</a>, <a href="https://github.com/olah0la">@olah0la</a>, <a href="https://github.com/antoinehashbang">@antoinehashbang</a>, <a href="https://github.com/teonateodorescu">@teonateodorescu</a>, <a href="https://github.com/C-BdB">@C-BdB</a>
 
 ## Code base
-(Provide a link to your Git repository)
+[Convene](https://github.com/olah0la/convene)
 
 ## Deliverables 
 (Provide a link to a live demo, if you have one)
 (Add screenshots (image, gif or video) and presentation deck to `/assets`)
 
 ## Key Achievements
-(Highlight the main features or breakthroughs)
+1. Being Proactive
 
 ## Challenges Overcome
-(What was difficult? What did you solve?)
+1. First Hackathon
+2. Meeting each other for the first time
+3. Planning alignment within the team took longer than expected
 
 ## Impact
-(Who will benefit from your project?)
+Teams and their users
 
 ## Next Steps
-(If you were to continue, what next steps or developments would you envision?)
+1) Creating a plugin space to "insert" the app into
+2) mobile version
+3) testing
+4) refactoring
+
