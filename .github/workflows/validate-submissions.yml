@@ -20,18 +20,12 @@ jobs:
       - name: Ensure only allowed files are changed
         run: |
           for f in $(git diff --name-only origin/main...HEAD); do
-            # 1) Block any README.md immediately
-            if [[ "$f" == *README.md ]]; then
-              echo "❌ PR modifies a README file: $f"
-              exit 1
-            fi
-
-            # 2) Allow teams.md or anything under submissions/
+            # 1) Allow teams.md or anything under submissions/
             if [[ "$f" == teams.md || "$f" == submissions/* ]]; then
               continue
             fi
 
-            # 3) Everything else is unauthorized
+            # 2) Everything else is unauthorized
             echo "❌ PR modifies unauthorized file: $f"
             exit 1
           done
