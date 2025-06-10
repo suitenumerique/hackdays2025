@@ -1,0 +1,14 @@
+flask
+sentence-transformers
+PyMuPDF
+python-docx
+python-pptx
+pandas
+unidecode
+faiss-cpu
+tiktoken
+beautifulsoup4
+fpdf2
+openai
+python-dotenv
+pdfkit

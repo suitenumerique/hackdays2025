@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Résumé Automatique de Documents Scientifiques</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='summary_style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='carbon_style.css') }}">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="min-h-screen bg-gradient">
+    <!-- Header -->
+    <header class="header">
+    <!-- 🔙 Bouton retour à côté du titre -->
+      <button onclick="window.location.href='/'" class="back-button">
+      ⬅️ Menu principal
+      </button>
+      <div class="header-content">
+        <div class="header-title">
+
+          <i data-lucide="book-open" class="icon purple"></i>
+          
+          <h1>Synthèse Rapide</h1>
+
+        </div>
+          <p>Résumé automatique de documents officiels prêts à l’emploi</p>
+            {% include 'carbon_counter.html' %}
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Features Section -->
+      <div class="features">
+        <div class="feature-card">
+          <i data-lucide="file-text" class="icon purple"></i>
+          <h2>Multi-format</h2>
+          <p>Compatible avec PDF, Word, PowerPoint, Excel, et fichiers texte.</p>
+        </div>
+        <div class="feature-card">
+          <i data-lucide="languages" class="icon pink"></i>
+          <h2>Multilingue</h2>
+          <p>Générez des résumés en français ou en anglais.</p>
+        </div>
+        <div class="feature-card">
+          <i data-lucide="folder" class="icon purple"></i>
+          <h2>Traitement par lot</h2>
+          <p>Analysez un fichier unique ou un dossier complet.</p>
+        </div>
+        <div class="feature-card">
+          <i data-lucide="download" class="icon pink"></i>
+          <h2>Export DOCX</h2>
+          <p>Téléchargez vos résumés au format DOCX.</p>
+        </div>
+      </div>
+
+      <!-- Main Interface -->
+      <div class="main-interface">
+        <!-- Language Selection -->
+        <div class="language-selector">
+          <label>Langue du résumé :</label>
+          <div class="language-buttons">
+            <button class="lang-btn active" data-lang="francais">
+              <span class="fi fi-fr icon-sm"></span>
+              Français
+            </button>
+            <button class="lang-btn" data-lang="en">
+              <span class="fi fi-gb icon-sm"></span>
+              English
+            </button>
+          </div>
+        </div>
+      <!-- Section Selection - ADDED SECTION -->
+      <div class="section-selector">
+        <div class="section-header">
+          <label>Sections à inclure</label>
+        </div>
+        <div class="section-tags" id="sectionTags">
+          <div class="section-tag" data-section="contexte" data-fr="Contexte et objectifs" data-en="Context and objectives">
+            Contexte et objectifs
+            <button class="remove-tag" aria-label="Supprimer section">×</button>
+          </div>
+          <div class="section-tag" data-section="resultats" data-fr="Principaux résultats" data-en="Main results">
+            Principaux résultats
+            <button class="remove-tag" aria-label="Supprimer section">×</button>
+          </div>
+          <div class="section-tag" data-section="perspectives" data-fr="Perspectives" data-en="Perspectives">
+            Perspectives
+            <button class="remove-tag" aria-label="Supprimer section">×</button>
+          </div>
+        </div>
+        <div class="other-sections">
+          <label>Autres sections (séparées par virgules)</label>
+          <div class="custom-input-wrapper">
+            <input type="text" id="customSections" placeholder="Entrez d'autres sections...">
+            <button id="addSectionBtn" class="add-section-btn" aria-label="Ajouter section">
+              <i data-lucide="plus" class="icon-sm"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+        <!-- Upload Section -->
+        <div class="upload-section">
+          <div class="upload-type">
+            <button class="type-btn active" data-type="single">
+              <i data-lucide="file" class="icon-sm"></i>
+              Fichier unique
+            </button>
+            <button class="type-btn" data-type="multiple">
+              <i data-lucide="files" class="icon-sm"></i>
+              Dossier
+            </button>
+          </div>
+
+          <div class="upload-zone" id="dropZone">
+            <i data-lucide="upload-cloud" class="icon-lg"></i>
+            <p>Glissez vos fichiers ici ou</p>
+            <label class="upload-button" for="fileInput">
+              Parcourir
+              <input type="file" id="fileInput" multiple hidden>
+            </label>
+            <p class="upload-info">Formats acceptés : PDF, DOCX, PPTX, XLSX, TXT, ZIP</p>
+          </div>
+
+          <div id="fileList" class="file-list"></div>
+
+          <button id="generateBtn" class="generate-btn" disabled>
+            <i data-lucide="sparkles" class="icon-sm"></i>
+            Générer le résumé
+          </button>
+        </div>
+
+        <!-- Results Section -->
+        <div id="results" class="results hidden">
+          <div class="progress-section">
+            <div class="progress-bar">
+              <div class="progress-fill"></div>
+            </div>
+            <p class="progress-text">Traitement en cours...</p>
+          </div>
+
+          <div class="summary-container">
+            <div class="summary-header">
+              <h3>Résumé généré</h3>
+              <button class="download-btn">
+                <i data-lucide="download" class="icon-sm"></i>
+                Télécharger en DOCX
+              </button>
+            </div>
+            <div class="summary-content"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="{{ url_for('static', filename='script_carbon.js') }}"></script>
+  <script src="{{ url_for('static', filename='script_summary.js') }}"></script>
+</body>
+</html>

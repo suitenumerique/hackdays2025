@@ -1,0 +1,5 @@
+template: |
+  Rédige une {{ doc_type }} destinée au {{ ministry }}.
+  Le contenu suivant doit être transformé en texte administratif structuré et professionnel :
+  "{{ text }}"
+  Le ton doit être respectueux et formel.

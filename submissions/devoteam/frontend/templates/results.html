@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMPACT - AI Model Evaluation: Résultats</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='chat_style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='carbon_style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="/generation" class="back-button">← Retour à la génération</a>
+    </nav>
+
+    <main>
+        <h1>Modèle de Langage IA Auto-Correctif</h1>
+        <p class="subtitle">Un système intelligent qui ajuste les prompts, réduit les hallucinations pour des réponses rapides et fiables.</p>
+        
+
+        <section class="evaluation-section">
+          {% include 'carbon_counter.html' %}
+            <h2 class="selected-prompt-title"></h2>
+            <p class="selected-prompt-text"></p>
+
+            <div class="results-section"></div>
+            <div class="results-layout">
+                <div class="results-card left-card">
+                    <h3>Réponse du modèle & Hallucinations</h3>
+                    <div class="response-content">
+                        <!-- Contenu dynamique -->
+                    </div>
+                </div>
+
+                <div class="results-card right-card">
+                    <h3>Métriques d'évaluation</h3>
+                    <div class="evaluation-metrics">
+                        <div class="donut-container">
+                            <!-- Jauge donut -->
+                        </div>
+                        <div class="charts-container">
+                            <canvas id="trendChart" width="400" height="300"></canvas>
+                            <canvas id="radarChart" width="400" height="300"></canvas>
+                            <canvas id="histogramChart" width="400" height="300"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="gradient-button" id="downloadPdfBtn">Télécharger en PDF</button>
+            </div>
+          </div>
+            <a href="/chat" class="back-link">Retour aux Prompts</a>
+        </section>
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.6/dist/purify.min.js"></script>
+  <script src="{{ url_for('static', filename='script_carbon.js') }}"></script>
+  <script src="{{ url_for('static', filename='script_chat.js') }}"></script>
+</body>
+</html>

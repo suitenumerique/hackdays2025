@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Auto-Corrective Interface</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='chat_style.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='carbon_style.css') }}">
+</head>
+<body>
+  <div class="min-h-screen bg-gradient">
+    <!-- Header -->
+    <header class="header">
+      <button onclick="window.location.href='/chatbot'" class="back-button">← Retour aux Prompts</button>
+      <div class="header-content">
+        <div class="header-title">
+          <i data-lucide="brain" class="icon purple"></i>
+          <h1>IA Auto-Correctif</h1>
+        </div>
+        <p class="subtitle">Un système intelligent qui ajuste les prompts, réduit les hallucinations pour des réponses rapides et fiables.</p>
+        {% include 'carbon_counter.html' %}
+      </div>
+    </header>
+
+    <main>
+      <!-- Selected Prompt Card -->
+      <h2 class="selected-prompt-title">Prompt sélectionné</h2>
+      <div class="selected-prompt-text">Sélectionnez un prompt pour commencer l'évaluation</div>
+
+
+      <!-- Advanced Settings Toggle -->
+      <button id="advanced-settings-toggle" class="settings-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+        <span>Paramètres avancés</span>
+        <svg id="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+
+      <!-- Advanced Settings Section -->
+      <div id="advanced-settings" class="advanced-settings hidden">
+        <!-- Model Selection Card -->
+        <div class="settings-card">
+          <h3>Modèle de Génération</h3>
+          <div class="model-grid">
+            <!-- VSLM Section -->
+            <div class="model-section">
+              <h4>VSLM</h4>
+              <div class="radio-group">
+                <label>
+                  <input type="radio" name="gen-model" value="G">
+                  <span>llama-3.2-1b-instruct</span>
+                </label>
+                <label>
+                  <input type="radio" name="gen-model" value="H">
+                  <span>llama-3.2-3b-instruct</span>
+                </label>
+                <label>
+                  <input type="radio" name="gen-model" value="I">
+                  <span>gemma-2b</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- SLM Section -->
+            <div class="model-section">
+              <h4>SLM</h4>
+              <div class="radio-group">
+                <label>
+                  <input type="radio" name="gen-model" value="A">
+                  <span>Deepseek-r1-distill-qwen-7B</span>
+                </label>
+                <label>
+                  <input type="radio" name="gen-model" value="J" checked>
+                  <span class="font-bold">Deepseek-r1-distill-llama-8B</span>
+                </label>
+                <label>
+                  <input type="radio" name="gen-model" value="K">
+                  <span>falcon3-7b-instruct</span>
+                </label>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Hyperparameters Card -->
+        <div class="settings-card">
+          <h3>Hyperparamètres Génération</h3>
+          <div class="parameters-group">
+            <div class="parameter">
+              <label>
+                <span>Temperature</span>
+                <div class="parameter-value">
+                  <span id="temp-value">0.7</span>
+                  <span class="info-icon" title="La température contrôle la créativité de la génération.">ℹ</span>
+                </div>
+              </label>
+              <input type="range" id="gen-temp" min="0" max="100" value="70">
+            </div>
+
+            <div class="parameter">
+              <label>
+                <span>Top-p</span>
+                <div class="parameter-value">
+                  <span id="top-p-value">0.7</span>
+                  <span class="info-icon" title="Le top-p limite la sélection aux tokens cumulant une probabilité p.">ℹ</span>
+                </div>
+              </label>
+              <input type="range" id="gen-top-p" min="0" max="100" value="70">
+            </div>
+
+            <div class="parameter">
+              <label>
+                <span>Top-k</span>
+                <div class="parameter-value">
+                  <span id="top-k-value">40</span>
+                  <span class="info-icon" title="Le top-k limite le nombre de tokens les plus probables à k.">ℹ</span>
+                </div>
+              </label>
+              <input type="range" id="gen-top-k" min="0" max="200" value="40">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="action-buttons">
+        <div class="generation-controls">
+          <button class="generate-button">Générer la réponse</button>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="{{ url_for('static', filename='script_carbon.js') }}"></script>
+  <script src="{{ url_for('static', filename='script_chat.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+template: |
+  Tu es un assistant administratif.
+  À partir de ce texte :
+  "{{ text }}"
+  Choisis parmi les ministères suivants : {{ ministries|join(", ") }}.
+  Réponds seulement par le nom exact du ministère.
+
+ministries:
+  - Ministère de la Santé
+  - Ministère de l’Éducation nationale et de la Jeunesse
+  - Ministère de l’Intérieur
+  - Ministère des Finances
+  - Ministère de la Justice
+  - Ministère de l’Environnement
+  - Ministère du Travail, de la Santé et des Solidarités
+
+  - Ministère de l’Europe et des Affaires étrangères
+  - Ministère des Armées
+  - Ministère de l’Économie, des Finances et de la Souveraineté industrielle et numérique
+  - Ministère de l’Enseignement supérieur et de la Recherche
+  - Ministère des Sports et des Jeux Olympiques et Paralympiques
+
+
+
+  - Ministère de la Transition écologique et de la Cohésion des territoires
+  - Ministère de l’Agriculture et de la Souveraineté alimentaire
+  - Ministère de la Culture
+  - Ministère de la Transformation et de la Fonction publiques
+  - Ministère de la Transition énergétique
+  - Ministère des Sports et des Jeux Olympiques et Paralympiques
+  - Ministère délégué chargé des Transports
+  - Ministère de l'Égalité entre les femmes et les hommes et de la Lutte contre les discriminations
