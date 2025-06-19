@@ -1,0 +1,238 @@
+/* Base styles */
+:root {
+  --purple-50: #f5f3ff;
+  --purple-100: #ede9fe;
+  --purple-600: #7c3aed;
+  --pink-50: #fdf2f8;
+  --pink-100: #fce7f3;
+  --pink-600: #db2777;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --green-500: #22c55e;
+  --green-600: #16a34a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  color: var(--gray-700);
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, #eef2ff 0%, #faf5ff 50%, #fdf2f8 100%);
+}
+
+/* Header */
+.header {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--purple-100);
+  padding: 1.5rem 0;
+}
+
+.header-content {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.blue {
+  color: #0d205a; /* ou une autre teinte de bleu */
+}
+
+/* Carbon Counter */
+.carbon-counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--green-500);
+  border-radius: 1rem;
+  margin-top: 1rem;
+  position: relative;
+  cursor: help;
+}
+
+.carbon-counter:hover .carbon-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.carbon-tooltip {
+  position: absolute;
+  bottom: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+}
+
+.carbon-tooltip::before {
+  content: '';
+  position: absolute;
+  top: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid rgba(0, 0, 0, 0.8);
+}
+
+.green {
+  color: var(--green-600);
+}
+
+/* Container */
+.container {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .features {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  border: 1px solid var(--purple-100);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-card .logo {
+    max-width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.fr-card {
+
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-card h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--gray-800);
+  margin: 1rem 0 0.5rem;
+}
+
+.feature-card p {
+  color: var(--gray-600);
+  margin-bottom: 1.5rem;
+}
+
+.feature-footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carbon-impact {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+  color: var(--green-600);
+}
+
+/* Try Button */
+.try-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  border: 2px solid var(--purple-600);
+  color: var(--purple-600);
+  font-weight: 600;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.try-button:hover {
+  background: var(--purple-600);
+  color: white;
+}
+
+.try-button i {
+  transition: transform 0.2s ease;
+}
+
+.try-button:hover i {
+  transform: translateX(4px);
+}
+
+/* Icons */
+.icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon-sm {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.icon-lg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.purple {
+  color: var(--purple-600);
+}
+
+.pink {
+  color: var(--pink-600);
+}
+
+/* Utilities */
+.hidden {
+  display: none;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DocGen IA - Générateur de Documents</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_docgen_v2.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='carbon_style.css') }}">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="min-h-screen">
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <button onclick="window.location.href='/'" class="back-button">
+            <i data-lucide="chevron-left"></i>
+            Menu principal
+          </button>
+          
+          <div class="header-title">
+            <i data-lucide="book-open"></i>
+            <div>
+              <h1>DocGen IA</h1>
+              <p>Générateur de documents administratifs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+
+        {% include 'carbon_counter.html' %}
+      <div class="document-generator">
+        <div class="generator-header">
+          <i data-lucide="file-text" class="icon purple"></i>
+          <h2>Créer un nouveau document</h2>
+        </div>
+
+        <div class="generator-form">
+          <div class="form-group">
+            <label for="request">Votre demande</label>
+            <textarea id="textInput" placeholder="Décrivez votre demande..." rows="4"></textarea>
+            <p class="form-tip">
+              Soyez précis pour obtenir un document adapté à vos besoins.
+            </p>
+          </div>
+
+          <button id="generateBtn" class="generate-button">
+            <i data-lucide="loader-2" class="hidden"></i>
+            <span>Générer le document</span>
+          </button>
+        </div>
+
+        <div id="resultSection" class="results hidden mt-6">
+          <button id="downloadBtn" class="download-btn">Télécharger en PDF</button>
+          <textarea id="generatedDoc" rows="10" class="w-full p-4 border rounded"></textarea>
+        </div>
+      </div>
+    </main>
+
+  </div>
+  <script src="{{ url_for('static', filename='script_carbon.js') }}"></script>
+<script src="{{ url_for('static', filename='script_docgen.js') }}"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

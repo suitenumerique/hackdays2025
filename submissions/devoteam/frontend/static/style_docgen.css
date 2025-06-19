@@ -1,0 +1,32 @@
+/* Variables (couleurs et typographie) */
+:root {
+    --purple-50: #f5f3ff;
+    --purple-100: #ede9fe;
+    --purple-600: #7c3aed;
+    --pink-50: #fdf2f8;
+    --pink-100: #fce7f3;
+    --pink-600: #db2777;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-400: #9ca3af;
+    --gray-600: #4b5563;
+    --font-sans: 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:var(--font-sans); background:linear-gradient(135deg, var(--purple-50), var(--pink-50)); color:var(--gray-600); }
+  
+  .min-h-screen { min-height:100vh; display:flex; flex-direction:column; }
+  .container { flex:1; width:90%; max-width:800px; margin:2rem auto; }
+  .header { display:flex; align-items:center; justify-content:space-between; padding:1rem; background:var(--purple-100); border-bottom:2px solid var(--purple-600); }
+  .header-title h1 { font-size:1.5rem; color:var(--purple-600); }
+  .back-button, .generate-btn, .download-btn { padding:.6rem 1rem; border-radius:.5rem; border:2px solid var(--purple-600); background:#fff; color:var(--purple-600); cursor:pointer; transition:.3s; }
+  .generate-btn:hover { background:var(--purple-600); color:#fff; }
+  .download-btn { border-color:var(--pink-600); color:var(--pink-600); }
+  .download-btn:hover { background:var(--pink-600); color:#fff; }
+  .input-section { margin-bottom:1rem; }
+  .input-section label { font-weight:500; display:block; margin-bottom:.5rem; }
+  textarea { width:100%; padding:.6rem; border:1px solid var(--gray-300); border-radius:.5rem; resize:vertical; }
+  .results { background:#fff; border:1px solid var(--gray-200); border-radius:1rem; padding:1rem; }
+  .hidden { display:none; }

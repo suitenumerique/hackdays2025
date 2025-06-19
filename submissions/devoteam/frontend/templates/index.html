@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interface All-in-One avec Chatbot et Synthétiseur</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='carbon_style.css') }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.9.3/dist/dsfr.min.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  
+  <header role="banner" class="fr-header">
+    <div class="fr-header__body">
+      <div class="fr-container">
+        <div class="fr-header__body-row">
+          <div class="fr-header__brand fr-enlarge-link">
+            <div class="fr-header__brand-top">
+              <div class="fr-header__logo">
+                <p class="fr-logo">
+                  GOUVERNEMENT
+                </p>
+              </div>
+            </div>
+            <div class="fr-header__service">
+              <a href="/" title="Accueil - [À MODIFIER - Nom du site / service] - Nom de l'entité (ministère, secrétariat d'état, gouvernement)">
+                <p class="fr-header__service-title">
+                  numerique.gouv.fr
+                </p>
+              </a>
+            </div>
+          </div>
+                <div class="fr-header__tools">
+                    <div class="fr-header__tools-links">
+        <ul class="fr-btns-group">
+            <li>
+                <a class="fr-logo-drapeau-europeen" href="#">
+                    <img src="{{ url_for('static', filename='images/Flag_of_Europe.svg') }}" alt="Drapeau de l'Union Européenne" class="fr-flag-europe" style="height: 1em; margin-right: 0.5em;">
+                    <span class="fr-logo-drapeau-europeen__txt">Union Européenne</span>
+                </a>
+            </li>
+        </ul>
+        <nav role="navigation" class="fr-translate fr-nav">    <div class="fr-nav__item">        <button class="fr-translate__btn fr-btn fr-btn--tertiary" aria-controls="translate-1177" aria-expanded="false" title="Sélectionner une langue">            FR<span class="fr-hidden-lg"> - Français</span>        </button>        <div class="fr-collapse fr-translate__menu fr-menu" id="translate-1177">            <ul class="fr-menu__list">                <li>                    <a class="fr-translate__language fr-nav__link" hreflang="fr" lang="fr" href="#" aria-current="true">FR - Français</a>                </li>                <li>                    <a class="fr-translate__language fr-nav__link" hreflang="en" lang="en" href="#">EN - English</a>                </li>                <li>                    <a class="fr-translate__language fr-nav__link" hreflang="es" lang="es" href="#">ES - Español</a>                </li>                <li>                    <a class="fr-translate__language fr-nav__link" hreflang="de" lang="de" href="#">DE - Deutsch</a>                </li>            </ul>        </div>    </div></nav>
+        </div>
+        
+        </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="min-h-screen bg-gradient">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <div class="header-title">
+         <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo La Suite" class="logo" />
+         
+        </div>
+        <p>Un environnement open source, pensé pour le secteur public et dédié aux communs.</p>
+        {% include 'carbon_counter.html' %}
+      </div>
+    </header>
+
+    <div class="container">
+      <!-- Features Section -->
+      <div class="features">
+          <div class="feature-card">
+          <img src="{{ url_for('static', filename='images/docs-logo.png') }}" alt="Logo La Suite" class="logo" />
+          <h2>Docs</h2>
+          <p>Docs est un éditeur de texte collaboratif conçu pour répondre aux défis courants liés à la création et au partage de connaissances.</p>
+          <div class="feature-footer">
+            
+            <button class="try-button fr-btn" data-tab="summary">
+                <i data-lucide="arrow-right" class="icon-sm"></i>
+                  Essayer
+            </button>
+          </div>
+        </div>
+        
+        
+
+            
+          <div class="feature-card">
+          <img src="{{ url_for('static', filename='images/logo_tchap.png') }}" alt="Logo La Suite" class="logo" />
+          <h2>TCHAP</h2>
+          <p>Tchap est une plateforme de messagerie sécurisée développée pour le gouvernement français, basée sur le protocole Matrix.</p>
+          <div class="feature-footer">
+            
+            <button class="try-button fr-btn" data-tab="summary">
+                <i data-lucide="arrow-right" class="icon-sm"></i>
+                  Essayer
+                </button>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <img src="{{ url_for('static', filename='images/logo_meet.png') }}" alt="Logo La Suite" class="logo" />
+          <h2>Meet</h2>
+          <p>La suite Meet offre des performances équivalentes à Zoom, avec une vidéo et un son de haute qualité.</p>
+          <div class="feature-footer">
+            
+            <button class="try-button fr-btn" data-tab="summary">
+                <i data-lucide="arrow-right" class="icon-sm"></i>
+                  Essayer
+                </button>
+          </div>
+        </div>
+          <div class="feature-card">
+           <img src="{{ url_for('static', filename='images/logo_drive.png') }}" alt="Logo La Suite" class="logo" />
+          <h2>Drive</h2>
+          <p>Drive permet aux équipes de stocker, partager et collaborer en toute sécurité sur des fichiers, tout en gardant un contrôle total sur leurs données grâce à une plateforme open source et facile à utiliser.</p>
+          <div class="feature-footer">
+            
+            <button class="try-button fr-btn" data-tab="summary">
+                <i data-lucide="arrow-right" class="icon-sm"></i>
+                  Essayer
+                </button>
+          </div>
+          </div>
+          <div class="feature-card">
+          <i data-lucide="bot" class="icon blue"></i>
+          <h2>Chatbot Intelligent</h2>
+          <p>Correction automatique en temps réel de vos messages avec une IA avancée.</p>
+          <div class="feature-footer">
+            
+            <button class="try-button fr-btn" data-tab="summary">
+                <i data-lucide="arrow-right" class="icon-sm"></i>
+                  Essayer
+                </button>
+          </div>
+        </div>
+        
+        <div class="feature-card">
+          <i data-lucide="zap" class="icon blue"></i>
+          <h2>DocSynth</h2>
+          <p>Transformez vos longs textes en résumés concis et pertinents.</p>
+          <div class="feature-footer">
+            
+            <button class="try-button fr-btn" data-tab="summary">
+                <i data-lucide="arrow-right" class="icon-sm"></i>
+                  Essayer
+                </button>
+          </div>
+        </div>
+        <div class="feature-card">
+          <i data-lucide="Ghost" class="icon blue"></i>
+          <h2>DocSearch</h2>
+          <p>Outil de fouille de documents gouvernementaux.</p>
+          <div class="feature-footer">
+
+            <button class="try-button fr-btn" data-tab="summary">
+                <i data-lucide="arrow-right" class="icon-sm"></i>
+                  Essayer
+                </button>
+          </div>
+        </div>
+          <div class="feature-card">
+          <i data-lucide="File" class="icon blue"></i>
+          <h2>DocGen</h2>
+          <p>Generation de documents administratifs</p>
+          <div class="feature-footer">
+            
+            <button class="try-button fr-btn" data-tab="summary">
+                <i data-lucide="arrow-right" class="icon-sm"></i>
+                  Essayer
+                </button>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='script_carbon.js') }}"></script>
+  <script src="{{ url_for('static', filename='script_tools.js') }}"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+
+  
+</body>
+</html>
